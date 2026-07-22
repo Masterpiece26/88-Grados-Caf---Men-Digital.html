@@ -198,9 +198,15 @@ function syncSizedItem(catalogItem, candidates, byId, storeId, warnings) {
   const updated = { ...catalogItem };
 
   // Pool de variantes por nombre (fallback) solo para las tallas que NO
-  // tengan loyverseItemId propio — se calcula una sola vez.
+  // tengan loyverseItemId propio — se calcula una sola vez, y solo si hace
+  // falta (si todas las tallas ya tienen su propio ID, ni se toca, para no
+  // ensuciar el log con avisos de "ambiguo"/"combinado" que no aplican).
   let namedVariants = null;
-  if (candidates) {
+  let namedVariantsComputed = false;
+  const getNamedVariants = () => {
+    if (namedVariantsComputed) return namedVariants;
+    namedVariantsComputed = true;
+    if (!candidates) return null;
     namedVariants = combineVariants(candidates);
     if (candidates.length > 1 && namedVariants.length !== catalogItem.sizes.length) {
       warnings.push(`⚠ Nombre ambiguo en Loyverse para "${catalogItem.name}" (${candidates.length} coincidencias), usando la primera.`);
@@ -208,14 +214,8 @@ function syncSizedItem(catalogItem, candidates, byId, storeId, warnings) {
     } else if (candidates.length > 1) {
       warnings.push(`"${catalogItem.name}": Loyverse tiene ${candidates.length} productos separados con el mismo nombre (uno por tamaño); se combinaron sus variantes.`);
     }
-  }
-  const variantsByLabel = new Map();
-  if (namedVariants) {
-    for (const v of namedVariants) {
-      const label = v.option1_value || v.option2_value || v.option3_value || '';
-      if (label) variantsByLabel.set(normalize(label), v);
-    }
-  }
+    return namedVariants;
+  };
 
   let anyResolved = false;
   let imageUrl = firstImageUrl(candidates || []);
@@ -227,6 +227,15 @@ function syncSizedItem(catalogItem, candidates, byId, storeId, warnings) {
       anyResolved = true;
       if (!imageUrl && resolved.imageUrl) imageUrl = resolved.imageUrl;
       return { ...sz, price: resolved.price };
+    }
+
+    const namedVariants = getNamedVariants();
+    const variantsByLabel = new Map();
+    if (namedVariants) {
+      for (const v of namedVariants) {
+        const label = v.option1_value || v.option2_value || v.option3_value || '';
+        if (label) variantsByLabel.set(normalize(label), v);
+      }
     }
 
     if (!namedVariants) {

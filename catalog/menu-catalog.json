@@ -518,7 +518,8 @@
       "price": 880,
       "mods": [
         "cafes"
-      ]
+      ],
+      "loyverseItemId": "9d4dc2ff-79ea-48fd-918a-8fa3c44254cd"
     },
     {
       "id": "cafe-doble",
@@ -584,11 +585,13 @@
       "sizes": [
         {
           "label": "Frío",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "d6453a61-d3b3-4097-a7ea-5b400600b007"
         },
         {
           "label": "Caliente",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "638d91ee-893c-4143-b659-c277cc8bd875"
         }
       ]
     },
@@ -599,11 +602,13 @@
       "sizes": [
         {
           "label": "Frío",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "36c50463-4b58-4ada-be24-17207eef7b0b"
         },
         {
           "label": "Caliente",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "f546a6ba-7011-4926-b236-e21138a7eb8e"
         }
       ]
     },
@@ -614,11 +619,13 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "cdb40b67-6867-4f6d-94ff-3fb1a16451c5"
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "bb35a2b7-6c5f-4de7-8c17-c2c4d457cb5e"
         }
       ]
     },
@@ -629,11 +636,13 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "1c9eec18-4cf8-4bba-856e-d1c5c48625dd"
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "089fc596-ade5-4f95-8c6b-70010d1fce80"
         }
       ]
     },
@@ -644,11 +653,13 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "4abb4160-338d-415b-ab08-1370e3f76692"
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "ba2cda01-dcee-4809-a801-562d448cc589"
         }
       ]
     },
@@ -659,11 +670,13 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "e0c10f7f-9422-43d6-8a8c-8a9fbe9ae045"
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "bded8706-8783-4f0a-ba05-c8168504574b"
         }
       ]
     },
@@ -674,11 +687,13 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "6a0c5be7-6a99-4595-b4cf-8bd07f8f12dc"
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "f45c47a9-7629-418e-8260-9e8e55bcc256"
         }
       ]
     },
@@ -689,11 +704,13 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "df94f4ca-1459-4424-9e62-6265b50ac902"
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "48a1b82b-2465-40a1-98d4-2652829e7698"
         }
       ]
     },
@@ -704,11 +721,13 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 1920,
+          "loyverseItemId": "3669acbd-76ce-48f4-b276-e50f39108cde"
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 3370,
+          "loyverseItemId": "d239ae4d-8b34-499b-b456-dc0bd8b4dbc6"
         }
       ]
     },
@@ -875,11 +894,13 @@
         },
         {
           "label": "Mediano",
-          "price": 1170
+          "price": 1170,
+          "loyverseItemId": "d412587c-be64-4f5c-b573-f0ebf54f7a86"
         },
         {
           "label": "Grande",
-          "price": 2020
+          "price": 2020,
+          "loyverseItemId": "119c8641-fab7-441e-8f78-ebbcd1992d0f"
         }
       ],
       "mods": [
@@ -971,6 +992,11 @@
           "label": "Pequeño",
           "price": 1030,
           "loyverseItemId": "36fb7500-00b9-4f6b-8c41-e620a9e41120"
+        },
+        {
+          "label": "Mediano",
+          "price": 1400,
+          "loyverseItemId": "4c96fb2c-b4fd-4973-a03e-98e24c9c2e28"
         }
       ]
     },
@@ -1004,7 +1030,7 @@
         {
           "label": "Pequeño",
           "price": 1030,
-          "loyverseItemId": "fd7e6c96-a118-4730-8e94-4fe9b4bc6089"
+          "loyverseItemId": "a276230a-6fd5-4f09-9d8d-38d9793262bd"
         },
         {
           "label": "Mediano",
@@ -1796,7 +1822,8 @@
       "name": "Pizza Pepperoni",
       "cat": "pizza",
       "price": 5950,
-      "desc": "Salsa, queso, jamón, aceituna negra, champiñones, salchichón, vegetales."
+      "desc": "Salsa, queso, jamón, aceituna negra, champiñones, salchichón, vegetales.",
+      "loyverseItemId": "1c994fb7-c578-4c49-91c6-2f8e11867ab9"
     },
     {
       "id": "pizza-salchichon",
@@ -2047,7 +2074,8 @@
       "id": "torta-auyama",
       "name": "Torta de Auyama (porción)",
       "cat": "postres",
-      "price": 1970
+      "price": 1970,
+      "loyverseItemId": "ae4f9740-6811-4a2e-b5b7-97aea747ff5c"
     },
     {
       "id": "torta-entera-fresa",
