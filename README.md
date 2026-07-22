@@ -192,6 +192,20 @@ de ahí, puedes fijar el emparejamiento de forma permanente en `menu-catalog.jso
 Con `loyverseItemId` fijado, ese producto se sigue emparejando aunque le cambies el nombre en
 Loyverse más adelante — deja de depender de que los nombres coincidan exactamente.
 
+También funciona **por talla**: si en Loyverse cada tamaño es un producto completamente
+separado (ej. "Agua Pequeña", "Agua Mediana", "Agua Grande" en vez de variantes de un mismo
+"Agua" — muy común), fija el ID dentro de cada size:
+
+```json
+{ "label": "Pequeña", "price": 570, "loyverseItemId": "abc123..." }
+```
+
+166 de los 166 productos del menú ya están revisados: 163 emparejados (la mayoría por ID,
+fijados a partir de `catalog/loyverse-snapshot.json` cruzando nombre + precio). Los 3 que
+quedan sin emparejar (Macchiato, Pizza Pepperoni, Torta de Auyama) se confirmó que no existen
+como productos en Loyverse — si los creas ahí, agrégales el `loyverseItemId` para que se
+sincronicen también; mientras tanto mantienen el precio que pongas a mano en el catálogo.
+
 ## Número de WhatsApp para pedidos
 
 Está definido en `docs/index.html` como `const WHATSAPP_NUMBER = '582123340106';`. Cámbialo ahí
