@@ -1,0 +1,2099 @@
+{
+  "CATEGORIES": [
+    {
+      "id": "cafe",
+      "name": "Café"
+    },
+    {
+      "id": "calientes",
+      "name": "Bebidas Calientes"
+    },
+    {
+      "id": "tes",
+      "name": "Tés"
+    },
+    {
+      "id": "frappes",
+      "name": "Frappés"
+    },
+    {
+      "id": "jugos",
+      "name": "Jugos Naturales"
+    },
+    {
+      "id": "frias",
+      "name": "Bebidas Frías"
+    },
+    {
+      "id": "arepas",
+      "name": "Arepas"
+    },
+    {
+      "id": "sandwiches",
+      "name": "Sándwiches"
+    },
+    {
+      "id": "empanadas",
+      "name": "Empanadas"
+    },
+    {
+      "id": "panaderia",
+      "name": "Panadería"
+    },
+    {
+      "id": "desayunos",
+      "name": "Desayunos"
+    },
+    {
+      "id": "pizza",
+      "name": "Pizza"
+    },
+    {
+      "id": "donas",
+      "name": "Donas"
+    },
+    {
+      "id": "galletas",
+      "name": "Galletas y Alfajores"
+    },
+    {
+      "id": "postres",
+      "name": "Postres"
+    },
+    {
+      "id": "tortas",
+      "name": "Tortas por Encargo"
+    },
+    {
+      "id": "raciones",
+      "name": "Raciones"
+    }
+  ],
+  "MODIFIER_GROUPS": {
+    "sabor-agua": {
+      "name": "Sabor",
+      "type": "single",
+      "options": [
+        {
+          "label": "Limón",
+          "price": 0
+        },
+        {
+          "label": "Naranja",
+          "price": 0
+        },
+        {
+          "label": "Toronja",
+          "price": 0
+        },
+        {
+          "label": "Natural",
+          "price": 0
+        },
+        {
+          "label": "Coco",
+          "price": 0
+        }
+      ]
+    },
+    "textura-arepa": {
+      "name": "Textura de la arepa",
+      "type": "single",
+      "options": [
+        {
+          "label": "Asada",
+          "price": 0
+        },
+        {
+          "label": "Frita",
+          "price": 0
+        }
+      ]
+    },
+    "adicional-queso": {
+      "name": "Adicional de queso",
+      "type": "multi",
+      "options": [
+        {
+          "label": "Queso Amarillo",
+          "price": 0
+        },
+        {
+          "label": "Queso Mozzarella",
+          "price": 0
+        }
+      ]
+    },
+    "cafes": {
+      "name": "Preparación",
+      "type": "single",
+      "options": [
+        {
+          "label": "Doble Extracción",
+          "price": 750
+        },
+        {
+          "label": "Doble Extracción con Crema",
+          "price": 800
+        }
+      ]
+    },
+    "tipo-de-cafe": {
+      "name": "Tipo de café",
+      "type": "single",
+      "options": [
+        {
+          "label": "Guayoyo",
+          "price": 0
+        },
+        {
+          "label": "Marrón",
+          "price": 0
+        },
+        {
+          "label": "Latte",
+          "price": 0
+        },
+        {
+          "label": "Capuchino",
+          "price": 0
+        },
+        {
+          "label": "Americano",
+          "price": 0
+        },
+        {
+          "label": "Canela",
+          "price": 0
+        }
+      ]
+    },
+    "topping-croissant": {
+      "name": "Relleno del croissant",
+      "type": "single",
+      "options": [
+        {
+          "label": "Nutella",
+          "price": 0
+        },
+        {
+          "label": "Jamón y Queso",
+          "price": 0
+        },
+        {
+          "label": "Queso Crema y Jamón",
+          "price": 0
+        },
+        {
+          "label": "Queso Amarillo y Jamón",
+          "price": 0
+        }
+      ]
+    },
+    "adicional-desayuno": {
+      "name": "Personaliza tu desayuno",
+      "type": "multi",
+      "options": [
+        {
+          "label": "Queso Blanco",
+          "price": 0
+        },
+        {
+          "label": "Queso Amarillo",
+          "price": 0
+        },
+        {
+          "label": "Huevos Duros",
+          "price": 0
+        },
+        {
+          "label": "Huevos Intermedios",
+          "price": 0
+        },
+        {
+          "label": "Huevos Blandos",
+          "price": 0
+        },
+        {
+          "label": "Con Arepa",
+          "price": 0
+        },
+        {
+          "label": "Sin Arepa",
+          "price": 0
+        },
+        {
+          "label": "Carne Mechada",
+          "price": 0
+        },
+        {
+          "label": "Carne Molida",
+          "price": 0
+        },
+        {
+          "label": "Pollo",
+          "price": 0
+        },
+        {
+          "label": "Tocineta",
+          "price": 0
+        },
+        {
+          "label": "Huevos Revueltos",
+          "price": 0
+        },
+        {
+          "label": "Cazón",
+          "price": 0
+        },
+        {
+          "label": "Queso Crema",
+          "price": 0
+        }
+      ]
+    },
+    "sabor-frappe": {
+      "name": "Extra",
+      "type": "multi",
+      "options": [
+        {
+          "label": "Leche Condensada",
+          "price": 0
+        }
+      ]
+    },
+    "relleno-mini-cake": {
+      "name": "Relleno",
+      "type": "single",
+      "options": [
+        {
+          "label": "Arequipe",
+          "price": 0
+        },
+        {
+          "label": "Chocolate",
+          "price": 0
+        }
+      ]
+    },
+    "sabor-nestea": {
+      "name": "Sabor",
+      "type": "single",
+      "options": [
+        {
+          "label": "Limón",
+          "price": 0
+        },
+        {
+          "label": "Frambuesa",
+          "price": 0
+        },
+        {
+          "label": "Durazno",
+          "price": 0
+        }
+      ]
+    },
+    "relleno-pastelito": {
+      "name": "Relleno",
+      "type": "single",
+      "options": [
+        {
+          "label": "Jamón de Pavo y Queso Crema",
+          "price": 0
+        },
+        {
+          "label": "Jamón y Queso Paisa",
+          "price": 0
+        }
+      ]
+    },
+    "sabor-pepsi": {
+      "name": "Sabor",
+      "type": "single",
+      "options": [
+        {
+          "label": "Naranja",
+          "price": 0
+        },
+        {
+          "label": "Manzanita",
+          "price": 0
+        },
+        {
+          "label": "Piña",
+          "price": 0
+        },
+        {
+          "label": "Colita",
+          "price": 0
+        },
+        {
+          "label": "Uva",
+          "price": 0
+        }
+      ]
+    },
+    "sabor-coca-cola": {
+      "name": "Sabor",
+      "type": "single",
+      "options": [
+        {
+          "label": "Chinotto",
+          "price": 0
+        },
+        {
+          "label": "Freskolita",
+          "price": 0
+        },
+        {
+          "label": "Naranja",
+          "price": 0
+        },
+        {
+          "label": "Uva",
+          "price": 0
+        }
+      ]
+    },
+    "extras-pizza": {
+      "name": "Extras",
+      "type": "multi",
+      "options": [
+        {
+          "label": "Tocineta",
+          "price": 1100
+        },
+        {
+          "label": "Aceitunas",
+          "price": 800
+        },
+        {
+          "label": "Anchoas",
+          "price": 800
+        },
+        {
+          "label": "Cebolla Caramelizada",
+          "price": 800
+        },
+        {
+          "label": "Queso en los Bordes",
+          "price": 800
+        },
+        {
+          "label": "Champiñones",
+          "price": 800
+        },
+        {
+          "label": "Jamón",
+          "price": 800
+        },
+        {
+          "label": "Todos los Extras",
+          "price": 5900
+        }
+      ]
+    },
+    "pan-sandwich": {
+      "name": "Tipo de pan",
+      "type": "single",
+      "options": [
+        {
+          "label": "Pan Deli",
+          "price": 0
+        },
+        {
+          "label": "Pan Orégano",
+          "price": 0
+        }
+      ]
+    },
+    "salsa-tequeno": {
+      "name": "Salsa",
+      "type": "single",
+      "options": [
+        {
+          "label": "Tártara",
+          "price": 0
+        },
+        {
+          "label": "Guayaba",
+          "price": 0
+        },
+        {
+          "label": "Ajo",
+          "price": 0
+        }
+      ]
+    },
+    "topping-torta-queso": {
+      "name": "Topping",
+      "type": "single",
+      "options": [
+        {
+          "label": "Nutella",
+          "price": 0
+        },
+        {
+          "label": "Fresa",
+          "price": 0
+        },
+        {
+          "label": "Mora",
+          "price": 0
+        }
+      ]
+    }
+  },
+  "ITEMS": [
+    {
+      "id": "espresso",
+      "name": "Espresso",
+      "cat": "cafe",
+      "price": 880
+    },
+    {
+      "id": "cafe-pequeno",
+      "name": "Café Pequeño",
+      "cat": "cafe",
+      "price": 880,
+      "tag": "Popular",
+      "mods": [
+        "tipo-de-cafe"
+      ]
+    },
+    {
+      "id": "cafe-lungo",
+      "name": "Café Lungo",
+      "cat": "cafe",
+      "price": 880
+    },
+    {
+      "id": "cafe-americano",
+      "name": "Café Americano",
+      "cat": "cafe",
+      "price": 1740,
+      "tag": "Popular",
+      "mods": [
+        "cafes"
+      ]
+    },
+    {
+      "id": "cafe-cortado",
+      "name": "Café Cortado",
+      "cat": "cafe",
+      "price": 1740
+    },
+    {
+      "id": "cafe-capuchino",
+      "name": "Capuchino",
+      "cat": "cafe",
+      "price": 1740
+    },
+    {
+      "id": "cafe-latte",
+      "name": "Latte",
+      "cat": "cafe",
+      "price": 1740,
+      "tag": "Popular"
+    },
+    {
+      "id": "cafe-latte-vainilla",
+      "name": "Latte Vainilla",
+      "cat": "cafe",
+      "price": 1740
+    },
+    {
+      "id": "cafe-maquiato",
+      "name": "Macchiato",
+      "cat": "cafe",
+      "price": 880,
+      "mods": [
+        "cafes"
+      ]
+    },
+    {
+      "id": "cafe-doble",
+      "name": "Café Doble",
+      "cat": "cafe",
+      "price": 1740
+    },
+    {
+      "id": "cafe-doble-xg",
+      "name": "Café Doble Extra Grande",
+      "cat": "cafe",
+      "price": 3250
+    },
+    {
+      "id": "cafe-xg",
+      "name": "Café Extra Grande",
+      "cat": "cafe",
+      "price": 2660
+    },
+    {
+      "id": "cafe-marron",
+      "name": "Café Marrón",
+      "cat": "cafe",
+      "price": 2180
+    },
+    {
+      "id": "cafe-moccachino",
+      "name": "Moccachino",
+      "cat": "cafe",
+      "price": 2180
+    },
+    {
+      "id": "cafe-bombon",
+      "name": "Café Bombón",
+      "cat": "cafe",
+      "price": 2220
+    },
+    {
+      "id": "barraquito",
+      "name": "Barraquito",
+      "cat": "cafe",
+      "price": 4010
+    },
+    {
+      "id": "chocolate-caliente",
+      "name": "Chocolate Caliente",
+      "cat": "calientes",
+      "price": 2450,
+      "desc": "Chocolate a la taza, preparado con cacao disuelto en leche caliente."
+    },
+    {
+      "id": "te-african-melon",
+      "name": "African Melon",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Frío",
+          "price": 1920
+        },
+        {
+          "label": "Caliente",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "te-ashwagandha",
+      "name": "Ashwagandha",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Frío",
+          "price": 1920
+        },
+        {
+          "label": "Caliente",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "te-berry-melody",
+      "name": "Berry Melody",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Caliente",
+          "price": 1920
+        },
+        {
+          "label": "Frío",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "te-caracas-sunset",
+      "name": "Caracas Sunset",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Caliente",
+          "price": 1920
+        },
+        {
+          "label": "Frío",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "te-indiana-nights",
+      "name": "Indiana Nights",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Caliente",
+          "price": 1920
+        },
+        {
+          "label": "Frío",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "te-rooibos-bourbon",
+      "name": "Rooibos Bourbon",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Caliente",
+          "price": 1920
+        },
+        {
+          "label": "Frío",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "te-rooibos-lemon",
+      "name": "Rooibos Lemon Flower",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Caliente",
+          "price": 1920
+        },
+        {
+          "label": "Frío",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "te-summer-lychee",
+      "name": "Summer Lychee",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Caliente",
+          "price": 1920
+        },
+        {
+          "label": "Frío",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "te-sweet-mango",
+      "name": "Sweet Mango",
+      "cat": "tes",
+      "sizes": [
+        {
+          "label": "Caliente",
+          "price": 1920
+        },
+        {
+          "label": "Frío",
+          "price": 3370
+        }
+      ]
+    },
+    {
+      "id": "frappe-frutas-tropicales",
+      "name": "Frappé Frutas Tropicales",
+      "cat": "frappes",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1130
+        },
+        {
+          "label": "Mediano",
+          "price": 1170
+        },
+        {
+          "label": "Grande",
+          "price": 2020
+        }
+      ],
+      "mods": [
+        "sabor-frappe"
+      ]
+    },
+    {
+      "id": "frappe-uva",
+      "name": "Frappé de Uva",
+      "cat": "frappes",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1100
+        },
+        {
+          "label": "Mediano",
+          "price": 1130
+        },
+        {
+          "label": "Grande",
+          "price": 1960
+        }
+      ],
+      "mods": [
+        "sabor-frappe"
+      ]
+    },
+    {
+      "id": "frappe-limon",
+      "name": "Frappé de Limón",
+      "cat": "frappes",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1130
+        },
+        {
+          "label": "Mediano",
+          "price": 1170
+        },
+        {
+          "label": "Grande",
+          "price": 2020
+        }
+      ],
+      "mods": [
+        "sabor-frappe"
+      ]
+    },
+    {
+      "id": "frappe-naranja",
+      "name": "Frappé de Naranja",
+      "cat": "frappes",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1140
+        },
+        {
+          "label": "Mediano",
+          "price": 1170
+        },
+        {
+          "label": "Grande",
+          "price": 2020
+        }
+      ],
+      "mods": [
+        "sabor-frappe"
+      ]
+    },
+    {
+      "id": "frappe-parchita",
+      "name": "Frappé de Parchita",
+      "cat": "frappes",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1130
+        },
+        {
+          "label": "Mediano",
+          "price": 1400
+        },
+        {
+          "label": "Grande",
+          "price": 2020
+        }
+      ],
+      "tag": "Popular",
+      "mods": [
+        "sabor-frappe"
+      ]
+    },
+    {
+      "id": "frappe-tamarindo",
+      "name": "Frappé de Tamarindo",
+      "cat": "frappes",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1130
+        },
+        {
+          "label": "Mediano",
+          "price": 1170
+        },
+        {
+          "label": "Grande",
+          "price": 2020
+        }
+      ],
+      "mods": [
+        "sabor-frappe"
+      ]
+    },
+    {
+      "id": "frappe-toddy",
+      "name": "Frappé Toddy",
+      "cat": "frappes",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1130
+        },
+        {
+          "label": "Mediano",
+          "price": 1170
+        },
+        {
+          "label": "Grande",
+          "price": 2020
+        }
+      ],
+      "mods": [
+        "sabor-frappe"
+      ]
+    },
+    {
+      "id": "frapuchino",
+      "name": "Frapuchino",
+      "cat": "frappes",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1130
+        },
+        {
+          "label": "Mediano",
+          "price": 1170
+        },
+        {
+          "label": "Grande",
+          "price": 2020
+        }
+      ],
+      "mods": [
+        "sabor-frappe"
+      ]
+    },
+    {
+      "id": "jugo-3en1",
+      "name": "Jugo 3 en 1",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1030
+        },
+        {
+          "label": "Mediano",
+          "price": 1400
+        },
+        {
+          "label": "Grande",
+          "price": 2310
+        }
+      ]
+    },
+    {
+      "id": "jugo-2en1",
+      "name": "Jugo 2 en 1",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Grande",
+          "price": 2310
+        }
+      ]
+    },
+    {
+      "id": "jugo-fresa",
+      "name": "Jugo de Fresa",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1030
+        },
+        {
+          "label": "Mediano",
+          "price": 1400
+        }
+      ]
+    },
+    {
+      "id": "jugo-guanabana",
+      "name": "Jugo de Guanábana",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1030
+        }
+      ]
+    },
+    {
+      "id": "jugo-guayaba",
+      "name": "Jugo de Guayaba",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1030
+        },
+        {
+          "label": "Mediano",
+          "price": 1400
+        },
+        {
+          "label": "Grande",
+          "price": 2310
+        }
+      ]
+    },
+    {
+      "id": "jugo-naranja",
+      "name": "Jugo de Naranja",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1030
+        },
+        {
+          "label": "Mediano",
+          "price": 1400
+        },
+        {
+          "label": "Grande",
+          "price": 2310
+        }
+      ]
+    },
+    {
+      "id": "jugo-naranja-zanahoria",
+      "name": "Jugo de Naranja y Zanahoria",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1030
+        },
+        {
+          "label": "Mediano",
+          "price": 1400
+        }
+      ]
+    },
+    {
+      "id": "jugo-parchita",
+      "name": "Jugo de Parchita",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1030
+        },
+        {
+          "label": "Mediano",
+          "price": 1400
+        },
+        {
+          "label": "Grande",
+          "price": 2310
+        }
+      ]
+    },
+    {
+      "id": "jugo-pina",
+      "name": "Jugo de Piña",
+      "cat": "jugos",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 1030
+        },
+        {
+          "label": "Mediano",
+          "price": 1400
+        },
+        {
+          "label": "Grande",
+          "price": 2310
+        }
+      ]
+    },
+    {
+      "id": "agua",
+      "name": "Agua",
+      "cat": "frias",
+      "sizes": [
+        {
+          "label": "Pequeña",
+          "price": 570
+        },
+        {
+          "label": "Mediana",
+          "price": 750
+        },
+        {
+          "label": "Grande",
+          "price": 1160
+        }
+      ]
+    },
+    {
+      "id": "agua-sparkling",
+      "name": "Agua Saborizada Sparkling",
+      "cat": "frias",
+      "price": 1060,
+      "mods": [
+        "sabor-agua"
+      ]
+    },
+    {
+      "id": "malta",
+      "name": "Malta",
+      "cat": "frias",
+      "sizes": [
+        {
+          "label": "Retornable",
+          "price": 510
+        },
+        {
+          "label": "Desechable",
+          "price": 750
+        }
+      ]
+    },
+    {
+      "id": "nestea",
+      "name": "Nestea",
+      "cat": "frias",
+      "sizes": [
+        {
+          "label": "Pequeño",
+          "price": 900
+        },
+        {
+          "label": "Mediano",
+          "price": 1100
+        },
+        {
+          "label": "Grande",
+          "price": 1510
+        }
+      ],
+      "mods": [
+        "sabor-nestea"
+      ]
+    },
+    {
+      "id": "tizana",
+      "name": "Tizana",
+      "cat": "frias",
+      "sizes": [
+        {
+          "label": "Pequeña",
+          "price": 1300
+        },
+        {
+          "label": "Mediana",
+          "price": 1540
+        },
+        {
+          "label": "Grande",
+          "price": 2260
+        }
+      ]
+    },
+    {
+      "id": "coca-cola",
+      "name": "Coca-Cola",
+      "cat": "frias",
+      "sizes": [
+        {
+          "label": "Retornable",
+          "price": 570
+        },
+        {
+          "label": "Lata",
+          "price": 1070
+        },
+        {
+          "label": "355ml desechable",
+          "price": 1070
+        },
+        {
+          "label": "1 litro",
+          "price": 1260
+        },
+        {
+          "label": "1.5 litros",
+          "price": 1570
+        },
+        {
+          "label": "2 litros",
+          "price": 2110
+        }
+      ],
+      "mods": [
+        "sabor-coca-cola"
+      ]
+    },
+    {
+      "id": "pepsi",
+      "name": "Pepsi",
+      "cat": "frias",
+      "sizes": [
+        {
+          "label": "Retornable",
+          "price": 570
+        },
+        {
+          "label": "Lata",
+          "price": 1100
+        },
+        {
+          "label": "1 litro",
+          "price": 1260
+        },
+        {
+          "label": "1.5 litros",
+          "price": 1600
+        },
+        {
+          "label": "2 litros",
+          "price": 2110
+        }
+      ],
+      "mods": [
+        "sabor-pepsi"
+      ]
+    },
+    {
+      "id": "arepa-viuda",
+      "name": "Arepa Viuda",
+      "cat": "arepas",
+      "price": 100,
+      "desc": "Arepa sola, sin relleno.",
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-queso",
+      "name": "Arepa de Queso",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa",
+        "adicional-queso"
+      ]
+    },
+    {
+      "id": "arepa-queso-mano",
+      "name": "Arepa Queso de Mano",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-caraota-queso",
+      "name": "Arepa Caraota y Queso",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-reina-pepiada",
+      "name": "Arepa Reina Pepiada",
+      "cat": "arepas",
+      "price": 2840,
+      "tag": "Popular",
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-pollo",
+      "name": "Arepa de Pollo",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-pollo-queso",
+      "name": "Arepa Pollo y Queso",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa",
+        "adicional-queso"
+      ]
+    },
+    {
+      "id": "arepa-pernil",
+      "name": "Arepa de Pernil",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-carne-mechada",
+      "name": "Arepa Carne Mechada",
+      "cat": "arepas",
+      "price": 2980,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-mechada-queso",
+      "name": "Arepa Mechada con Queso",
+      "cat": "arepas",
+      "price": 2980,
+      "mods": [
+        "textura-arepa",
+        "adicional-queso"
+      ]
+    },
+    {
+      "id": "arepa-molida",
+      "name": "Arepa de Molida",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-molida-queso",
+      "name": "Arepa de Molida y Queso",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa",
+        "adicional-queso"
+      ]
+    },
+    {
+      "id": "arepa-cazon",
+      "name": "Arepa de Cazón",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-atun",
+      "name": "Arepa de Atún",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-perico",
+      "name": "Arepa con Perico",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-asado-negro",
+      "name": "Arepa de Asado Negro",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-jamon-queso",
+      "name": "Arepa Jamón y Queso",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa",
+        "adicional-queso"
+      ]
+    },
+    {
+      "id": "arepa-jamon-pavo-paisa",
+      "name": "Arepa Jamón de Pavo Queso Paisa",
+      "cat": "arepas",
+      "price": 2840,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "arepa-pabellon",
+      "name": "Arepa Pabellón",
+      "cat": "arepas",
+      "price": 3020,
+      "mods": [
+        "textura-arepa"
+      ]
+    },
+    {
+      "id": "sandwich-atun",
+      "name": "Sándwich de Atún",
+      "cat": "sandwiches",
+      "price": 2800,
+      "mods": [
+        "pan-sandwich"
+      ]
+    },
+    {
+      "id": "sandwich-jamon-queso",
+      "name": "Sándwich Jamón y Queso",
+      "cat": "sandwiches",
+      "price": 2800,
+      "mods": [
+        "pan-sandwich",
+        "adicional-queso"
+      ]
+    },
+    {
+      "id": "sandwich-pernil",
+      "name": "Sándwich Pernil",
+      "cat": "sandwiches",
+      "price": 2800,
+      "mods": [
+        "pan-sandwich"
+      ]
+    },
+    {
+      "id": "sandwich-jamon-pavo-paisa",
+      "name": "Sándwich Jamón de Pavo/Queso Paisa",
+      "cat": "sandwiches",
+      "price": 2730,
+      "mods": [
+        "pan-sandwich"
+      ]
+    },
+    {
+      "id": "sandwich-reina-pepiada",
+      "name": "Sándwich Reina Pepiada",
+      "cat": "sandwiches",
+      "price": 2730,
+      "mods": [
+        "pan-sandwich"
+      ]
+    },
+    {
+      "id": "empanada-queso",
+      "name": "Empanada de Queso",
+      "cat": "empanadas",
+      "price": 880
+    },
+    {
+      "id": "empanada-pollo",
+      "name": "Empanada de Pollo",
+      "cat": "empanadas",
+      "price": 990
+    },
+    {
+      "id": "empanada-jamon-queso",
+      "name": "Empanada Jamón y Queso",
+      "cat": "empanadas",
+      "price": 990
+    },
+    {
+      "id": "empanada-caraota-queso",
+      "name": "Empanada Caraota y Queso",
+      "cat": "empanadas",
+      "price": 990
+    },
+    {
+      "id": "empanada-atun",
+      "name": "Empanada de Atún",
+      "cat": "empanadas",
+      "price": 990
+    },
+    {
+      "id": "empanada-carne-molida",
+      "name": "Empanada Carne Molida",
+      "cat": "empanadas",
+      "price": 1110
+    },
+    {
+      "id": "empanada-pernil",
+      "name": "Empanada de Pernil",
+      "cat": "empanadas",
+      "price": 1220
+    },
+    {
+      "id": "empanada-champinones-mozzarella",
+      "name": "Empanada Champiñones y Queso Mozzarella",
+      "cat": "empanadas",
+      "price": 1250
+    },
+    {
+      "id": "empanada-cazon",
+      "name": "Empanada de Cazón",
+      "cat": "empanadas",
+      "price": 1330
+    },
+    {
+      "id": "empanada-mechada",
+      "name": "Empanada de Mechada",
+      "cat": "empanadas",
+      "price": 1360
+    },
+    {
+      "id": "empanada-pabellon",
+      "name": "Empanada de Pabellón",
+      "cat": "empanadas",
+      "price": 1400
+    },
+    {
+      "id": "empanada-mechada-queso-amarillo",
+      "name": "Empanada Mechada con Queso Amarillo",
+      "cat": "empanadas",
+      "price": 1590
+    },
+    {
+      "id": "cachitos",
+      "name": "Cachitos",
+      "cat": "panaderia",
+      "price": 1270,
+      "tag": "Popular"
+    },
+    {
+      "id": "mini-cachito",
+      "name": "Mini Cachito",
+      "cat": "panaderia",
+      "price": 890
+    },
+    {
+      "id": "cachito-mortadela-pistacho",
+      "name": "Cachito de Mortadela y Pistacho",
+      "cat": "panaderia",
+      "price": 1670
+    },
+    {
+      "id": "cachito-jamon-pavo",
+      "name": "Cachito Jamón de Pavo / Queso Crema",
+      "cat": "panaderia",
+      "price": 1670
+    },
+    {
+      "id": "cachito-queso-paisa",
+      "name": "Cachito Queso Paisa",
+      "cat": "panaderia",
+      "price": 1390
+    },
+    {
+      "id": "croissant",
+      "name": "Croissant",
+      "cat": "panaderia",
+      "price": 2800,
+      "mods": [
+        "topping-croissant"
+      ]
+    },
+    {
+      "id": "mini-croissant",
+      "name": "Mini Croissant",
+      "cat": "panaderia",
+      "price": 1470,
+      "mods": [
+        "topping-croissant"
+      ]
+    },
+    {
+      "id": "golfiado",
+      "name": "Golfiado",
+      "cat": "panaderia",
+      "price": 1280
+    },
+    {
+      "id": "pan-de-jamon",
+      "name": "Pan de Jamón Grande",
+      "cat": "panaderia",
+      "price": 10770
+    },
+    {
+      "id": "pan-de-jamon-croissant",
+      "name": "Pan de Jamón Croissant",
+      "cat": "panaderia",
+      "price": 10770
+    },
+    {
+      "id": "pan-de-jamon-mediano",
+      "name": "Pan de Jamón Mediano",
+      "cat": "panaderia",
+      "price": 7060
+    },
+    {
+      "id": "mini-pan-de-jamon",
+      "name": "Mini Pan de Jamón",
+      "cat": "panaderia",
+      "price": 3510
+    },
+    {
+      "id": "rol-canela",
+      "name": "Rol de Canela",
+      "cat": "panaderia",
+      "price": 1290
+    },
+    {
+      "id": "rol-pan-de-jamon-brioche",
+      "name": "Rol de Pan de Jamón Brioche",
+      "cat": "panaderia",
+      "price": 1280
+    },
+    {
+      "id": "rol-pan-de-jamon-croissant",
+      "name": "Rol de Pan de Jamón Croissant",
+      "cat": "panaderia",
+      "price": 1590
+    },
+    {
+      "id": "pastelito-jamon-queso",
+      "name": "Pastelito Jamón y Queso Crema",
+      "cat": "panaderia",
+      "price": 2310,
+      "mods": [
+        "relleno-pastelito"
+      ]
+    },
+    {
+      "id": "pastelito-ricota",
+      "name": "Pastelito de Ricota",
+      "cat": "panaderia",
+      "price": 2310
+    },
+    {
+      "id": "pastelito-champinones-paisa",
+      "name": "Pastelito Champiñones/Queso Paisa",
+      "cat": "panaderia",
+      "price": 2310
+    },
+    {
+      "id": "pastelito-pollo",
+      "name": "Pastelito de Pollo",
+      "cat": "panaderia",
+      "price": 2310
+    },
+    {
+      "id": "pastelito-navideno",
+      "name": "Pastelito Navideño",
+      "cat": "panaderia",
+      "price": 2290
+    },
+    {
+      "id": "mini-pastelito",
+      "name": "Mini Pastelito",
+      "cat": "panaderia",
+      "price": 1280
+    },
+    {
+      "id": "mini-lunch",
+      "name": "Mini Lunch",
+      "cat": "panaderia",
+      "price": 1270
+    },
+    {
+      "id": "desayuno-americano",
+      "name": "Desayuno Americano",
+      "cat": "desayunos",
+      "price": 4360,
+      "mods": [
+        "adicional-desayuno"
+      ]
+    },
+    {
+      "id": "desayuno-criollo",
+      "name": "Desayuno Criollo",
+      "cat": "desayunos",
+      "price": 4360,
+      "mods": [
+        "adicional-desayuno"
+      ]
+    },
+    {
+      "id": "tortilla-espanola",
+      "name": "Tortilla Española",
+      "cat": "desayunos",
+      "price": 2180
+    },
+    {
+      "id": "tortilla-omelette",
+      "name": "Tortilla Omelette",
+      "cat": "desayunos",
+      "price": 3100
+    },
+    {
+      "id": "pizza-margarita",
+      "name": "Pizza Margarita",
+      "cat": "pizza",
+      "price": 4260,
+      "tag": "Popular",
+      "mods": [
+        "extras-pizza"
+      ]
+    },
+    {
+      "id": "pizza-pepperoni",
+      "name": "Pizza Pepperoni",
+      "cat": "pizza",
+      "price": 5950,
+      "desc": "Salsa, queso, jamón, aceituna negra, champiñones, salchichón, vegetales."
+    },
+    {
+      "id": "pizza-salchichon",
+      "name": "Pizza de Salchichón",
+      "cat": "pizza",
+      "price": 6560,
+      "mods": [
+        "extras-pizza"
+      ]
+    },
+    {
+      "id": "mini-pizza",
+      "name": "Mini Pizza",
+      "cat": "pizza",
+      "price": 1740
+    },
+    {
+      "id": "donas-glaseadas",
+      "name": "Donas Glaseadas",
+      "cat": "donas",
+      "price": 990
+    },
+    {
+      "id": "donas-rellenas",
+      "name": "Donas Rellenas",
+      "cat": "donas",
+      "price": 990
+    },
+    {
+      "id": "alfajor-coco",
+      "name": "Alfajor de Coco",
+      "cat": "galletas",
+      "price": 810
+    },
+    {
+      "id": "alfajor-bom-o-bom",
+      "name": "Alfajor Bom o Bom",
+      "cat": "galletas",
+      "price": 810
+    },
+    {
+      "id": "alfajor-havanna-arequipe",
+      "name": "Alfajor Havanna Arequipe",
+      "cat": "galletas",
+      "price": 1220
+    },
+    {
+      "id": "alfajor-mantequilla-mani",
+      "name": "Alfajor Mantequilla de Maní",
+      "cat": "galletas",
+      "price": 810
+    },
+    {
+      "id": "3-mini-alfajores",
+      "name": "3 Mini Alfajores",
+      "cat": "galletas",
+      "price": 790
+    },
+    {
+      "id": "cajita-12-mini-alfajores",
+      "name": "Cajita 12 Mini Alfajores",
+      "cat": "galletas",
+      "price": 3430
+    },
+    {
+      "id": "galleta-nutella-chocolate",
+      "name": "Galleta Nutella Chocolate",
+      "cat": "galletas",
+      "price": 530
+    },
+    {
+      "id": "galleta-nutella-vainilla",
+      "name": "Galleta Nutella Vainilla",
+      "cat": "galletas",
+      "price": 530
+    },
+    {
+      "id": "galletas-chocolate-chispas",
+      "name": "Galletas Chocolate con Chispas",
+      "cat": "galletas",
+      "price": 350
+    },
+    {
+      "id": "galletas-vainilla-chispas",
+      "name": "Galletas Vainilla con Chispas",
+      "cat": "galletas",
+      "price": 350
+    },
+    {
+      "id": "galletas-danesas",
+      "name": "Galletas Danesas",
+      "cat": "galletas",
+      "price": 1030
+    },
+    {
+      "id": "brownie",
+      "name": "Brownie Tradicional",
+      "cat": "postres",
+      "price": 1420
+    },
+    {
+      "id": "brownie-frutos-secos",
+      "name": "Brownie Frutos Secos",
+      "cat": "postres",
+      "price": 1670
+    },
+    {
+      "id": "choco-almendra",
+      "name": "Choco Almendra",
+      "cat": "postres",
+      "price": 2650
+    },
+    {
+      "id": "oreo",
+      "name": "Oreo",
+      "cat": "postres",
+      "price": 2650
+    },
+    {
+      "id": "lingote-chocolate",
+      "name": "Lingote de Chocolate",
+      "cat": "postres",
+      "price": 870
+    },
+    {
+      "id": "lingote-limon",
+      "name": "Lingote de Limón",
+      "cat": "postres",
+      "price": 640
+    },
+    {
+      "id": "lingote-vainilla",
+      "name": "Lingote de Vainilla",
+      "cat": "postres",
+      "price": 600
+    },
+    {
+      "id": "pay-limon",
+      "name": "Pay de Limón",
+      "cat": "postres",
+      "price": 1780
+    },
+    {
+      "id": "pay-parchita",
+      "name": "Pay de Parchita",
+      "cat": "postres",
+      "price": 1780
+    },
+    {
+      "id": "muffin-calabaza",
+      "name": "Muffin de Calabaza con Chispas",
+      "cat": "postres",
+      "price": 960
+    },
+    {
+      "id": "torta-fresa",
+      "name": "Torta de Fresa (porción)",
+      "cat": "postres",
+      "price": 3150
+    },
+    {
+      "id": "torta-naranja",
+      "name": "Torta de Naranja (porción)",
+      "cat": "postres",
+      "price": 1170
+    },
+    {
+      "id": "torta-parchita",
+      "name": "Torta de Parchita (porción)",
+      "cat": "postres",
+      "price": 1970
+    },
+    {
+      "id": "torta-queso",
+      "name": "Torta de Queso (porción)",
+      "cat": "postres",
+      "price": 2230,
+      "tag": "Popular",
+      "mods": [
+        "topping-torta-queso"
+      ]
+    },
+    {
+      "id": "torta-red-velvet",
+      "name": "Torta Red Velvet (porción)",
+      "cat": "postres",
+      "price": 2290
+    },
+    {
+      "id": "torta-tiramisu",
+      "name": "Torta Tiramisú (porción)",
+      "cat": "postres",
+      "price": 2290
+    },
+    {
+      "id": "torta-zanahoria-nueces",
+      "name": "Torta Zanahoria y Nueces (porción)",
+      "cat": "postres",
+      "price": 2290
+    },
+    {
+      "id": "torta-ron",
+      "name": "Torta de Ron (porción)",
+      "cat": "postres",
+      "price": 1380
+    },
+    {
+      "id": "torta-coco",
+      "name": "Torta de Coco (porción)",
+      "cat": "postres",
+      "price": 2640
+    },
+    {
+      "id": "torta-auyama",
+      "name": "Torta de Auyama (porción)",
+      "cat": "postres",
+      "price": 1970
+    },
+    {
+      "id": "torta-entera-fresa",
+      "name": "Torta de Fresa",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Grande",
+          "price": 10710
+        },
+        {
+          "label": "Grande 2.2kg",
+          "price": 22930
+        },
+        {
+          "label": "Completa",
+          "price": 18920
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-coco",
+      "name": "Torta de Coco",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Completa",
+          "price": 17760
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-naranja",
+      "name": "Torta de Naranja",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Completa",
+          "price": 11510
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-parchita",
+      "name": "Torta de Parchita",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Completa",
+          "price": 17410
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-queso",
+      "name": "Torta de Queso",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Completa",
+          "price": 19370
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-red-velvet",
+      "name": "Red Velvet",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "4 porciones",
+          "price": 9760
+        },
+        {
+          "label": "Completa",
+          "price": 14550
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-tiramisu",
+      "name": "Tiramisú",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "4 porciones",
+          "price": 9790
+        },
+        {
+          "label": "Completa",
+          "price": 15010
+        },
+        {
+          "label": "30x30",
+          "price": 28990
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-zanahoria",
+      "name": "Zanahoria y Nueces",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Completa",
+          "price": 8870
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-choco-almendras",
+      "name": "Choco Almendras",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Completa",
+          "price": 22560
+        },
+        {
+          "label": "3 Rellenos",
+          "price": 25760
+        }
+      ]
+    },
+    {
+      "id": "torta-entera-vainilla-rellena",
+      "name": "Vainilla Rellena (arequipe/chocolate/almendras)",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Arequipe o Chocolate",
+          "price": 21600
+        },
+        {
+          "label": "3 Rellenos",
+          "price": 23530
+        }
+      ]
+    },
+    {
+      "id": "ponque-vainilla",
+      "name": "Ponqué de Vainilla",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Individual",
+          "price": 4610
+        },
+        {
+          "label": "Marmoleado Grande",
+          "price": 11250
+        }
+      ]
+    },
+    {
+      "id": "mini-cake",
+      "name": "Mini Cake",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Clásico",
+          "price": 11800
+        },
+        {
+          "label": "Choco/Almendras",
+          "price": 11840
+        },
+        {
+          "label": "Red Velvet",
+          "price": 9560
+        },
+        {
+          "label": "Tiramisú",
+          "price": 9590
+        }
+      ],
+      "mods": [
+        "relleno-mini-cake"
+      ]
+    },
+    {
+      "id": "pie-de-limon",
+      "name": "Pie de Limón",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "15cm",
+          "price": 5890
+        },
+        {
+          "label": "21cm",
+          "price": 12910
+        }
+      ]
+    },
+    {
+      "id": "small-cake",
+      "name": "Small Cake",
+      "cat": "tortas",
+      "price": 5640,
+      "mods": [
+        "relleno-mini-cake"
+      ]
+    },
+    {
+      "id": "torta-dos-pisos",
+      "name": "Torta Dos Pisos con Toppers",
+      "cat": "tortas",
+      "price": 40580
+    },
+    {
+      "id": "tequenos",
+      "name": "Tequeños",
+      "cat": "raciones",
+      "price": 1500,
+      "tag": "Popular",
+      "mods": [
+        "salsa-tequeno"
+      ]
+    },
+    {
+      "id": "papas-chips",
+      "name": "Ración de Papas Chips",
+      "cat": "raciones",
+      "price": 1280
+    }
+  ]
+}

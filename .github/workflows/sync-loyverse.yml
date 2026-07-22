@@ -1,0 +1,40 @@
+name: Sincronizar precios con Loyverse
+
+on:
+  schedule:
+    # Cada 15 minutos. GitHub puede retrasar la ejecución en momentos de alta carga.
+    - cron: '*/15 * * * *'
+  workflow_dispatch: {} # permite ejecutarlo manualmente desde la pestaña "Actions"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Ejecutar sincronización con Loyverse
+        env:
+          LOYVERSE_TOKEN: ${{ secrets.LOYVERSE_TOKEN }}
+          LOYVERSE_STORE_ID: ${{ secrets.LOYVERSE_STORE_ID }}
+        run: node scripts/sync-loyverse.js
+
+      - name: Publicar cambios si hay precios actualizados
+        run: |
+          if git diff --quiet -- docs/data/menu-data.json; then
+            echo "Sin cambios de precio, no se hace commit."
+          else
+            git config user.name "loyverse-sync-bot"
+            git config user.email "actions@users.noreply.github.com"
+            git add docs/data/menu-data.json
+            git commit -m "Sincronizar precios con Loyverse [skip ci]"
+            git push
+          fi

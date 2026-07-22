@@ -1,0 +1,7 @@
+node_modules/
+.env
+*.log
+
+# Artifact original (bundle autocontenido) del que se extrajo este proyecto.
+# Se queda como respaldo local; ya no se usa ni se necesita en el repositorio.
+88 Grados Café - Menú Digital.html

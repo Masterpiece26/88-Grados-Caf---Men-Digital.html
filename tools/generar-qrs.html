@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Generar QR por mesa — 88° Grados Café</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #241c14; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; color: #F4ECE1; padding: 24px; }
+  h1 { font-size: 20px; margin: 0 0 4px; color: #F2C14E; }
+  p.hint { color: #C9B9A4; font-size: 13.5px; margin: 0 0 20px; }
+  .panel { background: #2f2519; border: 1px solid #ffffff1a; border-radius: 14px; padding: 18px 20px; max-width: 640px; margin-bottom: 24px; }
+  label { display: block; font-size: 13px; font-weight: 600; color: #C9B9A4; margin-bottom: 6px; margin-top: 14px; }
+  label:first-child { margin-top: 0; }
+  input[type=text], input[type=number], textarea {
+    width: 100%; padding: 10px 12px; border-radius: 8px; border: 1px solid #ffffff20;
+    background: #ffffff0d; color: #F4ECE1; font-size: 14px; font-family: inherit; outline: none;
+  }
+  textarea { min-height: 120px; resize: vertical; white-space: pre; }
+  .row { display: flex; gap: 10px; align-items: flex-end; }
+  .row > div { flex: 1; }
+  button {
+    margin-top: 16px; padding: 11px 18px; border-radius: 8px; border: none; cursor: pointer;
+    font-family: inherit; font-weight: 700; font-size: 14px;
+  }
+  #btn-generate { background: #E85D04; color: #fff; margin-right: 10px; }
+  #btn-fill { background: #ffffff14; color: #F4ECE1; }
+  #btn-print { background: #25D366; color: #fff; }
+  #grid {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px;
+    max-width: 1100px;
+  }
+  .card {
+    background: #2f2519; border: 1px solid #ffffff1a; border-radius: 14px; padding: 16px;
+    text-align: center; page-break-inside: avoid;
+  }
+  .card img { width: 100%; max-width: 220px; height: auto; border-radius: 8px; background: #fff; padding: 8px; }
+  .card .label { margin-top: 10px; font-weight: 800; font-size: 16px; color: #F2C14E; }
+  .card .brand { font-size: 11.5px; color: #C9B9A4; margin-top: 2px; }
+
+  @media print {
+    body { background: #fff; color: #000; padding: 0; }
+    .panel, h1, p.hint { display: none; }
+    #grid { max-width: none; }
+    .card { background: #fff; border: 1px dashed #999; }
+    .card .label { color: #000; }
+    .card .brand { color: #555; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Generar códigos QR por mesa</h1>
+<p class="hint">Herramienta de uso interno — no forma parte del menú que ven los clientes. Genera un QR por mesa que abre el menú con ese número ya identificado.</p>
+
+<div class="panel">
+  <label for="base-url">URL de tu menú publicado</label>
+  <input type="text" id="base-url" placeholder="https://tu-usuario.github.io/tu-repo/" value="">
+
+  <div class="row">
+    <div>
+      <label for="table-count">Generar mesas del 1 al…</label>
+      <input type="number" id="table-count" min="1" max="200" value="12">
+    </div>
+    <div>
+      <button id="btn-fill" type="button">Rellenar lista</button>
+    </div>
+  </div>
+
+  <label for="table-list">Lista de mesas (una por línea — puedes editar, agregar nombres como "Terraza 1" o borrar las que no necesites)</label>
+  <textarea id="table-list"></textarea>
+
+  <div>
+    <button id="btn-generate" type="button">Generar QRs</button>
+    <button id="btn-print" type="button">Imprimir</button>
+  </div>
+</div>
+
+<div id="grid"></div>
+
+<script>
+const baseUrlInput = document.getElementById('base-url');
+const tableCountInput = document.getElementById('table-count');
+const tableListInput = document.getElementById('table-list');
+const grid = document.getElementById('grid');
+
+document.getElementById('btn-fill').addEventListener('click', () => {
+  const n = Math.max(1, Math.min(200, parseInt(tableCountInput.value, 10) || 1));
+  const lines = [];
+  for (let i = 1; i <= n; i++) lines.push(String(i));
+  tableListInput.value = lines.join('\n');
+});
+
+function buildTableUrl(baseUrl, tableLabel) {
+  let base = baseUrl.trim();
+  if (!base) return null;
+  if (!/^https?:\/\//i.test(base)) base = 'https://' + base;
+  const sep = base.includes('?') ? '&' : '?';
+  return `${base}${sep}mesa=${encodeURIComponent(tableLabel)}`;
+}
+
+function qrImageUrl(targetUrl) {
+  return `https://api.qrserver.com/v1/create-qr-code/?size=280x280&margin=10&data=${encodeURIComponent(targetUrl)}`;
+}
+
+document.getElementById('btn-generate').addEventListener('click', () => {
+  const baseUrl = baseUrlInput.value.trim();
+  if (!baseUrl) {
+    alert('Primero ingresa la URL de tu menú publicado (la de GitHub Pages).');
+    return;
+  }
+  const labels = tableListInput.value.split('\n').map(l => l.trim()).filter(Boolean);
+  if (labels.length === 0) {
+    alert('Agrega al menos una mesa a la lista (o usa "Rellenar lista").');
+    return;
+  }
+  grid.innerHTML = labels.map(label => {
+    const targetUrl = buildTableUrl(baseUrl, label);
+    return `<div class="card">
+      <img src="${qrImageUrl(targetUrl)}" alt="QR Mesa ${label}" loading="lazy">
+      <div class="label">Mesa ${label}</div>
+      <div class="brand">88° Grados Café</div>
+    </div>`;
+  }).join('');
+});
+
+document.getElementById('btn-print').addEventListener('click', () => window.print());
+
+// Rellena la lista con 1..12 al abrir la página, listo para generar de una vez.
+tableListInput.value = Array.from({ length: 12 }, (_, i) => String(i + 1)).join('\n');
+</script>
+
+</body>
+</html>
