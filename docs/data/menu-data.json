@@ -491,8 +491,7 @@
       "cat": "cafe",
       "price": 1740,
       "loyverseItemId": "3f5a4b18-6e3e-42a7-8f52-4625a223d4d4",
-      "image": "https://api.loyverse.com/image/3f5a4b18-6e3e-42a7-8f52-4625a223d4d4",
-      "available": false
+      "image": "https://api.loyverse.com/image/3f5a4b18-6e3e-42a7-8f52-4625a223d4d4"
     },
     {
       "id": "cafe-capuchino",
