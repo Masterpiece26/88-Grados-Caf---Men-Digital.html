@@ -576,11 +576,11 @@
       "sizes": [
         {
           "label": "Frío",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Caliente",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/638d91ee-893c-4143-b659-c277cc8bd875"
@@ -592,11 +592,11 @@
       "sizes": [
         {
           "label": "Frío",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Caliente",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/f546a6ba-7011-4926-b236-e21138a7eb8e"
@@ -608,11 +608,11 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/bb35a2b7-6c5f-4de7-8c17-c2c4d457cb5e"
@@ -624,11 +624,11 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/089fc596-ade5-4f95-8c6b-70010d1fce80"
@@ -640,11 +640,11 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/ba2cda01-dcee-4809-a801-562d448cc589"
@@ -656,11 +656,11 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/bded8706-8783-4f0a-ba05-c8168504574b"
@@ -672,11 +672,11 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/f45c47a9-7629-418e-8260-9e8e55bcc256"
@@ -688,11 +688,11 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/48a1b82b-2465-40a1-98d4-2652829e7698"
@@ -704,11 +704,11 @@
       "sizes": [
         {
           "label": "Caliente",
-          "price": 1920
+          "price": 3370
         },
         {
           "label": "Frío",
-          "price": 3370
+          "price": 1920
         }
       ],
       "image": "https://api.loyverse.com/image/d239ae4d-8b34-499b-b456-dc0bd8b4dbc6"
@@ -2178,5 +2178,5 @@
       "price": 1280
     }
   ],
-  "_syncedAt": "2026-07-22T12:43:57.446Z"
+  "_syncedAt": "2026-07-22T13:06:50.860Z"
 }
