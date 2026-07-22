@@ -460,7 +460,8 @@
       "tag": "Popular",
       "mods": [
         "tipo-de-cafe"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/1b97a482-6baa-4c06-967d-dffe1304fdd2"
     },
     {
       "id": "cafe-lungo",
@@ -476,13 +477,15 @@
       "tag": "Popular",
       "mods": [
         "cafes"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/115671bb-a3f5-42be-9fca-a974de39a22e"
     },
     {
       "id": "cafe-cortado",
       "name": "Café Cortado",
       "cat": "cafe",
-      "price": 1740
+      "price": 1740,
+      "image": "https://api.loyverse.com/image/3f5a4b18-6e3e-42a7-8f52-4625a223d4d4"
     },
     {
       "id": "cafe-capuchino",
@@ -516,7 +519,8 @@
       "id": "cafe-doble",
       "name": "Café Doble",
       "cat": "cafe",
-      "price": 1740
+      "price": 1740,
+      "image": "https://api.loyverse.com/image/48300f7d-6220-42af-9e63-5b5f6e649dbb"
     },
     {
       "id": "cafe-doble-xg",
@@ -528,13 +532,15 @@
       "id": "cafe-xg",
       "name": "Café Extra Grande",
       "cat": "cafe",
-      "price": 2660
+      "price": 2660,
+      "image": "https://api.loyverse.com/image/d7e4fd63-cb0f-42e3-b42f-694bd596d54e"
     },
     {
       "id": "cafe-marron",
       "name": "Café Marrón",
       "cat": "cafe",
-      "price": 2180
+      "price": 2180,
+      "image": "https://api.loyverse.com/image/894098cc-26cb-40df-9b98-a5f379d705ab"
     },
     {
       "id": "cafe-moccachino",
@@ -546,7 +552,8 @@
       "id": "cafe-bombon",
       "name": "Café Bombón",
       "cat": "cafe",
-      "price": 2220
+      "price": 2220,
+      "image": "https://api.loyverse.com/image/a9467a9b-f5fe-4f05-9cfd-2ad885ea24be"
     },
     {
       "id": "barraquito",
@@ -559,7 +566,8 @@
       "name": "Chocolate Caliente",
       "cat": "calientes",
       "price": 2450,
-      "desc": "Chocolate a la taza, preparado con cacao disuelto en leche caliente."
+      "desc": "Chocolate a la taza, preparado con cacao disuelto en leche caliente.",
+      "image": "https://api.loyverse.com/image/adea053e-6588-4973-ae49-b89fde8efa6e"
     },
     {
       "id": "te-african-melon",
@@ -574,7 +582,8 @@
           "label": "Caliente",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/638d91ee-893c-4143-b659-c277cc8bd875"
     },
     {
       "id": "te-ashwagandha",
@@ -589,7 +598,8 @@
           "label": "Caliente",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/f546a6ba-7011-4926-b236-e21138a7eb8e"
     },
     {
       "id": "te-berry-melody",
@@ -604,7 +614,8 @@
           "label": "Frío",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/bb35a2b7-6c5f-4de7-8c17-c2c4d457cb5e"
     },
     {
       "id": "te-caracas-sunset",
@@ -619,7 +630,8 @@
           "label": "Frío",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/089fc596-ade5-4f95-8c6b-70010d1fce80"
     },
     {
       "id": "te-indiana-nights",
@@ -634,7 +646,8 @@
           "label": "Frío",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/ba2cda01-dcee-4809-a801-562d448cc589"
     },
     {
       "id": "te-rooibos-bourbon",
@@ -649,7 +662,8 @@
           "label": "Frío",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/bded8706-8783-4f0a-ba05-c8168504574b"
     },
     {
       "id": "te-rooibos-lemon",
@@ -664,7 +678,8 @@
           "label": "Frío",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/f45c47a9-7629-418e-8260-9e8e55bcc256"
     },
     {
       "id": "te-summer-lychee",
@@ -679,7 +694,8 @@
           "label": "Frío",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/48a1b82b-2465-40a1-98d4-2652829e7698"
     },
     {
       "id": "te-sweet-mango",
@@ -694,7 +710,8 @@
           "label": "Frío",
           "price": 3370
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/d239ae4d-8b34-499b-b456-dc0bd8b4dbc6"
     },
     {
       "id": "frappe-frutas-tropicales",
@@ -1046,7 +1063,8 @@
       "price": 1060,
       "mods": [
         "sabor-agua"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/edc5150c-ad18-4a9b-b48e-605bea5495be"
     },
     {
       "id": "malta",
@@ -1061,7 +1079,8 @@
           "label": "Desechable",
           "price": 750
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/97689a11-b653-44c8-96c0-ad90f6793ba6"
     },
     {
       "id": "nestea",
@@ -1176,7 +1195,8 @@
       "desc": "Arepa sola, sin relleno.",
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/c46ee0c4-5035-4a80-a45b-bb3450d03bee"
     },
     {
       "id": "arepa-queso",
@@ -1186,7 +1206,8 @@
       "mods": [
         "textura-arepa",
         "adicional-queso"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/14062a26-8ed9-4940-a117-09a9d5fde622"
     },
     {
       "id": "arepa-queso-mano",
@@ -1195,7 +1216,8 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/9b12a187-eda8-4738-b306-901941b9305d"
     },
     {
       "id": "arepa-caraota-queso",
@@ -1204,7 +1226,8 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/2da56438-c2b9-493e-8b3f-2388cc523fa9"
     },
     {
       "id": "arepa-reina-pepiada",
@@ -1214,7 +1237,8 @@
       "tag": "Popular",
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/b9e0ef3d-c37b-4674-9ae0-ffe00631d003"
     },
     {
       "id": "arepa-pollo",
@@ -1233,7 +1257,8 @@
       "mods": [
         "textura-arepa",
         "adicional-queso"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/aec278c2-b37e-41d4-b9f2-77a16f442026"
     },
     {
       "id": "arepa-pernil",
@@ -1251,7 +1276,8 @@
       "price": 2980,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/6dc7846b-bd2c-4dcb-9767-5cc2a8cef54e"
     },
     {
       "id": "arepa-mechada-queso",
@@ -1270,7 +1296,8 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/521d692f-c4e7-45e6-b981-dc375ba3c2fc"
     },
     {
       "id": "arepa-molida-queso",
@@ -1280,7 +1307,8 @@
       "mods": [
         "textura-arepa",
         "adicional-queso"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/540f5b16-25d1-4fd0-9298-573351b86e76"
     },
     {
       "id": "arepa-cazon",
@@ -1298,7 +1326,8 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/82792208-e6ac-4b79-a570-d239bae17fd5"
     },
     {
       "id": "arepa-perico",
@@ -1307,7 +1336,8 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/3ce1348e-bdf5-43af-b97a-e89f24b9527a"
     },
     {
       "id": "arepa-asado-negro",
@@ -1316,7 +1346,8 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/d8187ee7-4ef5-4bf6-83a1-c7b8cf87a884"
     },
     {
       "id": "arepa-jamon-queso",
@@ -1326,7 +1357,8 @@
       "mods": [
         "textura-arepa",
         "adicional-queso"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/dd6690a4-e4d2-4b38-ba7a-968d3150ac1a"
     },
     {
       "id": "arepa-jamon-pavo-paisa",
@@ -1335,7 +1367,8 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/3c884bdf-85f2-4975-bdf6-727aa7b75f34"
     },
     {
       "id": "arepa-pabellon",
@@ -1344,7 +1377,8 @@
       "price": 3020,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/e215b930-e295-41e5-b1d1-deecf5884b51"
     },
     {
       "id": "sandwich-atun",
@@ -1363,7 +1397,8 @@
       "mods": [
         "pan-sandwich",
         "adicional-queso"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/1f714a93-d6e9-40d5-9344-d4b1097084ae"
     },
     {
       "id": "sandwich-pernil",
@@ -1372,7 +1407,8 @@
       "price": 2800,
       "mods": [
         "pan-sandwich"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/b52a5e04-f2be-4460-86a4-97d550c34862"
     },
     {
       "id": "sandwich-jamon-pavo-paisa",
@@ -1381,7 +1417,8 @@
       "price": 2730,
       "mods": [
         "pan-sandwich"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/7c8264f7-77f5-4415-8d0c-51b9af0d5650"
     },
     {
       "id": "sandwich-reina-pepiada",
@@ -1390,49 +1427,57 @@
       "price": 2730,
       "mods": [
         "pan-sandwich"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/7014aaf0-9c3f-4b26-a97b-a7557c8f2ac6"
     },
     {
       "id": "empanada-queso",
       "name": "Empanada de Queso",
       "cat": "empanadas",
-      "price": 880
+      "price": 880,
+      "image": "https://api.loyverse.com/image/0228f74b-2ff5-4ce9-8614-72068ad52f1e"
     },
     {
       "id": "empanada-pollo",
       "name": "Empanada de Pollo",
       "cat": "empanadas",
-      "price": 990
+      "price": 990,
+      "image": "https://api.loyverse.com/image/2ae22333-4e43-47cf-ab41-92348b425599"
     },
     {
       "id": "empanada-jamon-queso",
       "name": "Empanada Jamón y Queso",
       "cat": "empanadas",
-      "price": 990
+      "price": 990,
+      "image": "https://api.loyverse.com/image/cba931e5-c053-45e4-a9be-d55fbebe4260"
     },
     {
       "id": "empanada-caraota-queso",
       "name": "Empanada Caraota y Queso",
       "cat": "empanadas",
-      "price": 990
+      "price": 990,
+      "image": "https://api.loyverse.com/image/75d5517f-025f-4230-9ddb-294dc8f373bd"
     },
     {
       "id": "empanada-atun",
       "name": "Empanada de Atún",
       "cat": "empanadas",
-      "price": 990
+      "price": 990,
+      "image": "https://api.loyverse.com/image/9721206c-cf6f-4bb3-b4e6-1cb5fda53e38"
     },
     {
       "id": "empanada-carne-molida",
       "name": "Empanada Carne Molida",
       "cat": "empanadas",
-      "price": 1110
+      "price": 1110,
+      "image": "https://api.loyverse.com/image/9ab959d8-070a-456f-b207-7c54182726d0"
     },
     {
       "id": "empanada-pernil",
       "name": "Empanada de Pernil",
       "cat": "empanadas",
-      "price": 1220
+      "price": 1220,
+      "image": "https://api.loyverse.com/image/0776b0cc-f279-417b-84b0-90573d2483c5"
     },
     {
       "id": "empanada-champinones-mozzarella",
@@ -1444,19 +1489,22 @@
       "id": "empanada-cazon",
       "name": "Empanada de Cazón",
       "cat": "empanadas",
-      "price": 1330
+      "price": 1330,
+      "image": "https://api.loyverse.com/image/47ad236c-5e63-4e83-9374-d48d486096ed"
     },
     {
       "id": "empanada-mechada",
       "name": "Empanada de Mechada",
       "cat": "empanadas",
-      "price": 1360
+      "price": 1360,
+      "image": "https://api.loyverse.com/image/e8d1212e-3873-4b24-928a-39cf678fcef5"
     },
     {
       "id": "empanada-pabellon",
       "name": "Empanada de Pabellón",
       "cat": "empanadas",
-      "price": 1400
+      "price": 1400,
+      "image": "https://api.loyverse.com/image/229ab2df-4b40-409f-b6ad-80e305d86e04"
     },
     {
       "id": "empanada-mechada-queso-amarillo",
@@ -1469,7 +1517,8 @@
       "name": "Cachitos",
       "cat": "panaderia",
       "price": 1270,
-      "tag": "Popular"
+      "tag": "Popular",
+      "image": "https://api.loyverse.com/image/76ae6bb1-e16d-4e09-a678-a2cee7b10b50"
     },
     {
       "id": "mini-cachito",
@@ -1481,19 +1530,22 @@
       "id": "cachito-mortadela-pistacho",
       "name": "Cachito de Mortadela y Pistacho",
       "cat": "panaderia",
-      "price": 1670
+      "price": 1670,
+      "image": "https://api.loyverse.com/image/e67672b6-f57c-4d01-9091-edab9dd36876"
     },
     {
       "id": "cachito-jamon-pavo",
       "name": "Cachito Jamón de Pavo / Queso Crema",
       "cat": "panaderia",
-      "price": 1670
+      "price": 1670,
+      "image": "https://api.loyverse.com/image/ddcf3f92-1d2c-4702-ad2e-95d67b34cd98"
     },
     {
       "id": "cachito-queso-paisa",
       "name": "Cachito Queso Paisa",
       "cat": "panaderia",
-      "price": 1390
+      "price": 1390,
+      "image": "https://api.loyverse.com/image/5ae30755-0cbd-4e90-8d8d-f3cc5005d2d7"
     },
     {
       "id": "croissant",
@@ -1502,7 +1554,8 @@
       "price": 2800,
       "mods": [
         "topping-croissant"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/e86b89e2-27b9-49fa-a73d-c55ab7bafce3"
     },
     {
       "id": "mini-croissant",
@@ -1511,7 +1564,8 @@
       "price": 1470,
       "mods": [
         "topping-croissant"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/ec097559-90c5-4835-80ce-b49539c8d3b6"
     },
     {
       "id": "golfiado",
@@ -1547,7 +1601,8 @@
       "id": "rol-canela",
       "name": "Rol de Canela",
       "cat": "panaderia",
-      "price": 1290
+      "price": 1290,
+      "image": "https://api.loyverse.com/image/d2c86ee1-daf6-4c8b-862c-7f48f31f3321"
     },
     {
       "id": "rol-pan-de-jamon-brioche",
@@ -1574,7 +1629,8 @@
       "id": "pastelito-ricota",
       "name": "Pastelito de Ricota",
       "cat": "panaderia",
-      "price": 2310
+      "price": 2310,
+      "image": "https://api.loyverse.com/image/e15fbc80-bd86-4d26-8f6e-03af0c7f0db7"
     },
     {
       "id": "pastelito-champinones-paisa",
@@ -1604,7 +1660,8 @@
       "id": "mini-lunch",
       "name": "Mini Lunch",
       "cat": "panaderia",
-      "price": 1270
+      "price": 1270,
+      "image": "https://api.loyverse.com/image/b51060fa-b961-43a8-8345-4e19e0be2301"
     },
     {
       "id": "desayuno-americano",
@@ -1613,7 +1670,8 @@
       "price": 4360,
       "mods": [
         "adicional-desayuno"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/3499e8d9-9591-453f-af72-0a6946ed9629"
     },
     {
       "id": "desayuno-criollo",
@@ -1622,7 +1680,8 @@
       "price": 4360,
       "mods": [
         "adicional-desayuno"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/500f42ce-3cb6-4f86-b0e0-33f2307e4216"
     },
     {
       "id": "tortilla-espanola",
@@ -1644,7 +1703,8 @@
       "tag": "Popular",
       "mods": [
         "extras-pizza"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/2a90179b-33cd-4469-a4b9-a598ac926552"
     },
     {
       "id": "pizza-pepperoni",
@@ -1660,25 +1720,29 @@
       "price": 6560,
       "mods": [
         "extras-pizza"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/1b274df2-2c90-4995-86ed-f28c517c3b53"
     },
     {
       "id": "mini-pizza",
       "name": "Mini Pizza",
       "cat": "pizza",
-      "price": 1740
+      "price": 1740,
+      "image": "https://api.loyverse.com/image/ef13238a-b92d-4463-8ab0-2db4ecc05a88"
     },
     {
       "id": "donas-glaseadas",
       "name": "Donas Glaseadas",
       "cat": "donas",
-      "price": 990
+      "price": 990,
+      "image": "https://api.loyverse.com/image/a6ddf81b-06b5-4642-80d3-eda03ba9d736"
     },
     {
       "id": "donas-rellenas",
       "name": "Donas Rellenas",
       "cat": "donas",
-      "price": 990
+      "price": 990,
+      "image": "https://api.loyverse.com/image/f6174d5f-ddfe-4d88-85e2-dead778ac883"
     },
     {
       "id": "alfajor-coco",
@@ -1690,19 +1754,22 @@
       "id": "alfajor-bom-o-bom",
       "name": "Alfajor Bom o Bom",
       "cat": "galletas",
-      "price": 810
+      "price": 810,
+      "image": "https://api.loyverse.com/image/4b736352-ab72-4780-98a3-2aab10630cff"
     },
     {
       "id": "alfajor-havanna-arequipe",
       "name": "Alfajor Havanna Arequipe",
       "cat": "galletas",
-      "price": 1220
+      "price": 1220,
+      "image": "https://api.loyverse.com/image/35d41585-f926-444b-b3bd-854b87290ca6"
     },
     {
       "id": "alfajor-mantequilla-mani",
       "name": "Alfajor Mantequilla de Maní",
       "cat": "galletas",
-      "price": 810
+      "price": 810,
+      "image": "https://api.loyverse.com/image/47c643d0-2048-4e59-a5b8-3bc0758f5e2e"
     },
     {
       "id": "3-mini-alfajores",
@@ -1714,61 +1781,71 @@
       "id": "cajita-12-mini-alfajores",
       "name": "Cajita 12 Mini Alfajores",
       "cat": "galletas",
-      "price": 3430
+      "price": 3430,
+      "image": "https://api.loyverse.com/image/c751a444-b602-408f-9705-7697243f2c8b"
     },
     {
       "id": "galleta-nutella-chocolate",
       "name": "Galleta Nutella Chocolate",
       "cat": "galletas",
-      "price": 530
+      "price": 530,
+      "image": "https://api.loyverse.com/image/508403b6-a97a-419b-b626-f1709c4ace38"
     },
     {
       "id": "galleta-nutella-vainilla",
       "name": "Galleta Nutella Vainilla",
       "cat": "galletas",
-      "price": 530
+      "price": 530,
+      "image": "https://api.loyverse.com/image/e4d47518-e076-4898-b358-cede17b873a3"
     },
     {
       "id": "galletas-chocolate-chispas",
       "name": "Galletas Chocolate con Chispas",
       "cat": "galletas",
-      "price": 350
+      "price": 350,
+      "image": "https://api.loyverse.com/image/9ebbdabb-bc54-4436-887d-7f440e83815d"
     },
     {
       "id": "galletas-vainilla-chispas",
       "name": "Galletas Vainilla con Chispas",
       "cat": "galletas",
-      "price": 350
+      "price": 350,
+      "image": "https://api.loyverse.com/image/df3d0a16-3152-4c92-9986-8a6f8737b68b"
     },
     {
       "id": "galletas-danesas",
       "name": "Galletas Danesas",
       "cat": "galletas",
-      "price": 1030
+      "price": 1030,
+      "image": "https://api.loyverse.com/image/39a0fdf7-0f09-4b08-93f0-3dc94608ea61"
     },
     {
       "id": "brownie",
       "name": "Brownie Tradicional",
       "cat": "postres",
-      "price": 1420
+      "price": 1420,
+      "image": "https://api.loyverse.com/image/7f1a8491-e663-49ec-b71f-ba9e4efac579"
     },
     {
       "id": "brownie-frutos-secos",
       "name": "Brownie Frutos Secos",
       "cat": "postres",
-      "price": 1670
+      "price": 1670,
+      "image": "https://api.loyverse.com/image/d5da9d6a-8aaa-4029-9083-578217d353e6"
     },
     {
       "id": "choco-almendra",
       "name": "Choco Almendra",
       "cat": "postres",
-      "price": 2650
+      "price": 2650,
+      "image": "https://api.loyverse.com/image/95dc99be-8213-4d6b-b4ee-4b0d4e889026"
     },
     {
       "id": "oreo",
       "name": "Oreo",
       "cat": "postres",
-      "price": 2650
+      "price": 2650,
+      "image": "https://api.loyverse.com/image/3777e18c-ccc0-4e50-ab47-d63d5ce61713"
     },
     {
       "id": "lingote-chocolate",
@@ -1792,13 +1869,15 @@
       "id": "pay-limon",
       "name": "Pay de Limón",
       "cat": "postres",
-      "price": 1780
+      "price": 1780,
+      "image": "https://api.loyverse.com/image/4ce0eb6c-09d8-405f-acd6-1821a9c1bd8a"
     },
     {
       "id": "pay-parchita",
       "name": "Pay de Parchita",
       "cat": "postres",
-      "price": 1780
+      "price": 1780,
+      "image": "https://api.loyverse.com/image/cfed3326-d04d-4a5a-933d-20fd179641c1"
     },
     {
       "id": "muffin-calabaza",
@@ -1887,7 +1966,8 @@
           "label": "Completa",
           "price": 18920
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/135a5e0a-08f4-4734-966b-5d4782149d92"
     },
     {
       "id": "torta-entera-coco",
@@ -2071,7 +2151,8 @@
       "price": 5640,
       "mods": [
         "relleno-mini-cake"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/2467c8f5-b5d9-4238-9911-54ac24000b50"
     },
     {
       "id": "torta-dos-pisos",
@@ -2087,7 +2168,8 @@
       "tag": "Popular",
       "mods": [
         "salsa-tequeno"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/3e514b80-beb3-4154-aed3-f83877da9e5c"
     },
     {
       "id": "papas-chips",
@@ -2095,5 +2177,6 @@
       "cat": "raciones",
       "price": 1280
     }
-  ]
+  ],
+  "_syncedAt": "2026-07-22T12:43:57.446Z"
 }
