@@ -74,27 +74,50 @@ function buildLoyverseIndex(loyverseItems) {
   return byName;
 }
 
-function matchLoyverseItem(catalogItem, byName) {
+function matchLoyverseItems(catalogItem, byName) {
   const explicitName = catalogItem.loyverseItemName || catalogItem.name;
   const key = normalize(explicitName);
   const matches = byName.get(key);
   if (!matches || matches.length === 0) return null;
-  if (matches.length > 1) {
-    console.warn(`⚠ Nombre ambiguo en Loyverse para "${catalogItem.name}" (${matches.length} coincidencias), usando la primera.`);
-  }
-  return matches[0];
+  return matches; // puede haber más de una coincidencia (ver combineVariants)
 }
 
-function syncItemPrice(catalogItem, loyverseItem, storeId, warnings) {
-  const variants = (loyverseItem.variants || []).filter(v => !v.deleted_at);
-  if (variants.length === 0) {
-    warnings.push(`"${catalogItem.name}": el producto existe en Loyverse pero no tiene variantes activas.`);
-    return catalogItem;
+// Junta las variantes activas de TODOS los productos de Loyverse que compartan
+// el mismo nombre. Cubre el caso real de cafeterías que, en vez de crear un solo
+// producto "Té X" con variantes Frío/Caliente, crean dos productos separados
+// llamados igual ("Té X" y "Té X"), uno por tamaño — cada uno con 1 sola variante.
+function combineVariants(candidates) {
+  const all = [];
+  for (const item of candidates) {
+    for (const v of (item.variants || [])) {
+      if (!v.deleted_at) all.push(v);
+    }
   }
+  return all;
+}
 
+function firstImageUrl(candidates) {
+  for (const item of candidates) {
+    if (item.image_url) return item.image_url;
+  }
+  return null;
+}
+
+function syncItemPrice(catalogItem, candidates, storeId, warnings) {
   const updated = { ...catalogItem };
 
   if (catalogItem.sizes && catalogItem.sizes.length) {
+    let variants = combineVariants(candidates);
+    if (candidates.length > 1 && variants.length === catalogItem.sizes.length) {
+      warnings.push(`"${catalogItem.name}": Loyverse tiene ${candidates.length} productos separados con el mismo nombre (uno por tamaño); se combinaron sus variantes.`);
+    } else if (candidates.length > 1) {
+      warnings.push(`⚠ Nombre ambiguo en Loyverse para "${catalogItem.name}" (${candidates.length} coincidencias), usando la primera.`);
+      variants = (candidates[0].variants || []).filter(v => !v.deleted_at);
+    }
+    if (variants.length === 0) {
+      warnings.push(`"${catalogItem.name}": el producto existe en Loyverse pero no tiene variantes activas.`);
+      return catalogItem;
+    }
     if (variants.length === 1) {
       warnings.push(`"${catalogItem.name}": tiene ${catalogItem.sizes.length} tamaños en el menú pero Loyverse solo tiene 1 variante. No se actualizaron los precios.`);
       return catalogItem;
@@ -130,6 +153,14 @@ function syncItemPrice(catalogItem, loyverseItem, storeId, warnings) {
     return updated;
   }
 
+  if (candidates.length > 1) {
+    warnings.push(`⚠ Nombre ambiguo en Loyverse para "${catalogItem.name}" (${candidates.length} coincidencias), usando la primera.`);
+  }
+  const variants = (candidates[0].variants || []).filter(v => !v.deleted_at);
+  if (variants.length === 0) {
+    warnings.push(`"${catalogItem.name}": el producto existe en Loyverse pero no tiene variantes activas.`);
+    return catalogItem;
+  }
   if (variants.length > 1) {
     warnings.push(`"${catalogItem.name}": tiene un solo precio en el menú pero Loyverse tiene ${variants.length} variantes. Se usó la primera variante.`);
   }
@@ -142,12 +173,15 @@ function syncItemPrice(catalogItem, loyverseItem, storeId, warnings) {
   return updated;
 }
 
-function syncItemImage(catalogItem, loyverseItem) {
+function syncItemImage(catalogItem, candidates) {
   // image_url es un campo del producto en Loyverse (no de la variante), se sube
-  // desde el Back Office de Loyverse (Productos → [producto] → foto).
-  if (!loyverseItem.image_url) return catalogItem;
-  if (catalogItem.image === loyverseItem.image_url) return catalogItem;
-  return { ...catalogItem, image: loyverseItem.image_url };
+  // desde el Back Office de Loyverse (Productos → [producto] → foto). Si hay
+  // varios productos duplicados con el mismo nombre, se usa la primera foto que
+  // exista entre ellos.
+  const imageUrl = firstImageUrl(candidates);
+  if (!imageUrl) return catalogItem;
+  if (catalogItem.image === imageUrl) return catalogItem;
+  return { ...catalogItem, image: imageUrl };
 }
 
 async function main() {
@@ -171,15 +205,15 @@ async function main() {
   let unmatched = 0;
 
   const newItems = catalog.ITEMS.map(item => {
-    const loyverseItem = matchLoyverseItem(item, byName);
-    if (!loyverseItem) {
+    const candidates = matchLoyverseItems(item, byName);
+    if (!candidates) {
       unmatched++;
       warnings.push(`"${item.name}": no se encontró ningún producto con ese nombre en Loyverse. Se mantiene el último precio conocido.`);
       return item;
     }
     matched++;
-    const withPrice = syncItemPrice(item, loyverseItem, storeId, warnings);
-    return syncItemImage(withPrice, loyverseItem);
+    const withPrice = syncItemPrice(item, candidates, storeId, warnings);
+    return syncItemImage(withPrice, candidates);
   });
 
   const output = {
