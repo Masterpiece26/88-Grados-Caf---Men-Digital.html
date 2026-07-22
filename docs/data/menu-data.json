@@ -2425,7 +2425,8 @@
       "cat": "raciones",
       "price": 1280,
       "loyverseItemId": "fa16f4f1-0272-4b7f-9a4d-ed746358c47f",
-      "image": "https://api.loyverse.com/image/fa16f4f1-0272-4b7f-9a4d-ed746358c47f"
+      "image": "https://api.loyverse.com/image/fa16f4f1-0272-4b7f-9a4d-ed746358c47f",
+      "available": false
     }
   ],
   "_syncedAt": "2026-07-22T16:09:03.470Z"
