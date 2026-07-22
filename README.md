@@ -6,28 +6,37 @@ desde Loyverse**, sin exponer nunca tu token de API en el navegador.
 ## Estructura del proyecto
 
 ```
-docs/               ← ÚNICA carpeta que GitHub Pages publica en internet
+docs/               ← ÚNICA carpeta que GitHub Pages sirve como sitio web (docs/index.html)
   index.html            el menú que ven tus clientes
+  admin.html             panel para marcar productos agotados (protegido con contraseña)
   data/menu-data.json   precios/fotos actuales, generado automáticamente
 
 catalog/
-  menu-catalog.json  ← la fuente de verdad que tú editas a mano (privado, no se publica)
+  menu-catalog.json      la fuente de verdad que tú editas a mano
+  unavailable-items.json lista de productos marcados "agotado" desde admin.html
+  loyverse-snapshot.json espejo de tu catálogo real de Loyverse (diagnóstico)
 
 scripts/
   sync-loyverse.js   ← trae precios/fotos de Loyverse y actualiza docs/data/menu-data.json
   dev-server.js      ← servidor local para probar antes de subir cambios
 
 tools/
-  generar-qrs.html   ← herramienta interna para generar los QR de las mesas (privado)
+  generar-qrs.html   ← herramienta interna para generar los QR de las mesas
+
+cloudflare-worker/
+  admin-worker.js    ← backend gratuito (Cloudflare) que permite a admin.html guardar cambios
 
 .github/workflows/
   sync-loyverse.yml  ← corre la sincronización cada 15 min en GitHub Actions
 ```
 
-**Todo lo que está fuera de `docs/` (el catálogo maestro, los scripts, la herramienta de QR)
-queda guardado en tu repositorio de GitHub pero nunca se publica ni tiene una URL pública** —
-solo tú (o quien tenga acceso al repositorio) puede verlo. GitHub Pages, configurado para
-publicar la carpeta `/docs`, solo sirve lo que hay adentro de esa carpeta.
+**GitHub Pages solo publica como sitio web lo que hay dentro de `docs/`** — `catalog/`,
+`scripts/`, `tools/` y `cloudflare-worker/` no tienen una URL de menú/QR asociada. Aclaración
+importante: como el repositorio en sí es público en GitHub, cualquiera que abra
+github.com/tu-usuario/tu-repo puede ver esos archivos igual (no hay contenido secreto en
+ellos — nombres, precios, scripts). La única pieza que sí necesita protegerse de verdad es
+`docs/admin.html`, y esa protección es la contraseña (más el hecho de que sin ella nadie puede
+guardar cambios), no la ubicación del archivo.
 
 ## Cómo funciona
 
@@ -141,6 +150,69 @@ Si el cliente entra sin `?mesa=` en la URL (por ejemplo, compartes el link gener
 Instagram), el menú funciona igual mostrando el nombre por defecto (sin el aviso), pero no
 aparece ningún número de mesa en el mensaje de WhatsApp.
 
+## Paso 6 — Panel de administración (marcar productos agotados)
+
+`docs/admin.html` es un panel protegido con contraseña donde el personal puede marcar
+productos como "agotado" (se muestran tachados/grises en el menú, sin poder agregarse al
+carrito) — útil para cuando se acaba algo a mitad del turno, sin esperar a Loyverse.
+
+Como el sitio es estático (sin servidor propio), guardar ese cambio en vivo requiere un
+pequeño backend intermedio: un **Cloudflare Worker** gratuito que recibe la contraseña,
+la valida, y si es correcta usa un token de GitHub (que nunca toca el navegador) para
+actualizar el menú publicado. Es exactamente el mismo principio de seguridad que usamos con
+el token de Loyverse — el secreto vive en un solo lugar, protegido, nunca en el código público.
+
+### 6.1 — Crear el Worker en Cloudflare
+
+1. Crea una cuenta gratuita en [dash.cloudflare.com/sign-up](https://dash.cloudflare.com/sign-up).
+2. En el menú lateral: **Workers y Pages → Create → Create Worker**. Dale un nombre (ej.
+   `admin-worker`) y créalo.
+3. Click en **Edit code** (o "Quick edit"). Borra el código de ejemplo y pega todo el contenido
+   de [`cloudflare-worker/admin-worker.js`](cloudflare-worker/admin-worker.js) de este repo.
+4. Click en **Deploy** (o "Save and deploy").
+5. Copia la URL que te asigna Cloudflare, algo como `https://admin-worker.tu-usuario.workers.dev`.
+
+### 6.2 — Generar el token de GitHub para el Worker
+
+**Este token solo debe tener permiso sobre este repositorio** (no acceso general a tu cuenta):
+
+1. GitHub → foto de perfil → **Settings → Developer settings → Personal access tokens →
+   Fine-grained tokens → Generate new token**.
+2. **Repository access**: elige "Only select repositories" y selecciona este repositorio.
+3. **Permissions → Repository permissions → Contents**: cambia a **Read and write**. Deja
+   todo lo demás sin acceso.
+4. Ponle una fecha de expiración razonable (ej. 1 año) y genera el token.
+5. Copia el token (`github_pat_...`) — no lo vuelves a ver después de esta pantalla.
+
+### 6.3 — Configurar las variables del Worker
+
+En tu Worker: **Settings → Variables and Secrets → Add**. Agrega estas 4 (marca "Encrypt"
+en las que son secretas):
+
+| Nombre | Valor | Tipo |
+|---|---|---|
+| `ADMIN_PASSWORD` | La contraseña que usará el personal | Secret |
+| `GITHUB_TOKEN` | El token que generaste en 6.2 | Secret |
+| `GITHUB_REPO` | `Masterpiece26/88-Grados-Caf---Men-Digital.html` | Texto |
+| `ALLOWED_ORIGIN` | `https://masterpiece26.github.io` | Texto |
+
+Guarda y vuelve a desplegar si te lo pide.
+
+### 6.4 — Conectar admin.html con tu Worker
+
+Edita `docs/admin.html`, busca la línea:
+```js
+const WORKER_URL = 'PON_AQUI_LA_URL_DE_TU_WORKER';
+```
+y reemplázala con la URL real de tu Worker (la del paso 6.1). Sube el cambio.
+
+### 6.5 — Usar el panel
+
+Abre `https://masterpiece26.github.io/88-Grados-Caf---Men-Digital.html/admin.html`, entra con
+la contraseña, busca el producto y apaga/enciende el interruptor. El cambio se ve en el menú
+en menos de un minuto (y queda protegido de que la próxima sincronización con Loyverse lo
+borre). Guarda esa URL — no está enlazada desde ningún lado del menú público.
+
 ## Editar el menú (productos, categorías, fotos, modificadores)
 
 Edita `catalog/menu-catalog.json` — **no `docs/data/menu-data.json`**:
@@ -229,11 +301,34 @@ que lo hará GitHub Pages en producción. (Abrir `docs/index.html` directamente 
 no funciona porque el navegador bloquea la carga de `data/menu-data.json` por seguridad cuando
 no hay un servidor de por medio.)
 
+## Estadísticas de uso (visitas al menú)
+
+Recomendado: **Cloudflare Web Analytics** — gratis, no requiere mover tu dominio a Cloudflare,
+y usas la misma cuenta que ya creaste para el panel de administración (Paso 6).
+
+1. En Cloudflare: **Analytics & Logs → Web Analytics → Add a site**.
+2. Pon `masterpiece26.github.io` como sitio (no pide cambiar DNS ni nada del hosting).
+3. Te da un fragmento `<script>` con un token — pégalo antes de `</head>` en `docs/index.html`.
+4. Sube el cambio. Las visitas empiezan a verse en el dashboard de Cloudflare (Analytics &
+   Logs → Web Analytics) unos minutos después.
+
+Si prefieres otra opción, [GoatCounter](https://www.goatcounter.com) es igual de simple
+(cuenta gratuita aparte, también un solo `<script>`) y su panel es público por defecto salvo
+que lo configures como privado.
+
 ## Seguridad
 
 - El token de Loyverse vive únicamente como GitHub Secret y se usa solo dentro de GitHub
   Actions — nunca llega al navegador ni aparece en el código fuente del sitio.
 - `docs/data/menu-data.json` solo contiene nombres, categorías y precios — información que de
   todas formas es pública en tu menú físico.
-- Todo lo que no está en `docs/` (catálogo maestro, scripts, herramienta de QR) no tiene URL
-  pública — GitHub Pages solo publica `/docs`.
+- Todo lo que no está en `docs/` (catálogo maestro, scripts, herramienta de QR) no está
+  publicado como sitio web — GitHub Pages solo sirve `/docs`. El repositorio en sí es público
+  en GitHub (ver nota en "Estructura del proyecto"), así que esto es organización, no una
+  barrera de seguridad real.
+- El token de GitHub del panel de administración (`GITHUB_TOKEN` del Worker) vive únicamente
+  en Cloudflare, cifrado — nunca toca el navegador ni el repositorio. Está limitado (permiso
+  "fine-grained") a leer/escribir solo este repositorio, nada más de tu cuenta de GitHub.
+- La contraseña del panel (`ADMIN_PASSWORD`) es la única barrera antes de poder guardar
+  cambios — trátala como cualquier contraseña de trabajo: compártela solo con el personal que
+  la necesite y cámbiala en el Worker si alguien que ya no debería tenerla la conoce.

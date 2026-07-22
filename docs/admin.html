@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Panel de administración — 88° Grados Café</title>
+<meta name="robots" content="noindex, nofollow">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; background: #241c14; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; color: #F4ECE1; }
+  h1 { font-size: 19px; margin: 0; color: #F2C14E; }
+  .topbar { position: sticky; top: 0; z-index: 10; background: #241c14ee; backdrop-filter: blur(10px); border-bottom: 1px solid #ffffff14; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 20px; }
+  input[type=password], input[type=text] {
+    width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid #ffffff20;
+    background: #ffffff0d; color: #F4ECE1; font-size: 15px; outline: none; font-family: inherit;
+  }
+  button { font-family: inherit; cursor: pointer; border: none; }
+  .btn-primary { background: #E85D04; color: #fff; font-weight: 700; padding: 12px 18px; border-radius: 10px; font-size: 14.5px; }
+  .btn-primary:disabled { background: #E85D0460; cursor: not-allowed; }
+  .btn-ghost { background: #ffffff14; color: #F4ECE1; font-weight: 600; padding: 8px 14px; border-radius: 8px; font-size: 13px; }
+  #login-screen { display: flex; align-items: center; justify-content: center; min-height: 100vh; padding: 20px; }
+  .login-card { background: #2f2519; border: 1px solid #ffffff1a; border-radius: 16px; padding: 28px 26px; max-width: 360px; width: 100%; }
+  .login-card h1 { margin-bottom: 6px; }
+  .login-card p { color: #C9B9A4; font-size: 13.5px; margin: 0 0 18px; }
+  .error { color: #ff6b6b; font-size: 13px; margin-top: 10px; min-height: 16px; }
+  #panel { display: none; }
+  .cat-section { margin-bottom: 22px; }
+  .cat-title { font-family: inherit; font-weight: 700; font-size: 15px; color: #C9B9A4; text-transform: uppercase; letter-spacing: 0.03em; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid #ffffff14; }
+  .item-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #ffffff0a; }
+  .item-name { font-size: 14.5px; font-weight: 600; }
+  .item-price { font-size: 12.5px; color: #C9B9A4; }
+  .switch { position: relative; width: 46px; height: 26px; flex-shrink: 0; }
+  .switch input { opacity: 0; width: 0; height: 0; }
+  .slider { position: absolute; inset: 0; background: #6b5c47; border-radius: 999px; transition: 0.15s; cursor: pointer; }
+  .slider::before { content: ''; position: absolute; width: 20px; height: 20px; left: 3px; top: 3px; background: #fff; border-radius: 50%; transition: 0.15s; }
+  input:checked + .slider { background: #25D366; }
+  input:checked + .slider::before { transform: translateX(20px); }
+  .switch.pending .slider { opacity: 0.5; }
+  #status-msg { font-size: 13px; margin-top: 4px; min-height: 18px; }
+  #status-msg.ok { color: #25D366; }
+  #status-msg.err { color: #ff6b6b; }
+</style>
+</head>
+<body>
+
+<div id="login-screen">
+  <div class="login-card">
+    <h1>Panel de administración</h1>
+    <p>88° Grados Café — acceso solo para personal.</p>
+    <input type="password" id="password-input" placeholder="Contraseña" autocomplete="current-password">
+    <div style="margin-top: 12px;"><button class="btn-primary" id="login-btn" style="width: 100%;">Entrar</button></div>
+    <div class="error" id="login-error"></div>
+  </div>
+</div>
+
+<div id="panel">
+  <div class="topbar">
+    <h1>Disponibilidad de productos</h1>
+    <button class="btn-ghost" id="logout-btn">Salir</button>
+  </div>
+  <div class="wrap">
+    <input type="text" id="search-input" placeholder="Buscar producto…" style="margin-bottom: 6px;">
+    <div id="status-msg"></div>
+    <div id="loading">Cargando productos…</div>
+    <div id="list"></div>
+  </div>
+</div>
+
+<script>
+// Después de desplegar el Worker (ver README), pon aquí su URL, ej:
+// 'https://admin-worker.tu-usuario.workers.dev'
+const WORKER_URL = 'PON_AQUI_LA_URL_DE_TU_WORKER';
+
+const state = { catalog: null, search: '' };
+
+function getPassword() { return sessionStorage.getItem('adminPassword') || ''; }
+
+async function callWorker(body) {
+  const res = await fetch(WORKER_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ ...body, password: getPassword() }),
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || ('Error ' + res.status));
+  return data;
+}
+
+document.getElementById('login-btn').addEventListener('click', doLogin);
+document.getElementById('password-input').addEventListener('keydown', (e) => { if (e.key === 'Enter') doLogin(); });
+
+async function doLogin() {
+  const pw = document.getElementById('password-input').value;
+  const errEl = document.getElementById('login-error');
+  errEl.textContent = '';
+  if (!pw) return;
+  const btn = document.getElementById('login-btn');
+  btn.disabled = true;
+  btn.textContent = 'Verificando…';
+  try {
+    sessionStorage.setItem('adminPassword', pw);
+    await callWorker({ action: 'verify' });
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('panel').style.display = 'block';
+    loadCatalog();
+  } catch (err) {
+    sessionStorage.removeItem('adminPassword');
+    errEl.textContent = err.message === 'Contraseña incorrecta' ? 'Contraseña incorrecta.' : ('No se pudo conectar: ' + err.message);
+  } finally {
+    btn.disabled = false;
+    btn.textContent = 'Entrar';
+  }
+}
+
+document.getElementById('logout-btn').addEventListener('click', () => {
+  sessionStorage.removeItem('adminPassword');
+  document.getElementById('panel').style.display = 'none';
+  document.getElementById('login-screen').style.display = 'flex';
+  document.getElementById('password-input').value = '';
+});
+
+function fmt(n) { return 'Bs. ' + Number(n).toLocaleString('es-VE'); }
+function priceLabelFor(item) {
+  if (item.price != null) return fmt(item.price);
+  if (item.sizes && item.sizes.length) return 'Desde ' + fmt(Math.min(...item.sizes.map(s => s.price)));
+  return '';
+}
+function escapeHtml(str) {
+  return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+}
+
+async function loadCatalog() {
+  const res = await fetch('./data/menu-data.json', { cache: 'no-store' });
+  state.catalog = await res.json();
+  document.getElementById('loading').style.display = 'none';
+  renderList();
+}
+
+document.getElementById('search-input').addEventListener('input', (e) => {
+  state.search = e.target.value;
+  renderList();
+});
+
+function renderList() {
+  const list = document.getElementById('list');
+  const { CATEGORIES, ITEMS } = state.catalog;
+  const q = state.search.trim().toLowerCase();
+  const filtered = q ? ITEMS.filter(it => it.name.toLowerCase().includes(q)) : ITEMS;
+
+  const byCat = {};
+  for (const it of filtered) (byCat[it.cat] = byCat[it.cat] || []).push(it);
+
+  list.innerHTML = CATEGORIES
+    .filter(c => byCat[c.id] && byCat[c.id].length)
+    .map(c => `
+      <div class="cat-section">
+        <div class="cat-title">${escapeHtml(c.name)}</div>
+        ${byCat[c.id].map(item => `
+          <div class="item-row">
+            <div>
+              <div class="item-name">${escapeHtml(item.name)}</div>
+              <div class="item-price">${escapeHtml(priceLabelFor(item))}</div>
+            </div>
+            <label class="switch" data-item-id="${escapeHtml(item.id)}">
+              <input type="checkbox" ${item.available === false ? '' : 'checked'}>
+              <span class="slider"></span>
+            </label>
+          </div>
+        `).join('')}
+      </div>
+    `).join('');
+
+  list.querySelectorAll('.switch').forEach(sw => {
+    const checkbox = sw.querySelector('input');
+    checkbox.addEventListener('change', () => onToggle(sw, checkbox));
+  });
+}
+
+async function onToggle(switchEl, checkbox) {
+  const itemId = switchEl.dataset.itemId;
+  const available = checkbox.checked;
+  const statusEl = document.getElementById('status-msg');
+  switchEl.classList.add('pending');
+  checkbox.disabled = true;
+  statusEl.className = '';
+  statusEl.textContent = 'Guardando…';
+  try {
+    await callWorker({ action: 'toggle', itemId, available });
+    const item = state.catalog.ITEMS.find(it => it.id === itemId);
+    if (item) { if (available) delete item.available; else item.available = false; }
+    statusEl.className = 'ok';
+    statusEl.textContent = `"${item ? item.name : itemId}" ${available ? 'marcado disponible' : 'marcado agotado'}. Puede tardar ~1 min en verse en el menú.`;
+  } catch (err) {
+    checkbox.checked = !available; // revertir
+    statusEl.className = 'err';
+    statusEl.textContent = 'No se pudo guardar: ' + err.message;
+  } finally {
+    switchEl.classList.remove('pending');
+    checkbox.disabled = false;
+  }
+}
+
+// Si ya había una sesión iniciada en este dispositivo (misma pestaña), entra directo.
+if (getPassword()) {
+  callWorker({ action: 'verify' }).then(() => {
+    document.getElementById('login-screen').style.display = 'none';
+    document.getElementById('panel').style.display = 'block';
+    loadCatalog();
+  }).catch(() => sessionStorage.removeItem('adminPassword'));
+}
+</script>
+
+</body>
+</html>
