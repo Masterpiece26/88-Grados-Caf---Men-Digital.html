@@ -2195,6 +2195,11 @@
           "label": "Completa",
           "price": 8870,
           "loyverseItemId": "a557eeda-d4a0-4903-b00e-7409444fedd9"
+        },
+        {
+          "label": "Grande de Cumpleaños",
+          "price": 28980,
+          "loyverseItemId": "54810cb0-f9f6-4fd9-bcfe-989a50c464b3"
         }
       ]
     },
@@ -2246,6 +2251,16 @@
           "label": "Marmoleado Grande",
           "price": 11250,
           "loyverseItemId": "bda30fb7-70bf-4f31-9bb7-3f2284462301"
+        },
+        {
+          "label": "3 Rellenos Arequipe 2.5kg",
+          "price": 23290,
+          "loyverseItemId": "ee9801ec-c000-4323-9a14-ae3a75e7d23c"
+        },
+        {
+          "label": "4 Rellenos Arequipe 3.362kg",
+          "price": 24760,
+          "loyverseItemId": "62826f34-fd4e-4e8d-9f7a-7f258a6e5671"
         }
       ]
     },
@@ -2312,6 +2327,58 @@
       "cat": "tortas",
       "price": 40580,
       "loyverseItemId": "d2bd0af7-9ab0-420d-87f3-edb7cbd5c02d"
+    },
+    {
+      "id": "mini-torta-fresa",
+      "name": "Mini Torta de Fresa",
+      "cat": "tortas",
+      "price": 12510,
+      "loyverseItemId": "a8204941-4aae-4020-91e9-c4e2e6398e99",
+      "image": "https://api.loyverse.com/image/a8204941-4aae-4020-91e9-c4e2e6398e99"
+    },
+    {
+      "id": "mini-torta-mora",
+      "name": "Mini Torta de Mora",
+      "cat": "tortas",
+      "price": 12510,
+      "loyverseItemId": "0cf70be0-fac7-4999-8119-9c40181d2359",
+      "image": "https://api.loyverse.com/image/0cf70be0-fac7-4999-8119-9c40181d2359"
+    },
+    {
+      "id": "mini-torta-zanahoria",
+      "name": "Mini Torta de Zanahoria",
+      "cat": "tortas",
+      "price": 13990,
+      "loyverseItemId": "54d6826c-4fa5-48f4-b20c-1f8d97577fcf",
+      "image": "https://api.loyverse.com/image/54d6826c-4fa5-48f4-b20c-1f8d97577fcf"
+    },
+    {
+      "id": "mini-oreo",
+      "name": "Mini Oreo",
+      "cat": "tortas",
+      "price": 17250,
+      "loyverseItemId": "3a688b55-c0a3-4dcc-a3fc-199975a37784",
+      "image": "https://api.loyverse.com/image/3a688b55-c0a3-4dcc-a3fc-199975a37784"
+    },
+    {
+      "id": "mini-choco-almendra",
+      "name": "Mini Choco Almendra",
+      "cat": "tortas",
+      "price": 14720,
+      "loyverseItemId": "ed8882cd-2c5f-4ded-a8a4-54d7ba4508d3",
+      "image": "https://api.loyverse.com/image/ed8882cd-2c5f-4ded-a8a4-54d7ba4508d3"
+    },
+    {
+      "id": "torta-entera-oreo",
+      "name": "Torta de Oreo",
+      "cat": "tortas",
+      "sizes": [
+        {
+          "label": "Completa",
+          "price": 22560,
+          "loyverseItemId": "990afae0-3f84-454e-8972-1bfeac31c1c6"
+        }
+      ]
     },
     {
       "id": "tequenos",
