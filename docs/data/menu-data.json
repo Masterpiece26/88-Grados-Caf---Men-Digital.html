@@ -472,7 +472,8 @@
       "name": "Café Lungo",
       "cat": "cafe",
       "price": 880,
-      "loyverseItemId": "f6639e2b-fca8-4b17-a150-84644e893c87"
+      "loyverseItemId": "f6639e2b-fca8-4b17-a150-84644e893c87",
+      "available": false
     },
     {
       "id": "cafe-americano",
