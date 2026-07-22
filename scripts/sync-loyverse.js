@@ -26,7 +26,21 @@ const CATALOG_PATH = path.join(__dirname, '..', 'catalog', 'menu-catalog.json');
 const OUTPUT_PATH = path.join(__dirname, '..', 'docs', 'data', 'menu-data.json');
 const SNAPSHOT_PATH = path.join(__dirname, '..', 'catalog', 'loyverse-snapshot.json');
 const UNAVAILABLE_PATH = path.join(__dirname, '..', 'catalog', 'unavailable-items.json');
+const SETTINGS_PATH = path.join(__dirname, '..', 'catalog', 'settings.json');
 const LOYVERSE_API = 'https://api.loyverse.com/v1.0';
+
+// Lee catalog/settings.json (ej. el número de WhatsApp, editable desde
+// docs/admin.html) y lo fusiona en la salida — misma idea que
+// unavailable-items.json: es la fuente durable que la próxima
+// sincronización respeta.
+function readSettings() {
+  try {
+    const raw = JSON.parse(fs.readFileSync(SETTINGS_PATH, 'utf8'));
+    return raw && typeof raw === 'object' ? raw : {};
+  } catch {
+    return {};
+  }
+}
 
 // Lee catalog/unavailable-items.json (lista de ids marcados "agotado" desde
 // docs/admin.html) y la fusiona en la salida. Es la fuente durable: el panel
@@ -355,10 +369,13 @@ async function main() {
     unavailableIds.has(item.id) ? { ...item, available: false } : item
   );
 
+  const settings = readSettings();
+
   const output = {
     CATEGORIES: catalog.CATEGORIES,
     MODIFIER_GROUPS: catalog.MODIFIER_GROUPS,
     ITEMS: itemsWithAvailability,
+    whatsappNumber: settings.whatsappNumber || null,
     _syncedAt: new Date().toISOString(),
   };
 

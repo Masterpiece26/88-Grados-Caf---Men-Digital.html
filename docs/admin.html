@@ -40,6 +40,13 @@
   #status-msg { font-size: 13px; margin-top: 4px; min-height: 18px; }
   #status-msg.ok { color: #25D366; }
   #status-msg.err { color: #ff6b6b; }
+  .settings-card { background: #2f2519; border: 1px solid #ffffff1a; border-radius: 14px; padding: 16px 18px; margin-bottom: 20px; }
+  .settings-card label { display: block; font-size: 12.5px; font-weight: 600; color: #C9B9A4; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px; }
+  .settings-row { display: flex; gap: 8px; align-items: flex-start; }
+  .settings-row input { flex: 1; }
+  #wa-status { font-size: 13px; margin-top: 8px; min-height: 16px; }
+  #wa-status.ok { color: #25D366; }
+  #wa-status.err { color: #ff6b6b; }
 </style>
 </head>
 <body>
@@ -60,6 +67,15 @@
     <button class="btn-ghost" id="logout-btn">Salir</button>
   </div>
   <div class="wrap">
+    <div class="settings-card">
+      <label for="wa-input">Número de WhatsApp para pedidos</label>
+      <div class="settings-row">
+        <input type="text" id="wa-input" placeholder="Ej. 584121234567 (código de país + número)">
+        <button class="btn-primary" id="wa-save-btn">Guardar</button>
+      </div>
+      <div id="wa-status"></div>
+    </div>
+
     <input type="text" id="search-input" placeholder="Buscar producto…" style="margin-bottom: 6px;">
     <div id="status-msg"></div>
     <div id="loading">Cargando productos…</div>
@@ -134,8 +150,36 @@ async function loadCatalog() {
   const res = await fetch('./data/menu-data.json', { cache: 'no-store' });
   state.catalog = await res.json();
   document.getElementById('loading').style.display = 'none';
+  document.getElementById('wa-input').value = state.catalog.whatsappNumber || '';
   renderList();
 }
+
+document.getElementById('wa-save-btn').addEventListener('click', async () => {
+  const input = document.getElementById('wa-input');
+  const statusEl = document.getElementById('wa-status');
+  const btn = document.getElementById('wa-save-btn');
+  const digits = input.value.replace(/\D/g, '');
+  if (digits.length < 10 || digits.length > 15) {
+    statusEl.className = 'err';
+    statusEl.textContent = 'Número inválido — debe tener entre 10 y 15 dígitos, con código de país (ej. 58 para Venezuela).';
+    return;
+  }
+  btn.disabled = true;
+  statusEl.className = '';
+  statusEl.textContent = 'Guardando…';
+  try {
+    await callWorker({ action: 'updateSettings', whatsappNumber: digits });
+    input.value = digits;
+    state.catalog.whatsappNumber = digits;
+    statusEl.className = 'ok';
+    statusEl.textContent = 'Guardado. Puede tardar ~1 min en verse en el menú.';
+  } catch (err) {
+    statusEl.className = 'err';
+    statusEl.textContent = 'No se pudo guardar: ' + err.message;
+  } finally {
+    btn.disabled = false;
+  }
+});
 
 document.getElementById('search-input').addEventListener('input', (e) => {
   state.search = e.target.value;

@@ -79,7 +79,10 @@
 </div>
 
 <script>
-const WHATSAPP_NUMBER = '582123340106';
+// Se usa solo si docs/data/menu-data.json no trae whatsappNumber (no debería
+// pasar en condiciones normales). El valor real se configura desde
+// docs/admin.html y se guarda en catalog/settings.json.
+const WHATSAPP_NUMBER_FALLBACK = '582123340106';
 const DATA_URL = './data/menu-data.json';
 
 function getTableNumberFromURL() {
@@ -525,7 +528,8 @@ function sendWhatsApp() {
   const lines = state.cart.map(c => `• ${c.qty}x ${c.name}${c.sizeLabel ? ' (' + c.sizeLabel + ')' : ''} — ${fmt(c.unitPrice * c.qty)}`);
   const tableLine = state.tableNumber ? `📍 Mesa: ${state.tableNumber}\n` : '';
   const text = `Hola 88° Grados Café, soy ${fullName} y quiero hacer este pedido:\n${tableLine}\n${lines.join('\n')}\n\nTotal: ${fmt(cartTotal)}`;
-  const cleanPhone = String(WHATSAPP_NUMBER).replace(/\D/g, '');
+  const number = (state.catalog && state.catalog.whatsappNumber) || WHATSAPP_NUMBER_FALLBACK;
+  const cleanPhone = String(number).replace(/\D/g, '');
   const url = `https://wa.me/${cleanPhone}?text=${encodeURIComponent(text)}`;
   window.open(url, '_blank');
 }

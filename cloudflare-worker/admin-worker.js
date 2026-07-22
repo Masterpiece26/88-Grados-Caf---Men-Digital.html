@@ -11,6 +11,7 @@
 //   ALLOWED_ORIGIN   Origen permitido para CORS, ej. "https://masterpiece26.github.io"
 
 const UNAVAILABLE_PATH = 'catalog/unavailable-items.json';
+const SETTINGS_PATH = 'catalog/settings.json';
 const MENU_DATA_PATH = 'docs/data/menu-data.json';
 const BRANCH = 'main';
 
@@ -118,6 +119,37 @@ async function toggleAvailability(env, itemId, available) {
   );
 }
 
+async function updateWhatsappNumber(env, whatsappNumber) {
+  // 1) Fuente durable: catalog/settings.json.
+  const settingsFile = await getFile(env, SETTINGS_PATH);
+  let settings = {};
+  try { settings = JSON.parse(settingsFile.content); } catch { settings = {}; }
+  if (!settings || typeof settings !== 'object') settings = {};
+  settings.whatsappNumber = whatsappNumber;
+
+  await putFile(
+    env, SETTINGS_PATH,
+    JSON.stringify(settings, null, 2) + '\n',
+    settingsFile.sha,
+    'Panel: actualizar número de WhatsApp'
+  );
+
+  // 2) Reflejo inmediato en docs/data/menu-data.json.
+  const menu = await getFile(env, MENU_DATA_PATH);
+  let menuData;
+  try { menuData = JSON.parse(menu.content); } catch (e) {
+    throw new Error('menu-data.json no es JSON válido: ' + e.message);
+  }
+  menuData.whatsappNumber = whatsappNumber;
+
+  await putFile(
+    env, MENU_DATA_PATH,
+    JSON.stringify(menuData, null, 2) + '\n',
+    menu.sha,
+    'Panel: actualizar número de WhatsApp (reflejo inmediato)'
+  );
+}
+
 export default {
   async fetch(request, env) {
     if (request.method === 'OPTIONS') {
@@ -148,6 +180,19 @@ export default {
       }
       try {
         await toggleAvailability(env, body.itemId, body.available);
+        return json({ ok: true }, 200, env);
+      } catch (err) {
+        return json({ error: err.message }, 500, env);
+      }
+    }
+
+    if (body.action === 'updateSettings') {
+      const digits = String(body.whatsappNumber || '').replace(/\D/g, '');
+      if (digits.length < 10 || digits.length > 15) {
+        return json({ error: 'Número de WhatsApp inválido (debe tener entre 10 y 15 dígitos, con código de país).' }, 400, env);
+      }
+      try {
+        await updateWhatsappNumber(env, digits);
         return json({ ok: true }, 200, env);
       } catch (err) {
         return json({ error: err.message }, 500, env);

@@ -14,6 +14,7 @@ docs/               ← ÚNICA carpeta que GitHub Pages sirve como sitio web (do
 catalog/
   menu-catalog.json      la fuente de verdad que tú editas a mano
   unavailable-items.json lista de productos marcados "agotado" desde admin.html
+  settings.json          ajustes editables desde admin.html (ej. número de WhatsApp)
   loyverse-snapshot.json espejo de tu catálogo real de Loyverse (diagnóstico)
 
 scripts/
@@ -150,11 +151,12 @@ Si el cliente entra sin `?mesa=` en la URL (por ejemplo, compartes el link gener
 Instagram), el menú funciona igual mostrando el nombre por defecto (sin el aviso), pero no
 aparece ningún número de mesa en el mensaje de WhatsApp.
 
-## Paso 6 — Panel de administración (marcar productos agotados)
+## Paso 6 — Panel de administración (agotados y número de WhatsApp)
 
-`docs/admin.html` es un panel protegido con contraseña donde el personal puede marcar
-productos como "agotado" (se muestran tachados/grises en el menú, sin poder agregarse al
-carrito) — útil para cuando se acaba algo a mitad del turno, sin esperar a Loyverse.
+`docs/admin.html` es un panel protegido con contraseña donde el personal puede:
+- Marcar productos como "agotado" (se muestran tachados/grises en el menú, sin poder agregarse
+  al carrito) — útil para cuando se acaba algo a mitad del turno, sin esperar a Loyverse.
+- Cambiar el número de WhatsApp que recibe los pedidos, sin tocar código.
 
 Como el sitio es estático (sin servidor propio), guardar ese cambio en vivo requiere un
 pequeño backend intermedio: un **Cloudflare Worker** gratuito que recibe la contraseña,
@@ -280,8 +282,12 @@ sincronicen también; mientras tanto mantienen el precio que pongas a mano en el
 
 ## Número de WhatsApp para pedidos
 
-Está definido en `docs/index.html` como `const WHATSAPP_NUMBER = '582123340106';`. Cámbialo ahí
-si necesitas actualizarlo.
+Se configura desde `docs/admin.html` (la misma contraseña del Paso 6) — campo "Número de
+WhatsApp para pedidos" arriba de la lista de productos. Se guarda en `catalog/settings.json`
+(fuente durable) y se refleja en el menú en menos de un minuto, igual que "agotado". Si por
+alguna razón `docs/data/menu-data.json` no trajera el número (no debería pasar en
+condiciones normales), `docs/index.html` usa como respaldo el valor de
+`WHATSAPP_NUMBER_FALLBACK` definido ahí mismo.
 
 ## Datos del cliente antes de enviar el pedido
 
