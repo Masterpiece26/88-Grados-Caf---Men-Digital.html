@@ -1,0 +1,4786 @@
+[
+  {
+    "id": "c60458e5-f515-4dc8-85bf-ad9942725d7d",
+    "item_name": "Base de torta",
+    "category": null,
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "e8e15013-d861-4520-a508-4714c18f0e73",
+        "sku": "10200",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 350
+      }
+    ]
+  },
+  {
+    "id": "86126222-d133-432f-beae-72ecdde6df07",
+    "item_name": "Credito",
+    "category": null,
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "79e873b3-4131-4747-aa32-a338ae172e26",
+        "sku": "10310",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "e6b898ba-e36d-488a-8559-d0b2c1c085eb",
+    "item_name": "Frappé toddy",
+    "category": null,
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "69025dcc-ab9e-44ce-b766-88eaae12627a",
+        "sku": "10218",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "c12ad1de-c070-4691-82a9-5331f3a6392e",
+    "item_name": "Guiso Carne Molida",
+    "category": null,
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "40fd834f-a178-4104-bbdf-7ba5fc519bbe",
+        "sku": "10317",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "dcb892a6-c09a-4edd-8799-da13adebf05d",
+    "item_name": "Masa Para Empanadas",
+    "category": null,
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "837bf5d7-5942-4c4d-a2df-e1db9aa3cee5",
+        "sku": "10318",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "39ebed38-162a-46c3-9d49-14453fe6c4de",
+    "item_name": "Adicional de arepas",
+    "category": "Arepas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "21e6e0fa-fd4c-49e2-9fd4-acae2df61ed5",
+        "sku": "10132",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "2da56438-c2b9-493e-8b3f-2388cc523fa9",
+    "item_name": "Arepa Caraota y Queso",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/2da56438-c2b9-493e-8b3f-2388cc523fa9",
+    "variants": [
+      {
+        "variant_id": "b6049387-538b-4e7a-b349-8bb3b217148c",
+        "sku": "10085",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "6dc7846b-bd2c-4dcb-9767-5cc2a8cef54e",
+    "item_name": "Arepa carne mechada",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/6dc7846b-bd2c-4dcb-9767-5cc2a8cef54e",
+    "variants": [
+      {
+        "variant_id": "ac64ab76-53fd-4318-998c-8860dc6c7aaf",
+        "sku": "10021",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2980
+      }
+    ]
+  },
+  {
+    "id": "7ff1273d-38f3-4cf5-a217-65c38374253b",
+    "item_name": "Arepa cazon",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/7ff1273d-38f3-4cf5-a217-65c38374253b",
+    "variants": [
+      {
+        "variant_id": "292a59b2-b18b-49ef-8002-72c1a9078e6d",
+        "sku": "10027",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "3ce1348e-bdf5-43af-b97a-e89f24b9527a",
+    "item_name": "Arepa con perico",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/3ce1348e-bdf5-43af-b97a-e89f24b9527a",
+    "variants": [
+      {
+        "variant_id": "06d0296f-a653-4acb-88a6-313de7b482b1",
+        "sku": "10206",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "d8187ee7-4ef5-4bf6-83a1-c7b8cf87a884",
+    "item_name": "Arepa de asado negro",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/d8187ee7-4ef5-4bf6-83a1-c7b8cf87a884",
+    "variants": [
+      {
+        "variant_id": "54dd6d37-9ebe-4ffd-a153-70305235e9f5",
+        "sku": "10259",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "82792208-e6ac-4b79-a570-d239bae17fd5",
+    "item_name": "Arepa de Atún",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/82792208-e6ac-4b79-a570-d239bae17fd5",
+    "variants": [
+      {
+        "variant_id": "64dede24-43f4-4cdd-9c7b-9df9aa8ecd9a",
+        "sku": "10272",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "dab7c87f-201b-41b3-b95e-297b4b3ef726",
+    "item_name": "Arepa de Mechada con Queso",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/dab7c87f-201b-41b3-b95e-297b4b3ef726",
+    "variants": [
+      {
+        "variant_id": "cf4572b4-31dd-4413-8f35-cf83dfae32d3",
+        "sku": "10080",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2980
+      }
+    ]
+  },
+  {
+    "id": "521d692f-c4e7-45e6-b981-dc375ba3c2fc",
+    "item_name": "Arepa de molida",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/521d692f-c4e7-45e6-b981-dc375ba3c2fc",
+    "variants": [
+      {
+        "variant_id": "371d87f4-cb0a-4d03-bad1-501e1bc587a8",
+        "sku": "10095",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "540f5b16-25d1-4fd0-9298-573351b86e76",
+    "item_name": "Arepa de molida y queso",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/540f5b16-25d1-4fd0-9298-573351b86e76",
+    "variants": [
+      {
+        "variant_id": "12795046-3d49-4821-8b34-b20ef23c1c0b",
+        "sku": "10096",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "14062a26-8ed9-4940-a117-09a9d5fde622",
+    "item_name": "Arepa de queso",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/14062a26-8ed9-4940-a117-09a9d5fde622",
+    "variants": [
+      {
+        "variant_id": "4bfcef57-ba44-44df-bb40-6863ef4678c4",
+        "sku": "10089",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "3c884bdf-85f2-4975-bdf6-727aa7b75f34",
+    "item_name": "Arepa Jamón de Pavo Queso Paisa",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/3c884bdf-85f2-4975-bdf6-727aa7b75f34",
+    "variants": [
+      {
+        "variant_id": "824bd628-e512-4fbe-82a6-0cf1be183883",
+        "sku": "10160",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "dd6690a4-e4d2-4b38-ba7a-968d3150ac1a",
+    "item_name": "Arepa jamon y queso",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/dd6690a4-e4d2-4b38-ba7a-968d3150ac1a",
+    "variants": [
+      {
+        "variant_id": "82fc4482-d70a-44c0-8f85-f45a618e78fe",
+        "sku": "10017",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "e215b930-e295-41e5-b1d1-deecf5884b51",
+    "item_name": "Arepa Pabellón",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/e215b930-e295-41e5-b1d1-deecf5884b51",
+    "variants": [
+      {
+        "variant_id": "63918a28-b9aa-4f76-a454-6c188ce20fb9",
+        "sku": "10251",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3020
+      }
+    ]
+  },
+  {
+    "id": "0c07752b-0d17-48de-86d7-32c5610dbe3d",
+    "item_name": "Arepa pernil",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/0c07752b-0d17-48de-86d7-32c5610dbe3d",
+    "variants": [
+      {
+        "variant_id": "f3f1ad71-c034-4f81-8543-49757fcc6324",
+        "sku": "10018",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "2086f813-8f14-40e1-bb7a-967a8d16437c",
+    "item_name": "Arepa pollo",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/2086f813-8f14-40e1-bb7a-967a8d16437c",
+    "variants": [
+      {
+        "variant_id": "3f373bf8-f04e-4ddf-8e92-432788566d60",
+        "sku": "10020",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "aec278c2-b37e-41d4-b9f2-77a16f442026",
+    "item_name": "Arepa Pollo y Queso",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/aec278c2-b37e-41d4-b9f2-77a16f442026",
+    "variants": [
+      {
+        "variant_id": "ddceffa4-2ebd-4252-ae18-066e9855e31f",
+        "sku": "10081",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "9b12a187-eda8-4738-b306-901941b9305d",
+    "item_name": "Arepa queso de mano",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/9b12a187-eda8-4738-b306-901941b9305d",
+    "variants": [
+      {
+        "variant_id": "f2d0de3e-367b-4268-9567-8a3c619a916f",
+        "sku": "10026",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "b9e0ef3d-c37b-4674-9ae0-ffe00631d003",
+    "item_name": "Arepa reina pepiada",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/b9e0ef3d-c37b-4674-9ae0-ffe00631d003",
+    "variants": [
+      {
+        "variant_id": "1dfebdf4-0e89-4e5e-a07a-63b140d2a609",
+        "sku": "10019",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2840
+      }
+    ]
+  },
+  {
+    "id": "c46ee0c4-5035-4a80-a45b-bb3450d03bee",
+    "item_name": "Arepa viuda",
+    "category": "Arepas",
+    "image_url": "https://api.loyverse.com/image/c46ee0c4-5035-4a80-a45b-bb3450d03bee",
+    "variants": [
+      {
+        "variant_id": "0eb79d69-2905-4b02-844c-b87758c67ef9",
+        "sku": "10055",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 100
+      }
+    ]
+  },
+  {
+    "id": "b3c4edf2-fc0c-491e-a191-82bbfdc78a53",
+    "item_name": "Extra en Arepa",
+    "category": "Arepas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "6cabe43c-9b5d-4ba1-8188-b6551b1e17bf",
+        "sku": "10131",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "adea053e-6588-4973-ae49-b89fde8efa6e",
+    "item_name": "Chocolate Caliente",
+    "category": "Bebidas Calientes",
+    "image_url": "https://api.loyverse.com/image/adea053e-6588-4973-ae49-b89fde8efa6e",
+    "variants": [
+      {
+        "variant_id": "7b4129aa-13fb-4a61-b488-c0b21e291d1d",
+        "sku": "10025",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2450
+      }
+    ]
+  },
+  {
+    "id": "ce70eff5-ce47-4abc-8be2-fd4ae60c0a01",
+    "item_name": "Agua Grande",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/ce70eff5-ce47-4abc-8be2-fd4ae60c0a01",
+    "variants": [
+      {
+        "variant_id": "c7356a72-cae5-4ec1-b204-155faf139e6a",
+        "sku": "10060",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1160
+      }
+    ]
+  },
+  {
+    "id": "5c630488-2a73-422b-9b7c-b437d43b97c1",
+    "item_name": "Agua Mediana",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/5c630488-2a73-422b-9b7c-b437d43b97c1",
+    "variants": [
+      {
+        "variant_id": "88ff109b-0c2e-409a-b68d-b8369f04005e",
+        "sku": "10024",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 750
+      }
+    ]
+  },
+  {
+    "id": "087a69a6-2157-474a-98bc-a4b30c171b79",
+    "item_name": "Agua Pequeña",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/087a69a6-2157-474a-98bc-a4b30c171b79",
+    "variants": [
+      {
+        "variant_id": "74a70cf3-210f-4696-b080-4a623d191223",
+        "sku": "10023",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 570
+      }
+    ]
+  },
+  {
+    "id": "edc5150c-ad18-4a9b-b48e-605bea5495be",
+    "item_name": "Agua Saborizada Sparkling",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/edc5150c-ad18-4a9b-b48e-605bea5495be",
+    "variants": [
+      {
+        "variant_id": "574d8295-1129-4ab1-95ec-2509178f9fb5",
+        "sku": "10076",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1060
+      }
+    ]
+  },
+  {
+    "id": "dc2ea164-2a71-4e47-b655-04741b5fbcb0",
+    "item_name": "Coca cola 1.5 litros",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/dc2ea164-2a71-4e47-b655-04741b5fbcb0",
+    "variants": [
+      {
+        "variant_id": "439d9ecf-e3e0-4574-a865-645a7112eeaa",
+        "sku": "10009",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1570
+      }
+    ]
+  },
+  {
+    "id": "39fbc92b-4646-4cec-ae05-62360d80325c",
+    "item_name": "Coca cola 2LT",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/39fbc92b-4646-4cec-ae05-62360d80325c",
+    "variants": [
+      {
+        "variant_id": "710d5a0c-861f-4ce9-a35f-8379b73d4326",
+        "sku": "10192",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2110
+      }
+    ]
+  },
+  {
+    "id": "8a148e0f-044b-403a-ac4a-547e81bbb362",
+    "item_name": "Coca cola de litro",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/8a148e0f-044b-403a-ac4a-547e81bbb362",
+    "variants": [
+      {
+        "variant_id": "9edc0b35-0be2-4193-864e-a10f10529cc9",
+        "sku": "10008",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1260
+      }
+    ]
+  },
+  {
+    "id": "5c5b23b2-aabf-47d9-b59e-4858e4860f68",
+    "item_name": "Coca cola retornable",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/5c5b23b2-aabf-47d9-b59e-4858e4860f68",
+    "variants": [
+      {
+        "variant_id": "6997545e-e2e3-4b83-9d07-4188bd21a076",
+        "sku": "10006",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 570
+      }
+    ]
+  },
+  {
+    "id": "c3a291c2-3778-4d04-8a86-5b1978c5d0d4",
+    "item_name": "Coca-cola 355 ml desechable",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/c3a291c2-3778-4d04-8a86-5b1978c5d0d4",
+    "variants": [
+      {
+        "variant_id": "482566f9-8bda-4237-9bba-893c2063470d",
+        "sku": "10046",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1070
+      }
+    ]
+  },
+  {
+    "id": "2ab787e2-0416-4408-805b-cb05ce21e89a",
+    "item_name": "Coca-Cola lata",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/2ab787e2-0416-4408-805b-cb05ce21e89a",
+    "variants": [
+      {
+        "variant_id": "b1bd2f98-b8c4-4e2b-ac07-1431787d565d",
+        "sku": "10322",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1070
+      }
+    ]
+  },
+  {
+    "id": "bddb6af3-8a32-4436-8c93-e41df95c5468",
+    "item_name": "Envase mediano",
+    "category": "Bebidas Frias",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "aa886d77-42c1-46d5-8986-90360d15c4a3",
+        "sku": "10273",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 600
+      }
+    ]
+  },
+  {
+    "id": "157b0e7f-8240-4ca7-b30a-8d47abe73933",
+    "item_name": "Envase pequeño",
+    "category": "Bebidas Frias",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "5044442a-8a04-42a4-9ccd-259cbb23fb4a",
+        "sku": "10243",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 600
+      }
+    ]
+  },
+  {
+    "id": "97689a11-b653-44c8-96c0-ad90f6793ba6",
+    "item_name": "Malta",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/97689a11-b653-44c8-96c0-ad90f6793ba6",
+    "variants": [
+      {
+        "variant_id": "b311a4a6-0b2a-414f-b498-661b273a19c6",
+        "sku": "10000",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 510
+      }
+    ]
+  },
+  {
+    "id": "0af15e83-6430-430a-9e0f-0a393286194d",
+    "item_name": "Malta desechable",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/0af15e83-6430-430a-9e0f-0a393286194d",
+    "variants": [
+      {
+        "variant_id": "e634efa3-1b8b-4691-8e8e-770e3e41d4c7",
+        "sku": "10136",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 750
+      }
+    ]
+  },
+  {
+    "id": "39030deb-f06f-42cd-a175-a8d65df305aa",
+    "item_name": "Nestea grande",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/39030deb-f06f-42cd-a175-a8d65df305aa",
+    "variants": [
+      {
+        "variant_id": "7281434f-aa8d-4b1e-a797-6c2ae1f0a9ad",
+        "sku": "10147",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1510
+      }
+    ]
+  },
+  {
+    "id": "ee240a21-5506-4634-95d8-ec34f1577660",
+    "item_name": "Nestea mediano",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/ee240a21-5506-4634-95d8-ec34f1577660",
+    "variants": [
+      {
+        "variant_id": "b5d46680-024e-421c-9d87-21dbd13074f2",
+        "sku": "10004",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1100
+      }
+    ]
+  },
+  {
+    "id": "e9d67df9-2afa-40a7-800b-dbf91b83ec9e",
+    "item_name": "Nestea pequeño",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/e9d67df9-2afa-40a7-800b-dbf91b83ec9e",
+    "variants": [
+      {
+        "variant_id": "e41db558-a59d-404d-b804-722597c2322a",
+        "sku": "10258",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 900
+      }
+    ]
+  },
+  {
+    "id": "1b7e8059-7abb-4c31-9f58-02429cefd9fd",
+    "item_name": "Pepsi 1.5LT",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/1b7e8059-7abb-4c31-9f58-02429cefd9fd",
+    "variants": [
+      {
+        "variant_id": "65abe2f7-77f0-4357-92d0-b5d2ca8c6c47",
+        "sku": "10268",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1600
+      }
+    ]
+  },
+  {
+    "id": "0ade16c1-0868-4ef7-9d87-62f4312ebb66",
+    "item_name": "Pepsi 1LT",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/0ade16c1-0868-4ef7-9d87-62f4312ebb66",
+    "variants": [
+      {
+        "variant_id": "a650e447-1f92-4270-8883-7c1ebb7a32a7",
+        "sku": "10267",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1260
+      }
+    ]
+  },
+  {
+    "id": "f8d3e6b4-72b1-4404-8983-7d04e559e408",
+    "item_name": "Pepsi 2LT",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/f8d3e6b4-72b1-4404-8983-7d04e559e408",
+    "variants": [
+      {
+        "variant_id": "06a43050-3a4b-46cf-85c9-c1723fb5a443",
+        "sku": "10269",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2110
+      }
+    ]
+  },
+  {
+    "id": "01cecd8f-1e92-49f8-a75f-8659283e8765",
+    "item_name": "Pepsi lata",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/01cecd8f-1e92-49f8-a75f-8659283e8765",
+    "variants": [
+      {
+        "variant_id": "d1b7dde8-6a4f-4cab-b278-b80f90dfe054",
+        "sku": "10002",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1100
+      }
+    ]
+  },
+  {
+    "id": "c8aaffb1-1a44-43bd-afec-24de25d5271d",
+    "item_name": "Pepsi retornable",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/c8aaffb1-1a44-43bd-afec-24de25d5271d",
+    "variants": [
+      {
+        "variant_id": "b9f1b702-2054-47c9-9e1b-78eb7ba4f511",
+        "sku": "10266",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 570
+      }
+    ]
+  },
+  {
+    "id": "d31c80d3-294e-4d1b-9d9c-18009a3509b7",
+    "item_name": "Tizana grande",
+    "category": "Bebidas Frias",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "5e01a7c2-f312-4ada-bd75-e3e8111d62df",
+        "sku": "10142",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2260
+      }
+    ]
+  },
+  {
+    "id": "3261e39f-0f66-4f01-9412-d56f00f014f3",
+    "item_name": "Tizana Mediana",
+    "category": "Bebidas Frias",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "43c328c9-e70c-4563-af4e-ed3b1562af43",
+        "sku": "10134",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1540
+      }
+    ]
+  },
+  {
+    "id": "d3e6200b-035a-482f-b86b-92bd5c6818cc",
+    "item_name": "Tizana pequeña",
+    "category": "Bebidas Frias",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "8c02a2d7-a48b-4c37-95a9-bb25006c17cb",
+        "sku": "10140",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1300
+      }
+    ]
+  },
+  {
+    "id": "2c565a4e-3b10-491e-963c-7c3623e7a30e",
+    "item_name": "Vaso de agua",
+    "category": "Bebidas Frias",
+    "image_url": "https://api.loyverse.com/image/2c565a4e-3b10-491e-963c-7c3623e7a30e",
+    "variants": [
+      {
+        "variant_id": "efc1a023-76c0-41ff-bd26-f023f534a987",
+        "sku": "10071",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "288dbe69-4e5f-45d8-a21b-a74d49a74c66",
+    "item_name": "Barraquito",
+    "category": "Cafe",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "07a9dc06-be63-4a22-973e-01a8b71de791",
+        "sku": "10190",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 4010
+      }
+    ]
+  },
+  {
+    "id": "115671bb-a3f5-42be-9fca-a974de39a22e",
+    "item_name": "Café Americano",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/115671bb-a3f5-42be-9fca-a974de39a22e",
+    "variants": [
+      {
+        "variant_id": "0398f1d5-347a-4049-9bba-3b8e7f15b400",
+        "sku": "10059",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1740
+      }
+    ]
+  },
+  {
+    "id": "a9467a9b-f5fe-4f05-9cfd-2ad885ea24be",
+    "item_name": "Cafe bombón",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/a9467a9b-f5fe-4f05-9cfd-2ad885ea24be",
+    "variants": [
+      {
+        "variant_id": "6826affc-7590-4033-a852-987f32aa44e3",
+        "sku": "10068",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2220
+      }
+    ]
+  },
+  {
+    "id": "56d79907-1c38-4a66-aa6a-43df8295dc4d",
+    "item_name": "Cafe capuchino",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/56d79907-1c38-4a66-aa6a-43df8295dc4d",
+    "variants": [
+      {
+        "variant_id": "0ba2e179-afca-4ac3-8715-ca3419b84489",
+        "sku": "10061",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1740
+      }
+    ]
+  },
+  {
+    "id": "3f5a4b18-6e3e-42a7-8f52-4625a223d4d4",
+    "item_name": "Cafe cortado",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/3f5a4b18-6e3e-42a7-8f52-4625a223d4d4",
+    "variants": [
+      {
+        "variant_id": "612edfb6-cad7-46d3-93f8-91ff3ad02986",
+        "sku": "10069",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1740
+      }
+    ]
+  },
+  {
+    "id": "48300f7d-6220-42af-9e63-5b5f6e649dbb",
+    "item_name": "Cafe doble",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/48300f7d-6220-42af-9e63-5b5f6e649dbb",
+    "variants": [
+      {
+        "variant_id": "d8c16c22-0322-4ea8-81e9-0190ea80f427",
+        "sku": "10057",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1740
+      }
+    ]
+  },
+  {
+    "id": "2a8dabc0-dba1-441a-9b52-fe1877ac8e76",
+    "item_name": "Cafe Doble  Extra Grande",
+    "category": "Cafe",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "e15e0ce0-8a4e-4065-a767-445405d3ef5f",
+        "sku": "10144",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3250
+      }
+    ]
+  },
+  {
+    "id": "b28f8d98-a796-4cb5-b392-c8a05dcbd4e7",
+    "item_name": "Cafe Espresso",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/b28f8d98-a796-4cb5-b392-c8a05dcbd4e7",
+    "variants": [
+      {
+        "variant_id": "0b5766e3-ed24-4d0c-9ef5-2f30b5f71167",
+        "sku": "10058",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 880
+      }
+    ]
+  },
+  {
+    "id": "d7e4fd63-cb0f-42e3-b42f-694bd596d54e",
+    "item_name": "Cafe extra grande",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/d7e4fd63-cb0f-42e3-b42f-694bd596d54e",
+    "variants": [
+      {
+        "variant_id": "5e25fc9d-77c2-4984-9a00-dc6284daed14",
+        "sku": "10067",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2660
+      }
+    ]
+  },
+  {
+    "id": "0fcf395e-56ab-4cbf-b32e-5992ab872590",
+    "item_name": "Cafe latte",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/0fcf395e-56ab-4cbf-b32e-5992ab872590",
+    "variants": [
+      {
+        "variant_id": "8b286c15-9e80-4bb5-a27d-cb7dba48392f",
+        "sku": "10063",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1740
+      }
+    ]
+  },
+  {
+    "id": "8fde3669-5e81-40f8-a718-5febe9941b15",
+    "item_name": "Cafe latte vainilla",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/8fde3669-5e81-40f8-a718-5febe9941b15",
+    "variants": [
+      {
+        "variant_id": "ec140b79-b247-49e0-b53f-64b4742bb67a",
+        "sku": "10064",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1740
+      }
+    ]
+  },
+  {
+    "id": "f6639e2b-fca8-4b17-a150-84644e893c87",
+    "item_name": "Café lungo",
+    "category": "Cafe",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "2a0cea10-494b-41f4-a55b-4b5e33ba2c38",
+        "sku": "10315",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 880
+      }
+    ]
+  },
+  {
+    "id": "9d4dc2ff-79ea-48fd-918a-8fa3c44254cd",
+    "item_name": "Cafe maquiato",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/9d4dc2ff-79ea-48fd-918a-8fa3c44254cd",
+    "variants": [
+      {
+        "variant_id": "889c9bb3-6d9f-4f3b-ac01-9344a15ac7cb",
+        "sku": "10062",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 880
+      }
+    ]
+  },
+  {
+    "id": "894098cc-26cb-40df-9b98-a5f379d705ab",
+    "item_name": "Cafe marron",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/894098cc-26cb-40df-9b98-a5f379d705ab",
+    "variants": [
+      {
+        "variant_id": "418a64e7-b798-4315-abd0-5979843ff82f",
+        "sku": "10066",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2180
+      }
+    ]
+  },
+  {
+    "id": "e488777b-1694-41b7-be12-74313cc0c5e2",
+    "item_name": "Cafe moccachino",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/e488777b-1694-41b7-be12-74313cc0c5e2",
+    "variants": [
+      {
+        "variant_id": "51356f72-9038-4f9c-be31-6b0743b47f52",
+        "sku": "10065",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2180
+      }
+    ]
+  },
+  {
+    "id": "1b97a482-6baa-4c06-967d-dffe1304fdd2",
+    "item_name": "Café pequeño",
+    "category": "Cafe",
+    "image_url": "https://api.loyverse.com/image/1b97a482-6baa-4c06-967d-dffe1304fdd2",
+    "variants": [
+      {
+        "variant_id": "8479cda0-944b-4da6-97dd-1137ffb616c5",
+        "sku": "10072",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 880
+      }
+    ]
+  },
+  {
+    "id": "c3e7252e-5f13-42c2-9187-42e0a8766481",
+    "item_name": "Caja 25×10",
+    "category": "Cajas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "c8fa4e06-5e32-4988-8a38-ebcc172c46a2",
+        "sku": "10312",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1470
+      }
+    ]
+  },
+  {
+    "id": "2b143c8d-48e0-4874-8458-7302e2182808",
+    "item_name": "Caja aceta rectangular",
+    "category": "Cajas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "09c7f563-5445-40ef-a469-047ede9e1c4b",
+        "sku": "10314",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1110
+      }
+    ]
+  },
+  {
+    "id": "15f423e7-83a1-447b-8e8f-35754464f62e",
+    "item_name": "Caja corazón acetato",
+    "category": "Cajas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "711aa2e7-caef-4592-baed-e81fedfebb8d",
+        "sku": "10313",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1110
+      }
+    ]
+  },
+  {
+    "id": "69f331a8-579d-4d8e-aa73-e2fd75bd69a7",
+    "item_name": "Caja mini cake",
+    "category": "Cajas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "965f0130-996f-4d61-880e-5c05c931d92b",
+        "sku": "10265",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1100
+      }
+    ]
+  },
+  {
+    "id": "d4a91eb9-7fac-4a18-87aa-4661fd2f326f",
+    "item_name": "Caja small cake",
+    "category": "Cajas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "833f0a4a-52bf-42fe-875d-b201fb7a5157",
+        "sku": "10139",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 890
+      }
+    ]
+  },
+  {
+    "id": "b332ab4b-c546-45bc-8c08-5947d3dea34c",
+    "item_name": "Caja torta grande",
+    "category": "Cajas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "70f0f4a6-800d-491c-8424-ec1833e4f7eb",
+        "sku": "10213",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1350
+      }
+    ]
+  },
+  {
+    "id": "47bd063c-f3f4-4dce-bb10-98c248b61c42",
+    "item_name": "Cancelación de Deuda",
+    "category": "Cancelacion de Deuda",
+    "image_url": "https://api.loyverse.com/image/47bd063c-f3f4-4dce-bb10-98c248b61c42",
+    "variants": [
+      {
+        "variant_id": "382c346b-1eb4-4148-ae0f-4e41aca77c74",
+        "sku": "10296",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "5df5c2f5-c039-48b4-97d7-25545a38d84d",
+    "item_name": "Delivery",
+    "category": "Delivery",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "f71a8962-a91f-4e94-a384-bb55891895c9",
+        "sku": "10237",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "e551c34c-a9ec-4685-9c0d-891ba07e56f7",
+    "item_name": "Delivery Foraneo",
+    "category": "Delivery",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "79eaab35-8156-406c-b78f-d5c94509f143",
+        "sku": "10311",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1470
+      }
+    ]
+  },
+  {
+    "id": "5768f929-64dd-4bfa-98e3-f34bf864e4c8",
+    "item_name": "Adicional desayuno",
+    "category": "Desayunos",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "5e2bbff1-4a23-444b-9342-933ab9b4d909",
+        "sku": "10137",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "3499e8d9-9591-453f-af72-0a6946ed9629",
+    "item_name": "Desayuno Americano",
+    "category": "Desayunos",
+    "image_url": "https://api.loyverse.com/image/3499e8d9-9591-453f-af72-0a6946ed9629",
+    "variants": [
+      {
+        "variant_id": "d4aee975-1601-42e6-b083-fa856cf074a2",
+        "sku": "10032",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 4360
+      }
+    ]
+  },
+  {
+    "id": "500f42ce-3cb6-4f86-b0e0-33f2307e4216",
+    "item_name": "Desayuno criollo",
+    "category": "Desayunos",
+    "image_url": "https://api.loyverse.com/image/500f42ce-3cb6-4f86-b0e0-33f2307e4216",
+    "variants": [
+      {
+        "variant_id": "03ad9d69-4020-4f54-8ad8-ef90e2530c5f",
+        "sku": "10083",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 4360
+      }
+    ]
+  },
+  {
+    "id": "76e16ccf-3142-4bfc-a2ef-1fa84fb98555",
+    "item_name": "Tortilla española",
+    "category": "Desayunos",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "d6dc674d-a329-4e15-9e8e-6b4924a8f2d4",
+        "sku": "10270",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2180
+      }
+    ]
+  },
+  {
+    "id": "67eb0094-5920-4033-9a13-856ba5ffb81b",
+    "item_name": "Tortilla omelette",
+    "category": "Desayunos",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "e544ae07-44fc-4c88-a772-0fa37f60c2c0",
+        "sku": "10092",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3100
+      }
+    ]
+  },
+  {
+    "id": "a6ddf81b-06b5-4642-80d3-eda03ba9d736",
+    "item_name": "Donas Glaseadas",
+    "category": "Donas",
+    "image_url": "https://api.loyverse.com/image/a6ddf81b-06b5-4642-80d3-eda03ba9d736",
+    "variants": [
+      {
+        "variant_id": "5c8a9780-d562-4b2b-924a-e3dc0ad1cbf9",
+        "sku": "10079",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 990
+      }
+    ]
+  },
+  {
+    "id": "f6174d5f-ddfe-4d88-85e2-dead778ac883",
+    "item_name": "Donas Rellenas",
+    "category": "Donas",
+    "image_url": "https://api.loyverse.com/image/f6174d5f-ddfe-4d88-85e2-dead778ac883",
+    "variants": [
+      {
+        "variant_id": "ed25ffb3-7155-408e-9aa0-f9e6d6cea7fd",
+        "sku": "10078",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 990
+      }
+    ]
+  },
+  {
+    "id": "ffea6b35-568a-4b32-8bda-88de358021d8",
+    "item_name": "3 Mini Alfajores",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "b728af80-83dc-4757-afee-47c7a87222ee",
+        "sku": "10321",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 790
+      }
+    ]
+  },
+  {
+    "id": "2f46b642-a1a0-4e6b-9baf-b4edd34bc32c",
+    "item_name": "Adicional Tortas",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "53d91bfa-4fb5-4d2d-81fa-80db6f45fd87",
+        "sku": "10278",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "b47cf212-dd2c-41f5-91be-9eaac4676497",
+    "item_name": "Base de torta grande",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "586fa95b-7d6f-424d-94b9-ae2bb887801a",
+        "sku": "10303",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 570
+      }
+    ]
+  },
+  {
+    "id": "5350e992-8e49-4ab3-98c7-bd580536f1c0",
+    "item_name": "Base Rectangular",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "14bbaf00-46cb-46c1-ab4d-57bb8d246acc",
+        "sku": "10306",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 650
+      }
+    ]
+  },
+  {
+    "id": "b590f691-0eba-4e07-8d48-cf45faf4d6c6",
+    "item_name": "Brownie Fruto Sec comp",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "e219622b-0357-4d1c-a85c-41ee52903771",
+        "sku": "10320",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 22110
+      }
+    ]
+  },
+  {
+    "id": "d5da9d6a-8aaa-4029-9083-578217d353e6",
+    "item_name": "Brownie Frutos secos",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/d5da9d6a-8aaa-4029-9083-578217d353e6",
+    "variants": [
+      {
+        "variant_id": "d1e3207f-45d5-45ce-9681-384703eed6d1",
+        "sku": "10045",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1670
+      }
+    ]
+  },
+  {
+    "id": "798f42e4-7284-4898-9b5c-3af13f50fbb7",
+    "item_name": "Brownie trad comp",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "c6ddf8e5-aff0-4526-ae67-2c77aa698bdc",
+        "sku": "10188",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 18420
+      }
+    ]
+  },
+  {
+    "id": "7f1a8491-e663-49ec-b71f-ba9e4efac579",
+    "item_name": "Brownie tradicional",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/7f1a8491-e663-49ec-b71f-ba9e4efac579",
+    "variants": [
+      {
+        "variant_id": "ae5839f7-f21d-4091-bdb3-052fd3b71e36",
+        "sku": "10044",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1420
+      }
+    ]
+  },
+  {
+    "id": "f4d44219-5bfc-4141-8a58-c98816571bdc",
+    "item_name": "Celofan",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "fe9b9ee0-1b84-4f47-a1f1-9718b9b7bde9",
+        "sku": "10307",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 230
+      }
+    ]
+  },
+  {
+    "id": "95dc99be-8213-4d6b-b4ee-4b0d4e889026",
+    "item_name": "Choco almendra",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/95dc99be-8213-4d6b-b4ee-4b0d4e889026",
+    "variants": [
+      {
+        "variant_id": "ff259153-8bb1-409c-b3eb-6648bb38f5ff",
+        "sku": "10105",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2650
+      }
+    ]
+  },
+  {
+    "id": "fe31c37a-ef70-441f-8dde-1cfc514f5008",
+    "item_name": "Cucharillas",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "85f66a25-c898-4b9e-a033-4017be8b9a37",
+        "sku": "10128",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "986504c9-9f60-4c8b-a836-77f38c3d6762",
+    "item_name": "Lingote chocolate",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/986504c9-9f60-4c8b-a836-77f38c3d6762",
+    "variants": [
+      {
+        "variant_id": "5c96f9e5-9bfd-4ed3-9eb5-e66254e19b54",
+        "sku": "10043",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "91c4dc73-8d66-44ae-a61a-e19850748eb0",
+    "item_name": "Lingote limon",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/91c4dc73-8d66-44ae-a61a-e19850748eb0",
+    "variants": [
+      {
+        "variant_id": "dd0b7b39-d613-4ce6-a5aa-5ca99f67c1be",
+        "sku": "10042",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 640
+      }
+    ]
+  },
+  {
+    "id": "9ca029e6-7b4f-44d6-afd8-70f51477979b",
+    "item_name": "Lingote vainilla",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/9ca029e6-7b4f-44d6-afd8-70f51477979b",
+    "variants": [
+      {
+        "variant_id": "140d8749-be0e-46a4-a814-e9f32f68d13b",
+        "sku": "10041",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 600
+      }
+    ]
+  },
+  {
+    "id": "51717dea-3cf0-4004-8ce4-15803736fe6d",
+    "item_name": "Mini cake",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "3727cf09-d1e5-458f-998a-a138157561a2",
+        "sku": "10166",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 11800
+      }
+    ]
+  },
+  {
+    "id": "4733c43c-85b8-4578-8e80-d54e31963b80",
+    "item_name": "Mini cake Chocolate/Almendras",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "a452c8c9-3952-4369-8f40-eb4da2fa9d8f",
+        "sku": "10308",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 11840
+      }
+    ]
+  },
+  {
+    "id": "ed8882cd-2c5f-4ded-a8a4-54d7ba4508d3",
+    "item_name": "Mini Choco Almendra",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/ed8882cd-2c5f-4ded-a8a4-54d7ba4508d3",
+    "variants": [
+      {
+        "variant_id": "d14dfed1-0dc8-41ce-846d-9ea0074d24c4",
+        "sku": "10323",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 14720
+      }
+    ]
+  },
+  {
+    "id": "3a688b55-c0a3-4dcc-a3fc-199975a37784",
+    "item_name": "Mini Oreo",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/3a688b55-c0a3-4dcc-a3fc-199975a37784",
+    "variants": [
+      {
+        "variant_id": "56fffae9-a61d-4592-90d4-1ca939569b77",
+        "sku": "10097",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 17250
+      }
+    ]
+  },
+  {
+    "id": "25a3eec8-2ae1-40b1-ad35-0daea94103d3",
+    "item_name": "Mini Red Velvet",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/25a3eec8-2ae1-40b1-ad35-0daea94103d3",
+    "variants": [
+      {
+        "variant_id": "c1fb40c5-7dc2-4476-979b-87ba4c29377b",
+        "sku": "10145",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 9560
+      }
+    ]
+  },
+  {
+    "id": "6f4fcb9a-56c8-4b4c-8a1c-b5b28953df99",
+    "item_name": "Mini Tiramisu",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/6f4fcb9a-56c8-4b4c-8a1c-b5b28953df99",
+    "variants": [
+      {
+        "variant_id": "8ee77e05-1924-41c4-a8b0-b04f03435803",
+        "sku": "10146",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 9590
+      }
+    ]
+  },
+  {
+    "id": "a8204941-4aae-4020-91e9-c4e2e6398e99",
+    "item_name": "Mini Torta de Fresa",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/a8204941-4aae-4020-91e9-c4e2e6398e99",
+    "variants": [
+      {
+        "variant_id": "6a6b9402-da5d-4570-b4fd-0cfe61d29449",
+        "sku": "10151",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 12510
+      }
+    ]
+  },
+  {
+    "id": "0cf70be0-fac7-4999-8119-9c40181d2359",
+    "item_name": "Mini Torta de Mora",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/0cf70be0-fac7-4999-8119-9c40181d2359",
+    "variants": [
+      {
+        "variant_id": "09553105-3eef-49f8-9a1f-9ad753fc8822",
+        "sku": "10236",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 12510
+      }
+    ]
+  },
+  {
+    "id": "54d6826c-4fa5-48f4-b20c-1f8d97577fcf",
+    "item_name": "Mini Torta de Zanahoria",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/54d6826c-4fa5-48f4-b20c-1f8d97577fcf",
+    "variants": [
+      {
+        "variant_id": "47285b27-b116-4a90-b184-7f790ee0b3b3",
+        "sku": "10135",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 13990
+      }
+    ]
+  },
+  {
+    "id": "ed59c20c-e308-4283-af56-f6e0d9e379b4",
+    "item_name": "Muffins de Calabaza con Chispas de chocolate",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "c6a73709-2cdb-4a60-bcdd-13b71fca05a4",
+        "sku": "10143",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 960
+      }
+    ]
+  },
+  {
+    "id": "3777e18c-ccc0-4e50-ab47-d63d5ce61713",
+    "item_name": "Oreo",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/3777e18c-ccc0-4e50-ab47-d63d5ce61713",
+    "variants": [
+      {
+        "variant_id": "8f6c297d-5a56-4728-a358-2a9057a1691a",
+        "sku": "10106",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2650
+      }
+    ]
+  },
+  {
+    "id": "4ce0eb6c-09d8-405f-acd6-1821a9c1bd8a",
+    "item_name": "Pay de limon",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/4ce0eb6c-09d8-405f-acd6-1821a9c1bd8a",
+    "variants": [
+      {
+        "variant_id": "613a41ce-cc04-40f8-a67d-5c2242408e8d",
+        "sku": "10126",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1780
+      }
+    ]
+  },
+  {
+    "id": "cfed3326-d04d-4a5a-933d-20fd179641c1",
+    "item_name": "Pay de parchita",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/cfed3326-d04d-4a5a-933d-20fd179641c1",
+    "variants": [
+      {
+        "variant_id": "07a06a3f-d06e-45bd-a958-181180bdfebb",
+        "sku": "10125",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1780
+      }
+    ]
+  },
+  {
+    "id": "52515f6d-c212-42d1-b6ea-fe71063dbf5e",
+    "item_name": "Pie de limón 15cm",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "a98b4107-8883-444d-a108-656006569055",
+        "sku": "10178",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 5890
+      }
+    ]
+  },
+  {
+    "id": "81165160-4ffa-41d3-af0c-cb4d54bd388e",
+    "item_name": "Pie de limón 21CM",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "e18a29b4-2989-4280-ab1f-c0a93595407d",
+        "sku": "10282",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 12910
+      }
+    ]
+  },
+  {
+    "id": "ec3ea44b-6646-4844-95ff-8aaacab23b0a",
+    "item_name": "Ponqué de vainilla",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "8efcbf07-7067-4655-8dc6-48c4a73f9feb",
+        "sku": "10199",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 4610
+      }
+    ]
+  },
+  {
+    "id": "ee9801ec-c000-4323-9a14-ae3a75e7d23c",
+    "item_name": "Ponqué de Vainilla 3relleno arequipe  2.5KL",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "8ddf4aef-f7a2-422f-864a-1e857c02a92d",
+        "sku": "10276",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 23290
+      }
+    ]
+  },
+  {
+    "id": "bda30fb7-70bf-4f31-9bb7-3f2284462301",
+    "item_name": "Ponqué marmoleado grande de vainilla",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "540c656f-a3a1-4e4a-825d-9df8e715d97e",
+        "sku": "10260",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 11250
+      }
+    ]
+  },
+  {
+    "id": "62826f34-fd4e-4e8d-9f7a-7f258a6e5671",
+    "item_name": "Ponque Vainilla 4 Relle Arequipe 3.362 kg",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "61cdd8d5-f36e-4022-8a0f-dd4da78aa887",
+        "sku": "10283",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 24760
+      }
+    ]
+  },
+  {
+    "id": "883c1ff5-fe22-4e04-b13f-f6e6d2d0a021",
+    "item_name": "Red velvet completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "c4d605a6-1bad-4541-bdd8-deedb5017b07",
+        "sku": "10201",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 14550
+      }
+    ]
+  },
+  {
+    "id": "92e3c577-519b-47c1-8318-b4a1750da0b2",
+    "item_name": "Red velvet de 4 porciones",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "1b9ea05d-84a7-409c-9cc5-f27c1aa042e8",
+        "sku": "10198",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 9760
+      }
+    ]
+  },
+  {
+    "id": "2467c8f5-b5d9-4238-9911-54ac24000b50",
+    "item_name": "small cake",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/2467c8f5-b5d9-4238-9911-54ac24000b50",
+    "variants": [
+      {
+        "variant_id": "d508fdd4-70ec-49ca-9e8b-a2ea7a3aacdc",
+        "sku": "10182",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 5640
+      }
+    ]
+  },
+  {
+    "id": "24e03e1e-d094-4e8d-bc2c-60842b9d1f0b",
+    "item_name": "Tiramisú 30x30",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "78811105-f43a-4018-b103-8bf6cbb06ef9",
+        "sku": "10281",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 28990
+      }
+    ]
+  },
+  {
+    "id": "aca7d38c-6499-454f-be20-065d5032af85",
+    "item_name": "Tiramisú completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "2b66ef67-4249-425a-b3fb-460a73c051e9",
+        "sku": "10202",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 15010
+      }
+    ]
+  },
+  {
+    "id": "f7b34c87-981b-4fca-bba0-b5f1fc049f30",
+    "item_name": "Tiramisú de 4 porciones",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "217001f1-d391-4231-849e-ee826b050c35",
+        "sku": "10193",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 9790
+      }
+    ]
+  },
+  {
+    "id": "6d3ee9cf-cefe-4a75-abb7-7392909b88d4",
+    "item_name": "Topers tortas",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "1d3058b5-4838-4374-8398-9ad4a149b659",
+        "sku": "10176",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 750
+      }
+    ]
+  },
+  {
+    "id": "c1faabc8-07ef-4208-8117-590cd65a6e13",
+    "item_name": "Topper de cruz",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "3bf7d5fa-eed7-44b7-a750-ba94fed77159",
+        "sku": "10240",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1600
+      }
+    ]
+  },
+  {
+    "id": "7c7f5f1c-09f4-4346-87c0-eaef5f040335",
+    "item_name": "Topper de Feliz CUMPLEAÑOS",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "f86035b0-55d9-4a5b-88da-e8906a66529e",
+        "sku": "10087",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "87766b58-d0a2-4573-a0ec-b6ba0e1f4c42",
+    "item_name": "Topper navidad",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "97d0a99f-78ab-4a51-912d-0a78b111475a",
+        "sku": "10295",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1060
+      }
+    ]
+  },
+  {
+    "id": "b4c91108-0f14-41b8-b513-18979c9f7957",
+    "item_name": "Torta choco almendras completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "e8ce8afc-ceea-4608-9087-7db69924ae20",
+        "sku": "10197",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 22560
+      }
+    ]
+  },
+  {
+    "id": "eb571e55-85dc-4aa3-ae80-499f37b10ca5",
+    "item_name": "Torta Chocolate/Almendras 3 rellenos",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "8b2b5b6b-b497-4a54-afab-6099a1108949",
+        "sku": "10309",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 25760
+      }
+    ]
+  },
+  {
+    "id": "ae4f9740-6811-4a2e-b5b7-97aea747ff5c",
+    "item_name": "Torta de ahuyama",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/ae4f9740-6811-4a2e-b5b7-97aea747ff5c",
+    "variants": [
+      {
+        "variant_id": "02a9f75d-d92d-4642-9459-511fa857219e",
+        "sku": "10098",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1970
+      }
+    ]
+  },
+  {
+    "id": "ae8624d9-fc39-4fe4-86b5-ad15b4da8955",
+    "item_name": "Torta de coco",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "62463573-a377-4bce-bdac-acc583e2a33b",
+        "sku": "10179",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2640
+      }
+    ]
+  },
+  {
+    "id": "ce2ec52b-185f-4d64-acc5-e150b8f80cf6",
+    "item_name": "Torta de coco completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "6babc01a-5c64-4060-9957-6e9a0133f3c0",
+        "sku": "10138",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 17760
+      }
+    ]
+  },
+  {
+    "id": "135a5e0a-08f4-4734-966b-5d4782149d92",
+    "item_name": "Torta de fresa",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/135a5e0a-08f4-4734-966b-5d4782149d92",
+    "variants": [
+      {
+        "variant_id": "f7e23fd5-1348-482c-8b00-d40246d80c1f",
+        "sku": "10124",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3150
+      }
+    ]
+  },
+  {
+    "id": "6923d8f7-ba18-4066-9496-87f2d2c3721b",
+    "item_name": "Torta de fresa completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "ce8a88bb-13a7-4f97-bd9f-19a0be46c98f",
+        "sku": "10194",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 18920
+      }
+    ]
+  },
+  {
+    "id": "9390a024-9682-4f89-ba58-37986420d291",
+    "item_name": "Torta de fresa grande",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "b715a69b-5355-4c4f-8c95-bbd57e93adce",
+        "sku": "10187",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 10710
+      }
+    ]
+  },
+  {
+    "id": "50dc17b5-b4ac-408d-a399-96d43664abe6",
+    "item_name": "Torta de Fresa Grande 2.2 kg",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/50dc17b5-b4ac-408d-a399-96d43664abe6",
+    "variants": [
+      {
+        "variant_id": "11a80f84-785b-4566-ab14-4a839221c158",
+        "sku": "10001",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 22930
+      }
+    ]
+  },
+  {
+    "id": "50248b37-1df1-4162-9ef6-178806177fc6",
+    "item_name": "Torta de naranja",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "35d3a98b-010d-4c6f-9f3f-2782fd7d1b3a",
+        "sku": "10168",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1170
+      }
+    ]
+  },
+  {
+    "id": "7cf52a3f-db84-4b3b-9a1a-533a74f7feed",
+    "item_name": "Torta de naranja completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "f03ee23b-2d4e-4112-b6c7-d2da0b8eba44",
+        "sku": "10181",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 11510
+      }
+    ]
+  },
+  {
+    "id": "990afae0-3f84-454e-8972-1bfeac31c1c6",
+    "item_name": "Torta de oreo completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "5ab02583-c349-4bdb-9f75-7a4eb67b0fb6",
+        "sku": "10207",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 22560
+      }
+    ]
+  },
+  {
+    "id": "9b89bc98-b2e5-4382-a657-a0795e05e88d",
+    "item_name": "Torta de Parchita",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "7846859f-5a66-4f76-bbb6-ef4800fda165",
+        "sku": "10184",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1970
+      }
+    ]
+  },
+  {
+    "id": "b7d9f77b-ce33-4921-b97b-5a3b3b3e0336",
+    "item_name": "Torta de parchita completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "7f054853-0dcc-4013-8280-287fa2c69e84",
+        "sku": "10185",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 17410
+      }
+    ]
+  },
+  {
+    "id": "41adb462-9852-4a7a-88c4-262ce66c49bf",
+    "item_name": "Torta de Queso",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "da86dff0-f2b0-4876-a5fd-fad99461585b",
+        "sku": "10158",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2230
+      }
+    ]
+  },
+  {
+    "id": "12cdfa9c-cb86-482e-b625-9683ebd49c1c",
+    "item_name": "Torta de queso completo",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "6b598f89-12da-4db9-8065-21017a84cccd",
+        "sku": "10191",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 19370
+      }
+    ]
+  },
+  {
+    "id": "49edcb64-4227-4537-8cb4-439ed10b74d2",
+    "item_name": "Torta de Ron",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "ccb26180-0fbe-4f51-aaf8-5138b1ce8608",
+        "sku": "10157",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1380
+      }
+    ]
+  },
+  {
+    "id": "38b02a9e-b98f-4c24-a506-a3ae03ecba12",
+    "item_name": "Torta de vainilla rellena de (arequipe. chocolate. almendras)",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "a0229c22-0528-4d73-b240-02b365430ae0",
+        "sku": "10294",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 23530
+      }
+    ]
+  },
+  {
+    "id": "c30bc18f-6971-477a-9d9e-971c676fad1b",
+    "item_name": "Torta de vainilla rellena de arequipe o chocolate",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "aa193636-7831-44dd-9359-2ffd30921c9d",
+        "sku": "10285",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 21600
+      }
+    ]
+  },
+  {
+    "id": "54810cb0-f9f6-4fd9-bcfe-989a50c464b3",
+    "item_name": "Torta de zanahoria grande de cumpleaños",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "ac9903f1-e692-4bec-b58a-c35085693688",
+        "sku": "10293",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 28980
+      }
+    ]
+  },
+  {
+    "id": "d2bd0af7-9ab0-420d-87f3-edb7cbd5c02d",
+    "item_name": "Torta dos pisos con toppers",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "59cf91ab-77e8-4de3-988c-7cf483d33554",
+        "sku": "10107",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 40580
+      }
+    ]
+  },
+  {
+    "id": "82edc28e-7877-4dd1-8c79-ed40c87a5db8",
+    "item_name": "Torta Especial",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "d3c528b0-9268-4f1d-8b7f-acf50c24ff97",
+        "sku": "10093",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "64d714f4-b41f-47f7-800d-830282b725c6",
+    "item_name": "Torta red velvet",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/64d714f4-b41f-47f7-800d-830282b725c6",
+    "variants": [
+      {
+        "variant_id": "f6682e64-f093-4239-b6ce-65d83de75a87",
+        "sku": "10038",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2290
+      }
+    ]
+  },
+  {
+    "id": "5f6651e0-89c0-4a72-b921-5b9558093892",
+    "item_name": "Torta tiramisú",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/5f6651e0-89c0-4a72-b921-5b9558093892",
+    "variants": [
+      {
+        "variant_id": "fe70b9e2-194c-45e0-bf16-f38a889652fa",
+        "sku": "10040",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2290
+      }
+    ]
+  },
+  {
+    "id": "f471a4ea-a196-423a-bcd0-a4f3639073c4",
+    "item_name": "Torta zanahoria y nueces",
+    "category": "Dulces",
+    "image_url": "https://api.loyverse.com/image/f471a4ea-a196-423a-bcd0-a4f3639073c4",
+    "variants": [
+      {
+        "variant_id": "5a4628bd-f415-4fde-a837-cd77a22ec498",
+        "sku": "10039",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2290
+      }
+    ]
+  },
+  {
+    "id": "a557eeda-d4a0-4903-b00e-7409444fedd9",
+    "item_name": "Zanahoria y nueces completa",
+    "category": "Dulces",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "91030e16-bbb9-40b0-98a9-931239fd3af1",
+        "sku": "10222",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 8870
+      }
+    ]
+  },
+  {
+    "id": "75d5517f-025f-4230-9ddb-294dc8f373bd",
+    "item_name": "Empanada caraota y queso",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/75d5517f-025f-4230-9ddb-294dc8f373bd",
+    "variants": [
+      {
+        "variant_id": "0be6276f-9c57-4dc2-9480-b2eb26e4248d",
+        "sku": "10250",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 990
+      }
+    ]
+  },
+  {
+    "id": "9ab959d8-070a-456f-b207-7c54182726d0",
+    "item_name": "Empanada carne molida",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/9ab959d8-070a-456f-b207-7c54182726d0",
+    "variants": [
+      {
+        "variant_id": "a9f82713-bf34-4226-9b95-7e1e6f68d74c",
+        "sku": "10031",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1110
+      }
+    ]
+  },
+  {
+    "id": "9721206c-cf6f-4bb3-b4e6-1cb5fda53e38",
+    "item_name": "Empanada de atun",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/9721206c-cf6f-4bb3-b4e6-1cb5fda53e38",
+    "variants": [
+      {
+        "variant_id": "ce59dc47-155e-456b-9283-d6a3885aeaf8",
+        "sku": "10036",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 990
+      }
+    ]
+  },
+  {
+    "id": "47ad236c-5e63-4e83-9374-d48d486096ed",
+    "item_name": "Empanada de cazon",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/47ad236c-5e63-4e83-9374-d48d486096ed",
+    "variants": [
+      {
+        "variant_id": "3ca3fa67-628d-407e-868e-3811067b220d",
+        "sku": "10033",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1330
+      }
+    ]
+  },
+  {
+    "id": "76a16c17-f3b4-44f9-be14-0f1787994dc1",
+    "item_name": "Empanada de champiñones y queso mozzarella",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/76a16c17-f3b4-44f9-be14-0f1787994dc1",
+    "variants": [
+      {
+        "variant_id": "95ef563c-c039-4ece-bcb7-6c47fed1e801",
+        "sku": "10161",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1250
+      }
+    ]
+  },
+  {
+    "id": "e8d1212e-3873-4b24-928a-39cf678fcef5",
+    "item_name": "Empanada de mechada",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/e8d1212e-3873-4b24-928a-39cf678fcef5",
+    "variants": [
+      {
+        "variant_id": "4d732152-f2eb-4c0b-80ca-7976879a9525",
+        "sku": "10030",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1360
+      }
+    ]
+  },
+  {
+    "id": "0047cef7-3863-4571-8ddf-8f249e4a02bb",
+    "item_name": "Empanada de mechada con queso amarillo",
+    "category": "Empanadas",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "5fe430ee-016c-4048-951a-779d88253c8e",
+        "sku": "10316",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1590
+      }
+    ]
+  },
+  {
+    "id": "229ab2df-4b40-409f-b6ad-80e305d86e04",
+    "item_name": "Empanada de pabellón",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/229ab2df-4b40-409f-b6ad-80e305d86e04",
+    "variants": [
+      {
+        "variant_id": "5cd7c7d9-7507-49d1-b33b-b8dc1517e9c6",
+        "sku": "10169",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "0776b0cc-f279-417b-84b0-90573d2483c5",
+    "item_name": "Empanada de pernil",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/0776b0cc-f279-417b-84b0-90573d2483c5",
+    "variants": [
+      {
+        "variant_id": "e8dd7f40-1d9e-4f32-9cf1-ee131e618f95",
+        "sku": "10152",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1220
+      }
+    ]
+  },
+  {
+    "id": "2ae22333-4e43-47cf-ab41-92348b425599",
+    "item_name": "Empanada de pollo",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/2ae22333-4e43-47cf-ab41-92348b425599",
+    "variants": [
+      {
+        "variant_id": "9e1ebbb7-77a0-4807-aab1-ec80d7ed267d",
+        "sku": "10029",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 990
+      }
+    ]
+  },
+  {
+    "id": "0228f74b-2ff5-4ce9-8614-72068ad52f1e",
+    "item_name": "Empanada de queso",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/0228f74b-2ff5-4ce9-8614-72068ad52f1e",
+    "variants": [
+      {
+        "variant_id": "0584234f-3f1d-42f2-ab45-7912d0f6a5c6",
+        "sku": "10034",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 880
+      }
+    ]
+  },
+  {
+    "id": "cba931e5-c053-45e4-a9be-d55fbebe4260",
+    "item_name": "Empanada jamon y queso",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/cba931e5-c053-45e4-a9be-d55fbebe4260",
+    "variants": [
+      {
+        "variant_id": "2edadcd2-5b8f-45c1-a5a3-8f1926f6d27c",
+        "sku": "10035",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 990
+      }
+    ]
+  },
+  {
+    "id": "9bea8ddb-851c-43a1-b037-9cd48962b6c8",
+    "item_name": "Extra para empanadas",
+    "category": "Empanadas",
+    "image_url": "https://api.loyverse.com/image/9bea8ddb-851c-43a1-b037-9cd48962b6c8",
+    "variants": [
+      {
+        "variant_id": "93972e75-5ea9-490e-b755-20d98c0d02e0",
+        "sku": "10082",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 610
+      }
+    ]
+  },
+  {
+    "id": "fedc589f-9a17-4c22-a237-db10cdb0ab69",
+    "item_name": "Envase",
+    "category": "Envases",
+    "image_url": "https://api.loyverse.com/image/fedc589f-9a17-4c22-a237-db10cdb0ab69",
+    "variants": [
+      {
+        "variant_id": "12e698b2-28ce-4483-af1b-bcbc0b0c5732",
+        "sku": "10094",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 110
+      }
+    ]
+  },
+  {
+    "id": "a5602466-80a2-4063-a7b3-a169e300ecb3",
+    "item_name": "Envase A n°1",
+    "category": "Envases",
+    "image_url": "https://api.loyverse.com/image/a5602466-80a2-4063-a7b3-a169e300ecb3",
+    "variants": [
+      {
+        "variant_id": "1188141f-aa7a-49bd-9989-a006945a6564",
+        "sku": "10209",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "c350b1e3-e10f-44eb-96fe-4b17a0f65d7f",
+    "item_name": "Envase A n°2",
+    "category": "Envases",
+    "image_url": "https://api.loyverse.com/image/c350b1e3-e10f-44eb-96fe-4b17a0f65d7f",
+    "variants": [
+      {
+        "variant_id": "a8d83a13-2805-4482-ac08-77e50d4042e3",
+        "sku": "10208",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "48dbbeee-c3c8-49e0-a49f-c0e2fabb05f9",
+    "item_name": "Envase C.G n° 5 desayuno",
+    "category": "Envases",
+    "image_url": "https://api.loyverse.com/image/48dbbeee-c3c8-49e0-a49f-c0e2fabb05f9",
+    "variants": [
+      {
+        "variant_id": "6955ea66-95df-4283-be78-9e14d497bbcb",
+        "sku": "10239",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "ba45222a-87bd-4b55-a711-5422d90c0f45",
+    "item_name": "Envase C.P n°3",
+    "category": "Envases",
+    "image_url": "https://api.loyverse.com/image/ba45222a-87bd-4b55-a711-5422d90c0f45",
+    "variants": [
+      {
+        "variant_id": "22128fa8-cb9b-4b7f-8b48-55aaf70a6e97",
+        "sku": "10212",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "ee120a05-4637-4fd2-9391-6c21c6f1c882",
+    "item_name": "Envase de quesillo",
+    "category": "Envases",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "ba958a16-ef90-46b5-9a82-b916670378a2",
+        "sku": "10241",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 60
+      }
+    ]
+  },
+  {
+    "id": "9883efbe-2645-42ec-bf24-0cfee9d02af9",
+    "item_name": "Envase n° 7",
+    "category": "Envases",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "35047278-a885-4f6d-9af7-3b308f37fb57",
+        "sku": "10271",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 750
+      }
+    ]
+  },
+  {
+    "id": "e8e7c2c8-a004-4b32-a8ed-e32bf34c3964",
+    "item_name": "Envase nro 6",
+    "category": "Envases",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "519ea4c1-5c93-4bd6-acf8-ac6045afd2cd",
+        "sku": "10247",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "953b5530-e207-4340-8c37-dc0d7705a5e1",
+    "item_name": "Envase rectangular n° 4",
+    "category": "Envases",
+    "image_url": "https://api.loyverse.com/image/953b5530-e207-4340-8c37-dc0d7705a5e1",
+    "variants": [
+      {
+        "variant_id": "1fef51f8-c786-451e-9145-1e20f6049c94",
+        "sku": "10214",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "cfed902f-e619-49f9-bfce-7241459bd0a6",
+    "item_name": "Envase grande",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "033659df-6a6b-4496-b0c6-cde228b2121e",
+        "sku": "10274",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 600
+      }
+    ]
+  },
+  {
+    "id": "11f7ec7a-9d16-4bd8-bdf4-c4718129705d",
+    "item_name": "Frappe frutas tropicales grande",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "41bacc1f-8cd2-4595-9da5-20a9bffa0d4a",
+        "sku": "10112",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2020
+      }
+    ]
+  },
+  {
+    "id": "74a42796-43f4-41d2-885c-069eb5a3479b",
+    "item_name": "Frappe grande uva",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "75232914-3ff9-4396-a600-96812d483b08",
+        "sku": "10297",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1960
+      }
+    ]
+  },
+  {
+    "id": "cfa9ca78-63c8-438e-b48d-6d7c49997e0e",
+    "item_name": "Frappe limon grande",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "0b0760a5-a9db-4ecd-989a-6a3ed9a10e33",
+        "sku": "10117",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2020
+      }
+    ]
+  },
+  {
+    "id": "e24c483a-0375-4125-94d2-090073896914",
+    "item_name": "Frappe naranja grande",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "53035cbd-6379-4200-97ea-0369c028a74a",
+        "sku": "10121",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2020
+      }
+    ]
+  },
+  {
+    "id": "3ae60d7a-4ca3-4410-9ec1-509077e6dc60",
+    "item_name": "Frappe Parchita grande",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "f0f3ad1a-0529-4dc4-83d9-c1cadff20d9e",
+        "sku": "10119",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2020
+      }
+    ]
+  },
+  {
+    "id": "6fab33ac-aa1c-49d6-82c9-708f78969b65",
+    "item_name": "Frappe tamarindo grande",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "60db3580-25a4-456b-ae35-b678bd1d95cf",
+        "sku": "10115",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2020
+      }
+    ]
+  },
+  {
+    "id": "33e0e5aa-de6e-4858-9682-ce07ccbc896e",
+    "item_name": "Frapuchino grande",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "2eb631de-d4a7-41d8-a0b8-06d65b6d7324",
+        "sku": "10122",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2020
+      }
+    ]
+  },
+  {
+    "id": "119c8641-fab7-441e-8f78-ebbcd1992d0f",
+    "item_name": "Tody grande",
+    "category": "Frappe grande",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "985078be-d1f1-4f06-b311-2a8b163338ba",
+        "sku": "10123",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2020
+      }
+    ]
+  },
+  {
+    "id": "beee01c9-9ef5-4da2-ba12-62df53c3978d",
+    "item_name": "Envase mediano",
+    "category": "Frappe mediano",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "7c78d00b-3e74-425d-96e0-05a1a0a95740",
+        "sku": "10279",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 600
+      }
+    ]
+  },
+  {
+    "id": "e0ca1881-7cb8-4034-9dc4-402875b41060",
+    "item_name": "Extra",
+    "category": "Frappe mediano",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "afcd3355-2bb6-4c0b-9fa2-cf935b2073c8",
+        "sku": "10249",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 210
+      }
+    ]
+  },
+  {
+    "id": "fcafc7e4-7da5-40fb-8c0f-7751362a0057",
+    "item_name": "Frappe frutas tropicales mediano",
+    "category": "Frappe mediano",
+    "image_url": "https://api.loyverse.com/image/fcafc7e4-7da5-40fb-8c0f-7751362a0057",
+    "variants": [
+      {
+        "variant_id": "3d200f02-3c46-46dc-8674-c5c63a3d6671",
+        "sku": "10074",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1170
+      }
+    ]
+  },
+  {
+    "id": "9a40675e-c26a-4486-8b87-ab06497b4a67",
+    "item_name": "Frappe limon mediano",
+    "category": "Frappe mediano",
+    "image_url": "https://api.loyverse.com/image/9a40675e-c26a-4486-8b87-ab06497b4a67",
+    "variants": [
+      {
+        "variant_id": "f4ec4175-779c-4632-9e89-08d4991cc7a4",
+        "sku": "10056",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1170
+      }
+    ]
+  },
+  {
+    "id": "057394e5-91c1-4b11-a6e5-f1d16739270f",
+    "item_name": "Frappe mediano uva",
+    "category": "Frappe mediano",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "3e7e2e48-4687-409d-b585-c90c133f0d43",
+        "sku": "10298",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1130
+      }
+    ]
+  },
+  {
+    "id": "d89f3e63-36cf-47a5-9295-2a92c68197ed",
+    "item_name": "Frappe naranja mediano",
+    "category": "Frappe mediano",
+    "image_url": "https://api.loyverse.com/image/d89f3e63-36cf-47a5-9295-2a92c68197ed",
+    "variants": [
+      {
+        "variant_id": "6cad68dd-f48a-4307-8b59-5d6462880240",
+        "sku": "10073",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1170
+      }
+    ]
+  },
+  {
+    "id": "594bc0c8-48db-44fb-83be-06a55d8e8175",
+    "item_name": "Frappe Parchita mediano",
+    "category": "Frappe mediano",
+    "image_url": "https://api.loyverse.com/image/594bc0c8-48db-44fb-83be-06a55d8e8175",
+    "variants": [
+      {
+        "variant_id": "4dee5bf5-8964-4242-aef1-cd3a7578edba",
+        "sku": "10086",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "baf3277d-7812-4db3-8255-da584468bc16",
+    "item_name": "Frappe tamarindo mediano",
+    "category": "Frappe mediano",
+    "image_url": "https://api.loyverse.com/image/baf3277d-7812-4db3-8255-da584468bc16",
+    "variants": [
+      {
+        "variant_id": "98d739ba-041a-48a2-9a43-74ef0415739f",
+        "sku": "10108",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1170
+      }
+    ]
+  },
+  {
+    "id": "64ec7c4c-6cc4-4f60-82c1-93d75765975e",
+    "item_name": "Frapuchino mediano",
+    "category": "Frappe mediano",
+    "image_url": "https://api.loyverse.com/image/64ec7c4c-6cc4-4f60-82c1-93d75765975e",
+    "variants": [
+      {
+        "variant_id": "a01e8f62-c326-42f3-8f7f-4c101e3b5860",
+        "sku": "10022",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1170
+      }
+    ]
+  },
+  {
+    "id": "d412587c-be64-4f5c-b573-f0ebf54f7a86",
+    "item_name": "Tody mediano",
+    "category": "Frappe mediano",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "cc160483-f668-4876-83f4-6582f852a059",
+        "sku": "10109",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1170
+      }
+    ]
+  },
+  {
+    "id": "6ba09d8e-60be-4790-8eaa-f40388c7f4a9",
+    "item_name": "Envase pequeño",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "c096338a-dade-4ccf-b970-5e56ba2a7f84",
+        "sku": "10280",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 480
+      }
+    ]
+  },
+  {
+    "id": "9ec89c9d-66e1-4301-88aa-4fd4ccb7c36c",
+    "item_name": "Frappé limón pequeño",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "d8c3d140-51bf-4372-8f32-e7b6475fcb34",
+        "sku": "10215",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1130
+      }
+    ]
+  },
+  {
+    "id": "21b7d8ca-036f-488d-97d9-52fa4310bb55",
+    "item_name": "Frappé naranja pequeño",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "a151c333-3d63-43df-98e0-b54d492a19b8",
+        "sku": "10216",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1140
+      }
+    ]
+  },
+  {
+    "id": "f2a3fa7b-be4d-4b73-b0d9-9ee51dce4def",
+    "item_name": "Frappé parchita pequeño",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "303019a4-8334-4920-9f67-0317b0a7245d",
+        "sku": "10221",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1130
+      }
+    ]
+  },
+  {
+    "id": "8feedf1b-b4f7-4554-a674-e3a8d539c1e2",
+    "item_name": "Frappe pequeño uva",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "8b2c3cbc-cb35-481a-b97c-a4b4a36afa64",
+        "sku": "10301",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1100
+      }
+    ]
+  },
+  {
+    "id": "18897473-1d69-4c2e-a5d4-bf8f73e39bc7",
+    "item_name": "Frappé tamarindo pequeño",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "38a9eabb-7851-4619-b69e-fb1d3d5d67a9",
+        "sku": "10217",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1130
+      }
+    ]
+  },
+  {
+    "id": "be1538ad-6b29-4fe5-88d0-19faed98a682",
+    "item_name": "Frappé toddy pequeño",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "dd9240dc-3e40-48f0-9425-67666e1bed42",
+        "sku": "10219",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1130
+      }
+    ]
+  },
+  {
+    "id": "2ccb0d57-abd6-423a-8bde-6652b7833045",
+    "item_name": "Frapuchino pequeño",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "8744a7f0-47bb-44d1-b15e-f20f761fd2d5",
+        "sku": "10220",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1130
+      }
+    ]
+  },
+  {
+    "id": "3ae7fb65-15d4-42c4-9580-f39a87d54b05",
+    "item_name": "Frutas tropicales pequeño",
+    "category": "Frappe pequeño",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "e8374c96-1481-4cd6-8c66-7389960e47b7",
+        "sku": "10141",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1130
+      }
+    ]
+  },
+  {
+    "id": "4b736352-ab72-4780-98a3-2aab10630cff",
+    "item_name": "Alfajor bom o bom",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/4b736352-ab72-4780-98a3-2aab10630cff",
+    "variants": [
+      {
+        "variant_id": "8c9cc0b9-9682-4e98-8375-7fb6d2878302",
+        "sku": "10050",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 810
+      }
+    ]
+  },
+  {
+    "id": "86ee6059-c120-4600-9f3b-7c0693949099",
+    "item_name": "Alfajor coco",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/86ee6059-c120-4600-9f3b-7c0693949099",
+    "variants": [
+      {
+        "variant_id": "6fc71cf9-bc4a-48ce-9e5f-8f2e0b8786f9",
+        "sku": "10047",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 810
+      }
+    ]
+  },
+  {
+    "id": "35d41585-f926-444b-b3bd-854b87290ca6",
+    "item_name": "Alfajor Havanna arequipe",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/35d41585-f926-444b-b3bd-854b87290ca6",
+    "variants": [
+      {
+        "variant_id": "f709b90c-1177-4aac-9340-984a17827889",
+        "sku": "10048",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1220
+      }
+    ]
+  },
+  {
+    "id": "47c643d0-2048-4e59-a5b8-3bc0758f5e2e",
+    "item_name": "Alfajor mantequilla de mani",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/47c643d0-2048-4e59-a5b8-3bc0758f5e2e",
+    "variants": [
+      {
+        "variant_id": "719f1b15-83ec-4d53-9171-c912f2387039",
+        "sku": "10049",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 810
+      }
+    ]
+  },
+  {
+    "id": "c751a444-b602-408f-9705-7697243f2c8b",
+    "item_name": "Cajita 12 mini alfajores",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/c751a444-b602-408f-9705-7697243f2c8b",
+    "variants": [
+      {
+        "variant_id": "061c94a4-cbc4-4781-80f4-f14c570f8bb5",
+        "sku": "10261",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3430
+      }
+    ]
+  },
+  {
+    "id": "508403b6-a97a-419b-b626-f1709c4ace38",
+    "item_name": "Galleta nutella chocolate",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/508403b6-a97a-419b-b626-f1709c4ace38",
+    "variants": [
+      {
+        "variant_id": "777bef14-7d85-481b-9655-f55b537fcd17",
+        "sku": "10054",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 530
+      }
+    ]
+  },
+  {
+    "id": "e4d47518-e076-4898-b358-cede17b873a3",
+    "item_name": "Galleta nutella vainilla",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/e4d47518-e076-4898-b358-cede17b873a3",
+    "variants": [
+      {
+        "variant_id": "c6cc6fba-b82c-4dd8-b1cb-f43d573e83a9",
+        "sku": "10070",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 530
+      }
+    ]
+  },
+  {
+    "id": "9ebbdabb-bc54-4436-887d-7f440e83815d",
+    "item_name": "Galletas chocolate con chispas",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/9ebbdabb-bc54-4436-887d-7f440e83815d",
+    "variants": [
+      {
+        "variant_id": "a40e78e6-9cd5-418a-9131-93105153b98a",
+        "sku": "10053",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 350
+      }
+    ]
+  },
+  {
+    "id": "39a0fdf7-0f09-4b08-93f0-3dc94608ea61",
+    "item_name": "Galletas danesas",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/39a0fdf7-0f09-4b08-93f0-3dc94608ea61",
+    "variants": [
+      {
+        "variant_id": "99ab5000-fe19-497c-9fa5-25b6232d2dee",
+        "sku": "10196",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "df3d0a16-3152-4c92-9986-8a6f8737b68b",
+    "item_name": "Galletas vainilla con chispas",
+    "category": "Galletas",
+    "image_url": "https://api.loyverse.com/image/df3d0a16-3152-4c92-9986-8a6f8737b68b",
+    "variants": [
+      {
+        "variant_id": "d06aefc2-870b-4202-983b-405b17e0e7c7",
+        "sku": "10052",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 350
+      }
+    ]
+  },
+  {
+    "id": "610233d0-08d4-4822-bf2b-9028d5890b3a",
+    "item_name": "Envase grande",
+    "category": "Jugos Naturales Grandes",
+    "image_url": "https://api.loyverse.com/image/610233d0-08d4-4822-bf2b-9028d5890b3a",
+    "variants": [
+      {
+        "variant_id": "33f8fcd2-5453-4b95-ac42-5b01b789ef67",
+        "sku": "10275",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 510
+      }
+    ]
+  },
+  {
+    "id": "6e3d702a-6b5d-428d-8610-36d904feedf5",
+    "item_name": "Jugo de naranja grande",
+    "category": "Jugos Naturales Grandes",
+    "image_url": "https://api.loyverse.com/image/6e3d702a-6b5d-428d-8610-36d904feedf5",
+    "variants": [
+      {
+        "variant_id": "3feb66fd-06fe-4342-9b39-b8d8d259c55c",
+        "sku": "10291",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "ae41252f-9d90-453d-b6e3-cf6978d80eb1",
+    "item_name": "Jugo grande 2 en 1",
+    "category": "Jugos Naturales Grandes",
+    "image_url": "https://api.loyverse.com/image/ae41252f-9d90-453d-b6e3-cf6978d80eb1",
+    "variants": [
+      {
+        "variant_id": "9550b0fa-f36d-4333-825f-9f86b2d67a9e",
+        "sku": "10287",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "a0595fac-e9e5-4f8e-9c04-40200f6e797a",
+    "item_name": "Jugo grande 3 en 1",
+    "category": "Jugos Naturales Grandes",
+    "image_url": "https://api.loyverse.com/image/a0595fac-e9e5-4f8e-9c04-40200f6e797a",
+    "variants": [
+      {
+        "variant_id": "b45e5406-526c-47a8-8a8c-d75fbb94020f",
+        "sku": "10288",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "99957b64-cf7d-4ecb-847a-ea51325a098f",
+    "item_name": "Jugo grande guayaba",
+    "category": "Jugos Naturales Grandes",
+    "image_url": "https://api.loyverse.com/image/99957b64-cf7d-4ecb-847a-ea51325a098f",
+    "variants": [
+      {
+        "variant_id": "1a200b7c-c33d-41cf-ac93-ca81684d120f",
+        "sku": "10286",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "14c51b26-2c3a-4a18-b1d5-e7fb8b95b821",
+    "item_name": "Jugo grande piña",
+    "category": "Jugos Naturales Grandes",
+    "image_url": "https://api.loyverse.com/image/14c51b26-2c3a-4a18-b1d5-e7fb8b95b821",
+    "variants": [
+      {
+        "variant_id": "bbeda6c3-d160-464b-9903-8e640655afea",
+        "sku": "10289",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "b5a18c5e-cd10-4c28-932d-5ddee96ddbbb",
+    "item_name": "Jugo parchíta grande",
+    "category": "Jugos Naturales Grandes",
+    "image_url": "https://api.loyverse.com/image/b5a18c5e-cd10-4c28-932d-5ddee96ddbbb",
+    "variants": [
+      {
+        "variant_id": "41b1ec81-253b-453e-99c7-c60898e75ec3",
+        "sku": "10290",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "f9d954cf-0d2e-41fa-a40d-f6f28479bd11",
+    "item_name": "Envase mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "6caedfe6-762e-468d-a4ff-d0d6408f9e13",
+        "sku": "10177",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 510
+      }
+    ]
+  },
+  {
+    "id": "ecd6054e-71a2-49c3-a60d-264d832ab842",
+    "item_name": "Jugo 3 En 1 mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": "https://api.loyverse.com/image/ecd6054e-71a2-49c3-a60d-264d832ab842",
+    "variants": [
+      {
+        "variant_id": "ce1a277d-4fd7-48c5-9788-850102a73146",
+        "sku": "10075",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "ec905bd8-f2ee-46bc-a8bf-1609e332d864",
+    "item_name": "Jugo de fresa mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": "https://api.loyverse.com/image/ec905bd8-f2ee-46bc-a8bf-1609e332d864",
+    "variants": [
+      {
+        "variant_id": "61bc2d78-d82e-4654-92be-0a4d86e22ee7",
+        "sku": "10223",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "f9b99451-7edf-4a2d-aa5b-6bee96d77a87",
+    "item_name": "Jugo de Guayaba mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": "https://api.loyverse.com/image/f9b99451-7edf-4a2d-aa5b-6bee96d77a87",
+    "variants": [
+      {
+        "variant_id": "c8665c32-e285-47c4-8345-5384a26175e8",
+        "sku": "10110",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "468d27d0-f5fa-4bfc-af32-cf5d99bd31f9",
+    "item_name": "Jugo de Parchita mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": "https://api.loyverse.com/image/468d27d0-f5fa-4bfc-af32-cf5d99bd31f9",
+    "variants": [
+      {
+        "variant_id": "572cdc24-5322-4aba-a3f7-1e59af688f6a",
+        "sku": "10077",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "348ec8f8-cb14-4027-9b89-1fee9c449dbd",
+    "item_name": "Jugo de piña mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": "https://api.loyverse.com/image/348ec8f8-cb14-4027-9b89-1fee9c449dbd",
+    "variants": [
+      {
+        "variant_id": "eed63437-f340-42c9-84c1-377cfd1e9f17",
+        "sku": "10010",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "4c96fb2c-b4fd-4973-a03e-98e24c9c2e28",
+    "item_name": "Jugo guanabana mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": "https://api.loyverse.com/image/4c96fb2c-b4fd-4973-a03e-98e24c9c2e28",
+    "variants": [
+      {
+        "variant_id": "b0af772c-471c-45de-aec0-925149b85547",
+        "sku": "10090",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "0f3b879b-bddd-403c-9d5a-6835502ce79b",
+    "item_name": "Jugo Naranja mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": "https://api.loyverse.com/image/0f3b879b-bddd-403c-9d5a-6835502ce79b",
+    "variants": [
+      {
+        "variant_id": "045a4d9f-3796-4154-8a25-930b21a1fd56",
+        "sku": "10005",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "12c708a6-e897-489d-8430-10b6aa66978a",
+    "item_name": "Jugo Naranja y Zanahoria mediano",
+    "category": "Jugos Naturales Medianos",
+    "image_url": "https://api.loyverse.com/image/12c708a6-e897-489d-8430-10b6aa66978a",
+    "variants": [
+      {
+        "variant_id": "6ab4e8a5-7bc1-4a9f-9eca-a6e79ccae125",
+        "sku": "10003",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1400
+      }
+    ]
+  },
+  {
+    "id": "4d6db8a2-6b96-4493-bc1c-cdb758ac2f8d",
+    "item_name": "Envase pequeño",
+    "category": "Jugos pequeños",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "c2451fbb-1c85-464e-a3f1-e48514d1595f",
+        "sku": "10277",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 600
+      }
+    ]
+  },
+  {
+    "id": "42b4d9d6-d3f1-4636-b057-f05e7869c81c",
+    "item_name": "Jugo 3 en 1 pequeño",
+    "category": "Jugos pequeños",
+    "image_url": "https://api.loyverse.com/image/42b4d9d6-d3f1-4636-b057-f05e7869c81c",
+    "variants": [
+      {
+        "variant_id": "f786ed15-3793-48d8-af2f-d2aab955c25e",
+        "sku": "10231",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "c3f84fa7-a1e4-4747-984c-fa6cbb7f3a4f",
+    "item_name": "Jugo de fresa pequeño",
+    "category": "Jugos pequeños",
+    "image_url": "https://api.loyverse.com/image/c3f84fa7-a1e4-4747-984c-fa6cbb7f3a4f",
+    "variants": [
+      {
+        "variant_id": "db67618f-3b7b-419d-805f-3c346d92341a",
+        "sku": "10229",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "36fb7500-00b9-4f6b-8c41-e620a9e41120",
+    "item_name": "Jugo de Guanabana pequeño",
+    "category": "Jugos pequeños",
+    "image_url": "https://api.loyverse.com/image/36fb7500-00b9-4f6b-8c41-e620a9e41120",
+    "variants": [
+      {
+        "variant_id": "afee6c80-073c-4020-bbb1-fc0ece15f7aa",
+        "sku": "10232",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "608d3ceb-aa9f-4e6d-8813-e1025d0b0988",
+    "item_name": "Jugo de guayaba pequeño",
+    "category": "Jugos pequeños",
+    "image_url": "https://api.loyverse.com/image/608d3ceb-aa9f-4e6d-8813-e1025d0b0988",
+    "variants": [
+      {
+        "variant_id": "b1212b01-0dca-48c3-8730-446ca72d9301",
+        "sku": "10228",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "fd7e6c96-a118-4730-8e94-4fe9b4bc6089",
+    "item_name": "Jugo de naranja y zanahoria pequeño",
+    "category": "Jugos pequeños",
+    "image_url": "https://api.loyverse.com/image/fd7e6c96-a118-4730-8e94-4fe9b4bc6089",
+    "variants": [
+      {
+        "variant_id": "1f1ebb16-13b4-44af-a192-f26813f3c4dc",
+        "sku": "10230",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "69372daf-d1e8-4826-8dda-d92e87ba5f22",
+    "item_name": "Jugo de parchita pequeño",
+    "category": "Jugos pequeños",
+    "image_url": "https://api.loyverse.com/image/69372daf-d1e8-4826-8dda-d92e87ba5f22",
+    "variants": [
+      {
+        "variant_id": "5e0a66d4-dce2-47e7-b834-3ea6115dd868",
+        "sku": "10227",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "cf1c9726-e4dd-4b92-8f80-8b2f2470dfdd",
+    "item_name": "Jugo de piña pequeño",
+    "category": "Jugos pequeños",
+    "image_url": "https://api.loyverse.com/image/cf1c9726-e4dd-4b92-8f80-8b2f2470dfdd",
+    "variants": [
+      {
+        "variant_id": "8fa3bd0f-ec0e-468c-8167-3b297c43c96b",
+        "sku": "10226",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "a276230a-6fd5-4f09-9d8d-38d9793262bd",
+    "item_name": "Jugos de naranja pequeño",
+    "category": "Jugos pequeños",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "2066a935-ae9b-4aa2-98f3-6cfbb5b3f2cd",
+        "sku": "10225",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1030
+      }
+    ]
+  },
+  {
+    "id": "e67672b6-f57c-4d01-9091-edab9dd36876",
+    "item_name": "Cachito de mortadela y pistacho",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/e67672b6-f57c-4d01-9091-edab9dd36876",
+    "variants": [
+      {
+        "variant_id": "6007796f-5e5f-429a-a614-c48e130218a0",
+        "sku": "10205",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1670
+      }
+    ]
+  },
+  {
+    "id": "ddcf3f92-1d2c-4702-ad2e-95d67b34cd98",
+    "item_name": "Cachito Jamón de Pavo / queso crema",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/ddcf3f92-1d2c-4702-ad2e-95d67b34cd98",
+    "variants": [
+      {
+        "variant_id": "e54e68e1-439e-4057-a3bd-9c3ba8016190",
+        "sku": "10130",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1670
+      }
+    ]
+  },
+  {
+    "id": "5ae30755-0cbd-4e90-8d8d-f3cc5005d2d7",
+    "item_name": "Cachito Queso Paisa",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/5ae30755-0cbd-4e90-8d8d-f3cc5005d2d7",
+    "variants": [
+      {
+        "variant_id": "d752d13f-0bf2-4d2c-bf44-9c90d91256d8",
+        "sku": "10150",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1390
+      }
+    ]
+  },
+  {
+    "id": "76ae6bb1-e16d-4e09-a678-a2cee7b10b50",
+    "item_name": "Cachitos",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/76ae6bb1-e16d-4e09-a678-a2cee7b10b50",
+    "variants": [
+      {
+        "variant_id": "0c5bd320-27e1-4cc2-8b79-dd2ee52a8825",
+        "sku": "10011",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1270
+      }
+    ]
+  },
+  {
+    "id": "e86b89e2-27b9-49fa-a73d-c55ab7bafce3",
+    "item_name": "Croissant",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/e86b89e2-27b9-49fa-a73d-c55ab7bafce3",
+    "variants": [
+      {
+        "variant_id": "63f48f53-1b31-46e7-a91f-972111670a23",
+        "sku": "10180",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2800
+      }
+    ]
+  },
+  {
+    "id": "ee98ea47-182c-4a34-9bc1-7bc2089c007d",
+    "item_name": "Extra Queso Crema P/Jamón Grande",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "85cb6486-2842-47db-b89e-c677524916ca",
+        "sku": "10305",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3610
+      }
+    ]
+  },
+  {
+    "id": "001550b4-649f-477a-b1b0-0ca2d8fc3641",
+    "item_name": "Extra Queso Crema P/jamón Mediano",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "afdf7ffb-3c33-47ff-9e60-b78c52a5886b",
+        "sku": "10304",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1800
+      }
+    ]
+  },
+  {
+    "id": "1196c458-f894-4179-821e-819dca4dbc68",
+    "item_name": "Golfiado",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "a96f3ee8-d43e-408e-85ad-f2cb7a5e340c",
+        "sku": "10248",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1280
+      }
+    ]
+  },
+  {
+    "id": "6d61f72b-ff5b-41d0-ba3c-e48b700dfe79",
+    "item_name": "Mini cachito",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "c556faa4-1ab4-4c46-b65a-47320a3823a7",
+        "sku": "10203",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 890
+      }
+    ]
+  },
+  {
+    "id": "ec097559-90c5-4835-80ce-b49539c8d3b6",
+    "item_name": "Mini Croissant",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/ec097559-90c5-4835-80ce-b49539c8d3b6",
+    "variants": [
+      {
+        "variant_id": "33433b44-a67e-43f6-97b2-a4a39c55a66b",
+        "sku": "10244",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1470
+      }
+    ]
+  },
+  {
+    "id": "b51060fa-b961-43a8-8345-4e19e0be2301",
+    "item_name": "Mini lunch",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/b51060fa-b961-43a8-8345-4e19e0be2301",
+    "variants": [
+      {
+        "variant_id": "7fd82f16-416d-411b-a605-c1bae9fdaca3",
+        "sku": "10088",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1270
+      }
+    ]
+  },
+  {
+    "id": "266c3f8d-5adc-46aa-9cae-cb1977a66b0e",
+    "item_name": "Mini Pan de Jamón",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "002a7677-874b-4df5-a3fb-e8c27dfc33d7",
+        "sku": "10167",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3510
+      }
+    ]
+  },
+  {
+    "id": "2fad1455-548e-4a9c-9522-0b34773b3ba4",
+    "item_name": "Mini pastelito",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "78b69e61-600c-47fb-873b-ea889fb4b3a2",
+        "sku": "10204",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1280
+      }
+    ]
+  },
+  {
+    "id": "30f22b96-ea25-4899-9ac4-21a5069d4e9c",
+    "item_name": "Pan",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "69ebac05-0152-40f4-8da9-b9c738da8c1a",
+        "sku": "10127",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 230
+      }
+    ]
+  },
+  {
+    "id": "5ab6d8aa-a127-449f-9dcf-616eb4dee868",
+    "item_name": "Pan de jamón",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/5ab6d8aa-a127-449f-9dcf-616eb4dee868",
+    "variants": [
+      {
+        "variant_id": "5d918117-f703-454a-b985-b3623316554d",
+        "sku": "10174",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 10770
+      }
+    ]
+  },
+  {
+    "id": "c1d10b56-cd40-40ec-96ff-f263966ac3ec",
+    "item_name": "Pan de Jamón Croissant",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "69db6bdd-1ff9-4953-ab6e-c2b65311a0dd",
+        "sku": "10173",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 10770
+      }
+    ]
+  },
+  {
+    "id": "7aa89468-fc2b-4b55-931b-b3caecc4842b",
+    "item_name": "Pan de jamón mediano",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "a4eba5a3-4f88-4a81-82b7-d5adec257da6",
+        "sku": "10175",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 7060
+      }
+    ]
+  },
+  {
+    "id": "6d509673-bc97-4e63-b1ad-9ea5b7fe183e",
+    "item_name": "Pastelito Champiñones/Queso Paisa",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "305c79ba-3902-422a-91e2-bff1062853bf",
+        "sku": "10246",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "e15fbc80-bd86-4d26-8f6e-03af0c7f0db7",
+    "item_name": "Pastelito de Ricota",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/e15fbc80-bd86-4d26-8f6e-03af0c7f0db7",
+    "variants": [
+      {
+        "variant_id": "20040bcc-4e6e-4c5c-87ba-1285ca65f01a",
+        "sku": "10211",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "368279d2-65fb-4ad0-9a66-c6e403b2eb45",
+    "item_name": "Pastelito Jamón y Queso Crema",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "cc01239d-2fb3-48e5-9e71-ad8da5982073",
+        "sku": "10245",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "8989de5f-871e-43f0-9417-f8695bde88f7",
+    "item_name": "Pastelito navideño",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "ca5dc982-8cd3-460d-aa03-06421b09f1b1",
+        "sku": "10120",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2290
+      }
+    ]
+  },
+  {
+    "id": "5496749f-e5f8-41dd-b8c8-a4ecc6c08f22",
+    "item_name": "Pastelitos de Pollo",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/5496749f-e5f8-41dd-b8c8-a4ecc6c08f22",
+    "variants": [
+      {
+        "variant_id": "52d027e5-3982-4fe4-bbc7-084aad6cf4f7",
+        "sku": "10189",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2310
+      }
+    ]
+  },
+  {
+    "id": "d2c86ee1-daf6-4c8b-862c-7f48f31f3321",
+    "item_name": "Rol de canela",
+    "category": "Panadería",
+    "image_url": "https://api.loyverse.com/image/d2c86ee1-daf6-4c8b-862c-7f48f31f3321",
+    "variants": [
+      {
+        "variant_id": "91ed913c-c6e3-465b-88a2-26b23c4f154e",
+        "sku": "10051",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1290
+      }
+    ]
+  },
+  {
+    "id": "1a0be264-15ea-40f9-bcd4-255ad1b481db",
+    "item_name": "Rol de pan de jamón brioche",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "ad2c6418-5956-41e4-a5ea-36b2e0db5bf2",
+        "sku": "10171",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1280
+      }
+    ]
+  },
+  {
+    "id": "ba8ec1ea-2487-4e4d-8ffa-e57f455d53a9",
+    "item_name": "Rol de pan de jamón croissant",
+    "category": "Panadería",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "41ad8e8d-77a5-4545-94c2-dad41ea1a81c",
+        "sku": "10170",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1590
+      }
+    ]
+  },
+  {
+    "id": "3c381333-4e22-463a-9f91-c29b752c2c60",
+    "item_name": "Adicional Anchoas",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/3c381333-4e22-463a-9f91-c29b752c2c60",
+    "variants": [
+      {
+        "variant_id": "9629b097-b571-4532-94d3-2d4fec5f0901",
+        "sku": "10183",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1740
+      }
+    ]
+  },
+  {
+    "id": "3f66603d-da28-477e-8085-bf2ce911baa6",
+    "item_name": "Adicional Salchichon",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/3f66603d-da28-477e-8085-bf2ce911baa6",
+    "variants": [
+      {
+        "variant_id": "1482a11d-4c4b-4288-87e3-ae6cbcde9686",
+        "sku": "10149",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1080
+      }
+    ]
+  },
+  {
+    "id": "2a6c9b1b-bfb5-4b93-b3e1-93050d721625",
+    "item_name": "Adicional Tocineta",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/2a6c9b1b-bfb5-4b93-b3e1-93050d721625",
+    "variants": [
+      {
+        "variant_id": "26bea43b-1db1-44f9-a2c8-cf375f5514cf",
+        "sku": "10133",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1080
+      }
+    ]
+  },
+  {
+    "id": "b09b3f1f-9533-49c2-89c6-0b65c489b3b3",
+    "item_name": "Envase para pizza",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/b09b3f1f-9533-49c2-89c6-0b65c489b3b3",
+    "variants": [
+      {
+        "variant_id": "83627db3-4be9-44b2-86b0-ba72ce95dc0c",
+        "sku": "10129",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 870
+      }
+    ]
+  },
+  {
+    "id": "ef13238a-b92d-4463-8ab0-2db4ecc05a88",
+    "item_name": "Mini pizza",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/ef13238a-b92d-4463-8ab0-2db4ecc05a88",
+    "variants": [
+      {
+        "variant_id": "842a87ca-3375-4f28-b966-115eb327944a",
+        "sku": "10284",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1740
+      }
+    ]
+  },
+  {
+    "id": "1b274df2-2c90-4995-86ed-f28c517c3b53",
+    "item_name": "Pizza de Salchichon",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/1b274df2-2c90-4995-86ed-f28c517c3b53",
+    "variants": [
+      {
+        "variant_id": "48edd1f1-e984-48cb-b8ea-8cd7158cebf0",
+        "sku": "10319",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 6560
+      }
+    ]
+  },
+  {
+    "id": "2a90179b-33cd-4469-a4b9-a598ac926552",
+    "item_name": "Pizza margarita",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/2a90179b-33cd-4469-a4b9-a598ac926552",
+    "variants": [
+      {
+        "variant_id": "17c38ee1-5f0e-4ad7-8bb8-25e1b7cf0adf",
+        "sku": "10242",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 4260
+      }
+    ]
+  },
+  {
+    "id": "1c994fb7-c578-4c49-91c6-2f8e11867ab9",
+    "item_name": "Pizza peperoni",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/1c994fb7-c578-4c49-91c6-2f8e11867ab9",
+    "variants": [
+      {
+        "variant_id": "529d9c7c-e649-4a61-a1c3-ea3d689c20ad",
+        "sku": "10116",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 5950
+      }
+    ]
+  },
+  {
+    "id": "783a5878-b1f7-4860-8a2b-13f5290325f9",
+    "item_name": "Servicio para pizzas",
+    "category": "Pizza",
+    "image_url": "https://api.loyverse.com/image/783a5878-b1f7-4860-8a2b-13f5290325f9",
+    "variants": [
+      {
+        "variant_id": "dfe1bed5-23f6-4625-a0a2-f657b2d9b243",
+        "sku": "10186",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 0
+      }
+    ]
+  },
+  {
+    "id": "fa16f4f1-0272-4b7f-9a4d-ed746358c47f",
+    "item_name": "Ración Papas Chips",
+    "category": "Raciones",
+    "image_url": "https://api.loyverse.com/image/fa16f4f1-0272-4b7f-9a4d-ed746358c47f",
+    "variants": [
+      {
+        "variant_id": "1349485a-c351-4443-9ab2-fcf625472b2a",
+        "sku": "10084",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1280
+      }
+    ]
+  },
+  {
+    "id": "3e514b80-beb3-4154-aed3-f83877da9e5c",
+    "item_name": "Tequeños",
+    "category": "Raciones",
+    "image_url": "https://api.loyverse.com/image/3e514b80-beb3-4154-aed3-f83877da9e5c",
+    "variants": [
+      {
+        "variant_id": "fade3c92-2c91-46fd-88e2-e855c0e9734f",
+        "sku": "10091",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1500
+      }
+    ]
+  },
+  {
+    "id": "3a306253-5811-4675-8b38-556affcee160",
+    "item_name": "Sandwich Atun",
+    "category": "Sandwich",
+    "image_url": "https://api.loyverse.com/image/3a306253-5811-4675-8b38-556affcee160",
+    "variants": [
+      {
+        "variant_id": "474f9cc0-ba2c-469e-80ce-1036a998fc9d",
+        "sku": "10015",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2800
+      }
+    ]
+  },
+  {
+    "id": "21e1585c-7c41-469e-819d-39faa2679c51",
+    "item_name": "Sandwich extra",
+    "category": "Sandwich",
+    "image_url": "https://api.loyverse.com/image/21e1585c-7c41-469e-819d-39faa2679c51",
+    "variants": [
+      {
+        "variant_id": "7438687f-dc4e-46a5-b34f-937eb917bb09",
+        "sku": "10016",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1370
+      }
+    ]
+  },
+  {
+    "id": "7c8264f7-77f5-4415-8d0c-51b9af0d5650",
+    "item_name": "Sandwich Jamón de Pavo/Queso Paisa",
+    "category": "Sandwich",
+    "image_url": "https://api.loyverse.com/image/7c8264f7-77f5-4415-8d0c-51b9af0d5650",
+    "variants": [
+      {
+        "variant_id": "21f68d24-a2d9-428f-92c7-3128ac741c2c",
+        "sku": "10159",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2730
+      }
+    ]
+  },
+  {
+    "id": "1f714a93-d6e9-40d5-9344-d4b1097084ae",
+    "item_name": "Sandwich jamon y queso",
+    "category": "Sandwich",
+    "image_url": "https://api.loyverse.com/image/1f714a93-d6e9-40d5-9344-d4b1097084ae",
+    "variants": [
+      {
+        "variant_id": "7a93758d-2503-4a86-bc74-d14ab56bfe39",
+        "sku": "10012",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2800
+      }
+    ]
+  },
+  {
+    "id": "b52a5e04-f2be-4460-86a4-97d550c34862",
+    "item_name": "Sandwich Pernil",
+    "category": "Sandwich",
+    "image_url": "https://api.loyverse.com/image/b52a5e04-f2be-4460-86a4-97d550c34862",
+    "variants": [
+      {
+        "variant_id": "4c558c16-f481-4d8e-9d2e-fee961982196",
+        "sku": "10013",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2800
+      }
+    ]
+  },
+  {
+    "id": "7014aaf0-9c3f-4b26-a97b-a7557c8f2ac6",
+    "item_name": "Sandwich Reina Pepiada",
+    "category": "Sandwich",
+    "image_url": "https://api.loyverse.com/image/7014aaf0-9c3f-4b26-a97b-a7557c8f2ac6",
+    "variants": [
+      {
+        "variant_id": "eb6c089e-ae68-4c30-891e-89517f3d1e4f",
+        "sku": "10014",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 2730
+      }
+    ]
+  },
+  {
+    "id": "638d91ee-893c-4143-b659-c277cc8bd875",
+    "item_name": "African Melon",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/638d91ee-893c-4143-b659-c277cc8bd875",
+    "variants": [
+      {
+        "variant_id": "558fed17-a056-43ee-a259-f7717fd27f55",
+        "sku": "10255",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "f546a6ba-7011-4926-b236-e21138a7eb8e",
+    "item_name": "Ashwagandha",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/f546a6ba-7011-4926-b236-e21138a7eb8e",
+    "variants": [
+      {
+        "variant_id": "27449aec-2518-42ee-b0f6-8d24dbe94dda",
+        "sku": "10254",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "cdb40b67-6867-4f6d-94ff-3fb1a16451c5",
+    "item_name": "Berry melody",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/cdb40b67-6867-4f6d-94ff-3fb1a16451c5",
+    "variants": [
+      {
+        "variant_id": "45c6d919-7bd3-4b2d-9ee7-7931ccf6d726",
+        "sku": "10100",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "1c9eec18-4cf8-4bba-856e-d1c5c48625dd",
+    "item_name": "Caracas sunset",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/1c9eec18-4cf8-4bba-856e-d1c5c48625dd",
+    "variants": [
+      {
+        "variant_id": "92463c26-a879-4384-b48d-3e13881b7bd1",
+        "sku": "10154",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "4abb4160-338d-415b-ab08-1370e3f76692",
+    "item_name": "Indiana nights",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/4abb4160-338d-415b-ab08-1370e3f76692",
+    "variants": [
+      {
+        "variant_id": "e9ba81d3-5da3-45b5-8712-461bf46f74bb",
+        "sku": "10099",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "e0c10f7f-9422-43d6-8a8c-8a9fbe9ae045",
+    "item_name": "Rooibos Bourbon",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/e0c10f7f-9422-43d6-8a8c-8a9fbe9ae045",
+    "variants": [
+      {
+        "variant_id": "ae2710ab-1203-421c-9ede-0ce0f01ef874",
+        "sku": "10256",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "6a0c5be7-6a99-4595-b4cf-8bd07f8f12dc",
+    "item_name": "Rooibos lemon flower",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/6a0c5be7-6a99-4595-b4cf-8bd07f8f12dc",
+    "variants": [
+      {
+        "variant_id": "e7df4662-a81e-457c-a968-b76a7d05af10",
+        "sku": "10037",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "df94f4ca-1459-4424-9e62-6265b50ac902",
+    "item_name": "Summer lychee",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/df94f4ca-1459-4424-9e62-6265b50ac902",
+    "variants": [
+      {
+        "variant_id": "61b7bfed-b43f-4780-a201-b9d5749d9288",
+        "sku": "10153",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "3669acbd-76ce-48f4-b276-e50f39108cde",
+    "item_name": "Sweet mango",
+    "category": "Te caliente",
+    "image_url": "https://api.loyverse.com/image/3669acbd-76ce-48f4-b276-e50f39108cde",
+    "variants": [
+      {
+        "variant_id": "aa69a2b2-a912-47a3-8b2f-1141c3f65a88",
+        "sku": "10028",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "d6453a61-d3b3-4097-a7ea-5b400600b007",
+    "item_name": "African Melon",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/d6453a61-d3b3-4097-a7ea-5b400600b007",
+    "variants": [
+      {
+        "variant_id": "6a3a08e7-8721-4655-a56e-62836df6c5bf",
+        "sku": "10253",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "36c50463-4b58-4ada-be24-17207eef7b0b",
+    "item_name": "Ashwagandha",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/36c50463-4b58-4ada-be24-17207eef7b0b",
+    "variants": [
+      {
+        "variant_id": "7e5ea7be-7a48-4d19-8020-01b9388b0a26",
+        "sku": "10252",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
+    "id": "bb35a2b7-6c5f-4de7-8c17-c2c4d457cb5e",
+    "item_name": "Berry melody",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/bb35a2b7-6c5f-4de7-8c17-c2c4d457cb5e",
+    "variants": [
+      {
+        "variant_id": "f00ebb65-073f-42b1-b817-de61fa5e1c25",
+        "sku": "10101",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "089fc596-ade5-4f95-8c6b-70010d1fce80",
+    "item_name": "Caracas sunset",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/089fc596-ade5-4f95-8c6b-70010d1fce80",
+    "variants": [
+      {
+        "variant_id": "c26d0257-08f4-4ed8-b71f-e8f8516d0167",
+        "sku": "10155",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "ba2cda01-dcee-4809-a801-562d448cc589",
+    "item_name": "Indiana nights",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/ba2cda01-dcee-4809-a801-562d448cc589",
+    "variants": [
+      {
+        "variant_id": "969932fc-b028-4bc6-8d8d-542389e18637",
+        "sku": "10104",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "bded8706-8783-4f0a-ba05-c8168504574b",
+    "item_name": "Rooibos Bourbon",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/bded8706-8783-4f0a-ba05-c8168504574b",
+    "variants": [
+      {
+        "variant_id": "c90aab13-19ab-47f3-8e50-721673e54549",
+        "sku": "10257",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "f45c47a9-7629-418e-8260-9e8e55bcc256",
+    "item_name": "Rooibos lemon flower",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/f45c47a9-7629-418e-8260-9e8e55bcc256",
+    "variants": [
+      {
+        "variant_id": "7b7e1664-802f-410e-9636-f8dbe532f2e7",
+        "sku": "10103",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "48a1b82b-2465-40a1-98d4-2652829e7698",
+    "item_name": "Summer lychee",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/48a1b82b-2465-40a1-98d4-2652829e7698",
+    "variants": [
+      {
+        "variant_id": "c842d240-0d32-4653-adcb-38366f5ce496",
+        "sku": "10156",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "d239ae4d-8b34-499b-b456-dc0bd8b4dbc6",
+    "item_name": "Sweet mango",
+    "category": "Té frio",
+    "image_url": "https://api.loyverse.com/image/d239ae4d-8b34-499b-b456-dc0bd8b4dbc6",
+    "variants": [
+      {
+        "variant_id": "63e1ff47-ecff-427a-ba58-e022ed9516e9",
+        "sku": "10102",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  }
+]
