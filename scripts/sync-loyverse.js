@@ -155,55 +155,102 @@ function firstImageUrl(candidates) {
   return null;
 }
 
-function syncItemPrice(catalogItem, candidates, storeId, warnings) {
+// Resuelve el precio (y el producto de Loyverse) de UNA talla que tiene su
+// propio `loyverseItemId` fijado — cubre el caso real de cafeterías donde cada
+// talla es un producto de Loyverse completamente distinto (ej. "Agua Pequeña",
+// "Agua Mediana", "Agua Grande" en vez de variantes de un mismo "Agua").
+function resolveSizeById(sz, byId, storeId, itemName, warnings) {
+  const loyverseItem = byId.get(sz.loyverseItemId);
+  if (!loyverseItem) {
+    warnings.push(`"${itemName}" → tamaño "${sz.label}": el loyverseItemId fijado ya no existe en Loyverse.`);
+    return null;
+  }
+  const variants = (loyverseItem.variants || []).filter(v => !v.deleted_at);
+  if (variants.length === 0) {
+    warnings.push(`"${itemName}" → tamaño "${sz.label}": el producto existe en Loyverse pero no tiene variantes activas.`);
+    return null;
+  }
+  const price = variantPrice(variants[0], storeId);
+  if (price == null) {
+    warnings.push(`"${itemName}" → tamaño "${sz.label}": no se encontró un precio válido en Loyverse.`);
+    return null;
+  }
+  return { price, imageUrl: loyverseItem.image_url || null };
+}
+
+function syncSizedItem(catalogItem, candidates, byId, storeId, warnings) {
   const updated = { ...catalogItem };
 
-  if (catalogItem.sizes && catalogItem.sizes.length) {
-    let variants = combineVariants(candidates);
-    if (candidates.length > 1 && variants.length === catalogItem.sizes.length) {
-      warnings.push(`"${catalogItem.name}": Loyverse tiene ${candidates.length} productos separados con el mismo nombre (uno por tamaño); se combinaron sus variantes.`);
-    } else if (candidates.length > 1) {
+  // Pool de variantes por nombre (fallback) solo para las tallas que NO
+  // tengan loyverseItemId propio — se calcula una sola vez.
+  let namedVariants = null;
+  if (candidates) {
+    namedVariants = combineVariants(candidates);
+    if (candidates.length > 1 && namedVariants.length !== catalogItem.sizes.length) {
       warnings.push(`⚠ Nombre ambiguo en Loyverse para "${catalogItem.name}" (${candidates.length} coincidencias), usando la primera.`);
-      variants = (candidates[0].variants || []).filter(v => !v.deleted_at);
+      namedVariants = (candidates[0].variants || []).filter(v => !v.deleted_at);
+    } else if (candidates.length > 1) {
+      warnings.push(`"${catalogItem.name}": Loyverse tiene ${candidates.length} productos separados con el mismo nombre (uno por tamaño); se combinaron sus variantes.`);
     }
-    if (variants.length === 0) {
-      warnings.push(`"${catalogItem.name}": el producto existe en Loyverse pero no tiene variantes activas.`);
-      return catalogItem;
-    }
-    if (variants.length === 1) {
-      warnings.push(`"${catalogItem.name}": tiene ${catalogItem.sizes.length} tamaños en el menú pero Loyverse solo tiene 1 variante. No se actualizaron los precios.`);
-      return catalogItem;
-    }
-    const variantsByLabel = new Map();
-    for (const v of variants) {
+  }
+  const variantsByLabel = new Map();
+  if (namedVariants) {
+    for (const v of namedVariants) {
       const label = v.option1_value || v.option2_value || v.option3_value || '';
       if (label) variantsByLabel.set(normalize(label), v);
     }
-    const newSizes = catalogItem.sizes.map((sz, i) => {
-      const explicitLabel = sz.loyverseVariantValue || sz.label;
-      let variant = variantsByLabel.get(normalize(explicitLabel));
-      let positional = false;
-      if (!variant && variants.length === catalogItem.sizes.length) {
-        variant = variants[i];
-        positional = true;
-      }
-      if (!variant) {
-        warnings.push(`"${catalogItem.name}" → tamaño "${sz.label}": no se encontró variante correspondiente en Loyverse.`);
-        return sz;
-      }
-      const price = variantPrice(variant, storeId);
-      if (price == null) {
-        warnings.push(`"${catalogItem.name}" → tamaño "${sz.label}": variante encontrada en Loyverse pero sin precio válido.`);
-        return sz;
-      }
-      if (positional) {
-        warnings.push(`"${catalogItem.name}" → tamaño "${sz.label}": emparejado por posición (no por nombre), verifica que el orden coincida con Loyverse.`);
-      }
-      return { ...sz, price };
-    });
-    updated.sizes = newSizes;
-    return updated;
   }
+
+  let anyResolved = false;
+  let imageUrl = firstImageUrl(candidates || []);
+
+  const newSizes = catalogItem.sizes.map((sz, i) => {
+    if (sz.loyverseItemId) {
+      const resolved = resolveSizeById(sz, byId, storeId, catalogItem.name, warnings);
+      if (!resolved) return sz;
+      anyResolved = true;
+      if (!imageUrl && resolved.imageUrl) imageUrl = resolved.imageUrl;
+      return { ...sz, price: resolved.price };
+    }
+
+    if (!namedVariants) {
+      warnings.push(`"${catalogItem.name}" → tamaño "${sz.label}": no se encontró producto ni talla correspondiente en Loyverse.`);
+      return sz;
+    }
+    if (namedVariants.length === 1 && catalogItem.sizes.length > 1) {
+      warnings.push(`"${catalogItem.name}": tiene ${catalogItem.sizes.length} tamaños en el menú pero Loyverse solo tiene 1 variante. No se actualizó "${sz.label}".`);
+      return sz;
+    }
+    const explicitLabel = sz.loyverseVariantValue || sz.label;
+    let variant = variantsByLabel.get(normalize(explicitLabel));
+    let positional = false;
+    if (!variant && namedVariants.length === catalogItem.sizes.length) {
+      variant = namedVariants[i];
+      positional = true;
+    }
+    if (!variant) {
+      warnings.push(`"${catalogItem.name}" → tamaño "${sz.label}": no se encontró variante correspondiente en Loyverse.`);
+      return sz;
+    }
+    const price = variantPrice(variant, storeId);
+    if (price == null) {
+      warnings.push(`"${catalogItem.name}" → tamaño "${sz.label}": variante encontrada en Loyverse pero sin precio válido.`);
+      return sz;
+    }
+    if (positional) {
+      warnings.push(`"${catalogItem.name}" → tamaño "${sz.label}": emparejado por posición (no por nombre), verifica que el orden coincida con Loyverse.`);
+    }
+    anyResolved = true;
+    return { ...sz, price };
+  });
+
+  updated.sizes = newSizes;
+  if (imageUrl && updated.image !== imageUrl) updated.image = imageUrl;
+  return { updated, anyResolved };
+}
+
+function syncFlatItem(catalogItem, candidates, storeId, warnings) {
+  let updated = { ...catalogItem };
 
   if (candidates.length > 1) {
     warnings.push(`⚠ Nombre ambiguo en Loyverse para "${catalogItem.name}" (${candidates.length} coincidencias), usando la primera.`);
@@ -211,29 +258,21 @@ function syncItemPrice(catalogItem, candidates, storeId, warnings) {
   const variants = (candidates[0].variants || []).filter(v => !v.deleted_at);
   if (variants.length === 0) {
     warnings.push(`"${catalogItem.name}": el producto existe en Loyverse pero no tiene variantes activas.`);
-    return catalogItem;
+  } else {
+    if (variants.length > 1) {
+      warnings.push(`"${catalogItem.name}": tiene un solo precio en el menú pero Loyverse tiene ${variants.length} variantes. Se usó la primera variante.`);
+    }
+    const price = variantPrice(variants[0], storeId);
+    if (price == null) {
+      warnings.push(`"${catalogItem.name}": no se encontró un precio válido en Loyverse.`);
+    } else {
+      updated.price = price;
+    }
   }
-  if (variants.length > 1) {
-    warnings.push(`"${catalogItem.name}": tiene un solo precio en el menú pero Loyverse tiene ${variants.length} variantes. Se usó la primera variante.`);
-  }
-  const price = variantPrice(variants[0], storeId);
-  if (price == null) {
-    warnings.push(`"${catalogItem.name}": no se encontró un precio válido en Loyverse.`);
-    return catalogItem;
-  }
-  updated.price = price;
-  return updated;
-}
 
-function syncItemImage(catalogItem, candidates) {
-  // image_url es un campo del producto en Loyverse (no de la variante), se sube
-  // desde el Back Office de Loyverse (Productos → [producto] → foto). Si hay
-  // varios productos duplicados con el mismo nombre, se usa la primera foto que
-  // exista entre ellos.
   const imageUrl = firstImageUrl(candidates);
-  if (!imageUrl) return catalogItem;
-  if (catalogItem.image === imageUrl) return catalogItem;
-  return { ...catalogItem, image: imageUrl };
+  if (imageUrl && updated.image !== imageUrl) updated.image = imageUrl;
+  return updated;
 }
 
 async function main() {
@@ -264,14 +303,26 @@ async function main() {
 
   const newItems = catalog.ITEMS.map(item => {
     const candidates = matchLoyverseItems(item, byId, byName);
+
+    if (item.sizes && item.sizes.length) {
+      const hasSizeIds = item.sizes.some(sz => sz.loyverseItemId);
+      if (!candidates && !hasSizeIds) {
+        unmatched++;
+        warnings.push(`"${item.name}": no se encontró ningún producto con ese nombre en Loyverse. Se mantiene el último precio conocido.`);
+        return item;
+      }
+      const { updated, anyResolved } = syncSizedItem(item, candidates, byId, storeId, warnings);
+      if (anyResolved) matched++; else unmatched++;
+      return updated;
+    }
+
     if (!candidates) {
       unmatched++;
       warnings.push(`"${item.name}": no se encontró ningún producto con ese nombre en Loyverse. Se mantiene el último precio conocido.`);
       return item;
     }
     matched++;
-    const withPrice = syncItemPrice(item, candidates, storeId, warnings);
-    return syncItemImage(withPrice, candidates);
+    return syncFlatItem(item, candidates, storeId, warnings);
   });
 
   const output = {
