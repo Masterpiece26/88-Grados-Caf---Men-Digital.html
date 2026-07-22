@@ -179,6 +179,19 @@ Revisa el log de la Action (Actions → última ejecución → sync). Verás adv
 Los grupos de modificadores (`MODIFIER_GROUPS`, ej. extras de pizza) **no se sincronizan
 automáticamente** — sus precios se editan a mano en `menu-catalog.json`.
 
+### Emparejamiento estable por ID (recomendado si un producto cambia de nombre seguido)
+
+Cada sincronización también escribe `catalog/loyverse-snapshot.json` — un espejo de tu
+catálogo real de Loyverse (ID, nombre, categoría, variantes de cada producto). Con el ID real
+de ahí, puedes fijar el emparejamiento de forma permanente en `menu-catalog.json`:
+
+```json
+{ "id": "cafe-lungo", "name": "Café Lungo", "cat": "cafe", "price": 880, "loyverseItemId": "abc123..." }
+```
+
+Con `loyverseItemId` fijado, ese producto se sigue emparejando aunque le cambies el nombre en
+Loyverse más adelante — deja de depender de que los nombres coincidan exactamente.
+
 ## Número de WhatsApp para pedidos
 
 Está definido en `docs/index.html` como `const WHATSAPP_NUMBER = '582123340106';`. Cámbialo ahí

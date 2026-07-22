@@ -1,9 +1,15 @@
-// Sincroniza los precios y fotos de data/menu-catalog.json con Loyverse y escribe
-// el resultado en data/menu-data.json (el archivo que lee index.html).
+// Sincroniza los precios y fotos de catalog/menu-catalog.json con Loyverse y
+// escribe el resultado en docs/data/menu-data.json (el archivo que lee index.html).
 //
 // El catálogo (nombres, categorías, descripciones, tags, modificadores) es la fuente
 // de verdad editada a mano. Este script SOLO actualiza `price` (de cada item y size)
-// e `image`, buscando el producto correspondiente en Loyverse por nombre.
+// e `image`, buscando el producto correspondiente en Loyverse — primero por
+// `loyverseItemId` si el item lo tiene fijado (estable, no se rompe si Loyverse
+// renombra el producto), si no por nombre (frágil ante cambios de nombre).
+//
+// También escribe catalog/loyverse-snapshot.json: un espejo legible de TODO el
+// catálogo real de Loyverse (id, nombre, categoría, variantes) para diagnosticar
+// emparejamientos fallidos y obtener los IDs reales que fijar como `loyverseItemId`.
 //
 // Requiere Node 18+ (usa fetch nativo). No usa dependencias externas.
 //
@@ -18,6 +24,7 @@ const path = require('path');
 
 const CATALOG_PATH = path.join(__dirname, '..', 'catalog', 'menu-catalog.json');
 const OUTPUT_PATH = path.join(__dirname, '..', 'docs', 'data', 'menu-data.json');
+const SNAPSHOT_PATH = path.join(__dirname, '..', 'catalog', 'loyverse-snapshot.json');
 const LOYVERSE_API = 'https://api.loyverse.com/v1.0';
 
 function normalize(str) {
@@ -30,11 +37,11 @@ function normalize(str) {
     .trim();
 }
 
-async function fetchAllLoyverseItems(token) {
-  const items = [];
+async function fetchAllPages(token, endpoint, listKey) {
+  const results = [];
   let cursor = null;
   do {
-    const url = new URL(LOYVERSE_API + '/items');
+    const url = new URL(LOYVERSE_API + endpoint);
     url.searchParams.set('limit', '250');
     if (cursor) url.searchParams.set('cursor', cursor);
     const res = await fetch(url, {
@@ -45,10 +52,48 @@ async function fetchAllLoyverseItems(token) {
       throw new Error(`Loyverse API respondió ${res.status} ${res.statusText}: ${body.slice(0, 300)}`);
     }
     const json = await res.json();
-    items.push(...(json.items || []));
+    results.push(...(json[listKey] || []));
     cursor = json.cursor || null;
   } while (cursor);
-  return items;
+  return results;
+}
+
+async function fetchAllLoyverseItems(token) {
+  return fetchAllPages(token, '/items', 'items');
+}
+
+async function fetchAllLoyverseCategories(token) {
+  return fetchAllPages(token, '/categories', 'categories');
+}
+
+// Guarda un "espejo" legible del catálogo real de Loyverse (IDs, nombres,
+// categorías, variantes) en catalog/ (privado, no se publica). Sirve para
+// diagnosticar de una vez por qué un producto no se emparejó, sin tener que
+// copiar/pegar nombres uno por uno — y para obtener los IDs reales que se
+// pueden fijar como `loyverseItemId` en menu-catalog.json (emparejamiento
+// estable que no se rompe si el producto se renombra en Loyverse).
+function writeSnapshot(loyverseItems, loyverseCategories) {
+  const categoryNameById = new Map(loyverseCategories.map(c => [c.id, c.name]));
+  const snapshot = loyverseItems
+    .filter(it => !it.deleted_at)
+    .map(it => ({
+      id: it.id,
+      item_name: it.item_name,
+      category: categoryNameById.get(it.category_id) || null,
+      image_url: it.image_url || null,
+      variants: (it.variants || [])
+        .filter(v => !v.deleted_at)
+        .map(v => ({
+          variant_id: v.variant_id,
+          sku: v.sku || null,
+          option1_value: v.option1_value || null,
+          option2_value: v.option2_value || null,
+          option3_value: v.option3_value || null,
+          default_price: v.default_price,
+        })),
+    }))
+    .sort((a, b) => (a.category || '').localeCompare(b.category || '') || a.item_name.localeCompare(b.item_name));
+  fs.writeFileSync(SNAPSHOT_PATH, JSON.stringify(snapshot, null, 2) + '\n');
 }
 
 function variantPrice(variant, storeId) {
@@ -74,7 +119,14 @@ function buildLoyverseIndex(loyverseItems) {
   return byName;
 }
 
-function matchLoyverseItems(catalogItem, byName) {
+function matchLoyverseItems(catalogItem, byId, byName) {
+  // Emparejamiento por ID es preferido: es estable aunque el producto se
+  // renombre en Loyverse. Se fija a mano en menu-catalog.json una vez
+  // identificado el ID correcto (ver catalog/loyverse-snapshot.json).
+  if (catalogItem.loyverseItemId) {
+    const byIdMatch = byId.get(catalogItem.loyverseItemId);
+    return byIdMatch ? [byIdMatch] : null;
+  }
   const explicitName = catalogItem.loyverseItemName || catalogItem.name;
   const key = normalize(explicitName);
   const matches = byName.get(key);
@@ -195,9 +247,15 @@ async function main() {
   const catalog = JSON.parse(fs.readFileSync(CATALOG_PATH, 'utf8'));
 
   console.log('Consultando catálogo de Loyverse…');
-  const loyverseItems = await fetchAllLoyverseItems(token);
-  console.log(`Loyverse devolvió ${loyverseItems.length} productos.`);
+  const [loyverseItems, loyverseCategories] = await Promise.all([
+    fetchAllLoyverseItems(token),
+    fetchAllLoyverseCategories(token),
+  ]);
+  console.log(`Loyverse devolvió ${loyverseItems.length} productos en ${loyverseCategories.length} categorías.`);
 
+  writeSnapshot(loyverseItems, loyverseCategories);
+
+  const byId = new Map(loyverseItems.filter(it => !it.deleted_at).map(it => [it.id, it]));
   const byName = buildLoyverseIndex(loyverseItems);
 
   const warnings = [];
@@ -205,7 +263,7 @@ async function main() {
   let unmatched = 0;
 
   const newItems = catalog.ITEMS.map(item => {
-    const candidates = matchLoyverseItems(item, byName);
+    const candidates = matchLoyverseItems(item, byId, byName);
     if (!candidates) {
       unmatched++;
       warnings.push(`"${item.name}": no se encontró ningún producto con ese nombre en Loyverse. Se mantiene el último precio conocido.`);
