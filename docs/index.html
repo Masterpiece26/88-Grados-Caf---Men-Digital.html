@@ -221,18 +221,23 @@ function renderItemGrid() {
   grid.style.display = 'grid';
   noResults.style.display = 'none';
 
-  grid.innerHTML = baseItems.map(item => `
-    <div data-item="${escapeHtml(item.id)}" style="background: #2f2519; border-radius: 16px; overflow: hidden; cursor: pointer; border: 1px solid #ffffff14; display: flex; flex-direction: column;">
+  grid.innerHTML = baseItems.map(item => {
+    const unavailable = item.available === false;
+    return `
+    <div data-item="${escapeHtml(item.id)}" style="background: #2f2519; border-radius: 16px; overflow: hidden; cursor: pointer; border: 1px solid #ffffff14; display: flex; flex-direction: column; ${unavailable ? 'opacity: 0.5;' : ''}">
       <div style="width: 100%; aspect-ratio: 4/3; position: relative;">
-        ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" style="width:100%;height:100%;object-fit:cover;">` : placeholderImg(item.name)}
-        ${item.tag ? `<div style="position: absolute; top: 8px; left: 8px; background: #E85D04; color: #fff; font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 999px; font-family: Inter, sans-serif; letter-spacing: 0.02em;">${escapeHtml(item.tag)}</div>` : ''}
+        ${item.image ? `<img src="${escapeHtml(item.image)}" alt="${escapeHtml(item.name)}" style="width:100%;height:100%;object-fit:cover; ${unavailable ? 'filter: grayscale(1);' : ''}">` : placeholderImg(item.name)}
+        ${unavailable
+          ? `<div style="position: absolute; top: 8px; left: 8px; background: #6b5c47; color: #fff; font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 999px; font-family: Inter, sans-serif; letter-spacing: 0.02em;">Agotado</div>`
+          : (item.tag ? `<div style="position: absolute; top: 8px; left: 8px; background: #E85D04; color: #fff; font-size: 10.5px; font-weight: 700; padding: 3px 9px; border-radius: 999px; font-family: Inter, sans-serif; letter-spacing: 0.02em;">${escapeHtml(item.tag)}</div>` : '')}
       </div>
       <div style="padding: 11px 12px 13px; display: flex; flex-direction: column; gap: 4px; flex: 1;">
-        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #F4ECE1; line-height: 1.25;">${escapeHtml(item.name)}</div>
+        <div style="font-family: Poppins, sans-serif; font-weight: 600; font-size: 14px; color: #F4ECE1; line-height: 1.25; ${unavailable ? 'text-decoration: line-through; text-decoration-color: #C9B9A4;' : ''}">${escapeHtml(item.name)}</div>
         <div style="font-family: Inter, sans-serif; font-weight: 700; font-size: 13.5px; color: #F2C14E; margin-top: auto;">${escapeHtml(priceLabelFor(item))}</div>
       </div>
     </div>
-  `).join('');
+  `;
+  }).join('');
 
   grid.querySelectorAll('[data-item]').forEach(card => {
     card.addEventListener('click', () => {
@@ -311,13 +316,18 @@ function renderModal() {
     html += `<div style="margin-top: 18px; font-family: Poppins, sans-serif; font-weight: 700; font-size: 22px; color: #F2C14E;">${escapeHtml(priceLabel)}</div>`;
   }
 
+  const unavailable = item.available === false;
+  if (unavailable) {
+    html += `<div style="margin-top: 18px; padding: 12px 14px; border-radius: 12px; background: #ffffff0a; border: 1px solid #ffffff14; color: #C9B9A4; font-size: 13.5px;">Este producto no está disponible en este momento.</div>`;
+  }
+
   html += `<div style="margin-top: 22px; display: flex; align-items: center; gap: 14px;">
-    <div style="display: flex; align-items: center; gap: 12px; background: #ffffff0a; border: 1px solid #ffffff14; border-radius: 12px; padding: 6px 10px;">
+    <div style="display: flex; align-items: center; gap: 12px; background: #ffffff0a; border: 1px solid #ffffff14; border-radius: 12px; padding: 6px 10px; ${unavailable ? 'opacity: 0.4; pointer-events: none;' : ''}">
       <button id="qty-minus" style="width: 28px; height: 28px; border-radius: 8px; border: none; background: #ffffff14; color: #F4ECE1; font-size: 16px; cursor: pointer;">−</button>
       <span style="font-size: 15px; font-weight: 700; min-width: 18px; text-align: center;">${state.qty}</span>
       <button id="qty-plus" style="width: 28px; height: 28px; border-radius: 8px; border: none; background: #ffffff14; color: #F4ECE1; font-size: 16px; cursor: pointer;">+</button>
     </div>
-    <button id="add-to-cart-btn" style="flex: 1; padding: 13px; border-radius: 12px; border: none; background: #E85D04; color: #fff; font-family: Poppins, sans-serif; font-weight: 700; font-size: 14.5px; cursor: pointer;">Agregar · ${escapeHtml(fmt(unitPrice * state.qty))}</button>
+    <button id="add-to-cart-btn" ${unavailable ? 'disabled' : ''} style="flex: 1; padding: 13px; border-radius: 12px; border: none; background: ${unavailable ? '#E85D0460' : '#E85D04'}; color: #fff; font-family: Poppins, sans-serif; font-weight: 700; font-size: 14.5px; cursor: ${unavailable ? 'not-allowed' : 'pointer'};">${unavailable ? 'Agotado' : 'Agregar · ' + escapeHtml(fmt(unitPrice * state.qty))}</button>
   </div>`;
   html += `</div>`;
 

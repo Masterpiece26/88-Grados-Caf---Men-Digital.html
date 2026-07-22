@@ -25,7 +25,23 @@ const path = require('path');
 const CATALOG_PATH = path.join(__dirname, '..', 'catalog', 'menu-catalog.json');
 const OUTPUT_PATH = path.join(__dirname, '..', 'docs', 'data', 'menu-data.json');
 const SNAPSHOT_PATH = path.join(__dirname, '..', 'catalog', 'loyverse-snapshot.json');
+const UNAVAILABLE_PATH = path.join(__dirname, '..', 'catalog', 'unavailable-items.json');
 const LOYVERSE_API = 'https://api.loyverse.com/v1.0';
+
+// Lee catalog/unavailable-items.json (lista de ids marcados "agotado" desde
+// docs/admin.html) y la fusiona en la salida. Es la fuente durable: el panel
+// de administración también actualiza docs/data/menu-data.json directamente
+// para que el cambio se vea al instante, pero si no tocara este archivo la
+// próxima sincronización de Loyverse borraría el estado "agotado" al
+// regenerar todo desde catalog/menu-catalog.json.
+function readUnavailableIds() {
+  try {
+    const raw = JSON.parse(fs.readFileSync(UNAVAILABLE_PATH, 'utf8'));
+    return new Set(Array.isArray(raw) ? raw : []);
+  } catch {
+    return new Set();
+  }
+}
 
 function normalize(str) {
   return String(str)
@@ -325,10 +341,15 @@ async function main() {
     return syncFlatItem(item, candidates, storeId, warnings);
   });
 
+  const unavailableIds = readUnavailableIds();
+  const itemsWithAvailability = newItems.map(item =>
+    unavailableIds.has(item.id) ? { ...item, available: false } : item
+  );
+
   const output = {
     CATEGORIES: catalog.CATEGORIES,
     MODIFIER_GROUPS: catalog.MODIFIER_GROUPS,
-    ITEMS: newItems,
+    ITEMS: itemsWithAvailability,
     _syncedAt: new Date().toISOString(),
   };
 
