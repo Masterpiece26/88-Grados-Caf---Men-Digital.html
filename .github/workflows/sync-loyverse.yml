@@ -29,12 +29,12 @@ jobs:
 
       - name: Publicar cambios si hay precios o catálogo actualizados
         run: |
-          if git diff --quiet -- docs/data/menu-data.json catalog/loyverse-snapshot.json; then
+          git add docs/data/menu-data.json catalog/loyverse-snapshot.json
+          if git diff --cached --quiet; then
             echo "Sin cambios, no se hace commit."
           else
             git config user.name "loyverse-sync-bot"
             git config user.email "actions@users.noreply.github.com"
-            git add docs/data/menu-data.json catalog/loyverse-snapshot.json
             git commit -m "Sincronizar precios con Loyverse [skip ci]"
             git push
           fi
