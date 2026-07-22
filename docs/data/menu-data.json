@@ -450,7 +450,9 @@
       "id": "espresso",
       "name": "Espresso",
       "cat": "cafe",
-      "price": 880
+      "price": 880,
+      "loyverseItemId": "b28f8d98-a796-4cb5-b392-c8a05dcbd4e7",
+      "image": "https://api.loyverse.com/image/b28f8d98-a796-4cb5-b392-c8a05dcbd4e7"
     },
     {
       "id": "cafe-pequeno",
@@ -461,13 +463,15 @@
       "mods": [
         "tipo-de-cafe"
       ],
+      "loyverseItemId": "1b97a482-6baa-4c06-967d-dffe1304fdd2",
       "image": "https://api.loyverse.com/image/1b97a482-6baa-4c06-967d-dffe1304fdd2"
     },
     {
       "id": "cafe-lungo",
       "name": "Café Lungo",
       "cat": "cafe",
-      "price": 880
+      "price": 880,
+      "loyverseItemId": "f6639e2b-fca8-4b17-a150-84644e893c87"
     },
     {
       "id": "cafe-americano",
@@ -478,6 +482,7 @@
       "mods": [
         "cafes"
       ],
+      "loyverseItemId": "115671bb-a3f5-42be-9fca-a974de39a22e",
       "image": "https://api.loyverse.com/image/115671bb-a3f5-42be-9fca-a974de39a22e"
     },
     {
@@ -485,26 +490,33 @@
       "name": "Café Cortado",
       "cat": "cafe",
       "price": 1740,
+      "loyverseItemId": "3f5a4b18-6e3e-42a7-8f52-4625a223d4d4",
       "image": "https://api.loyverse.com/image/3f5a4b18-6e3e-42a7-8f52-4625a223d4d4"
     },
     {
       "id": "cafe-capuchino",
       "name": "Capuchino",
       "cat": "cafe",
-      "price": 1740
+      "price": 1740,
+      "loyverseItemId": "56d79907-1c38-4a66-aa6a-43df8295dc4d",
+      "image": "https://api.loyverse.com/image/56d79907-1c38-4a66-aa6a-43df8295dc4d"
     },
     {
       "id": "cafe-latte",
       "name": "Latte",
       "cat": "cafe",
       "price": 1740,
-      "tag": "Popular"
+      "tag": "Popular",
+      "loyverseItemId": "0fcf395e-56ab-4cbf-b32e-5992ab872590",
+      "image": "https://api.loyverse.com/image/0fcf395e-56ab-4cbf-b32e-5992ab872590"
     },
     {
       "id": "cafe-latte-vainilla",
       "name": "Latte Vainilla",
       "cat": "cafe",
-      "price": 1740
+      "price": 1740,
+      "loyverseItemId": "8fde3669-5e81-40f8-a718-5febe9941b15",
+      "image": "https://api.loyverse.com/image/8fde3669-5e81-40f8-a718-5febe9941b15"
     },
     {
       "id": "cafe-maquiato",
@@ -520,19 +532,22 @@
       "name": "Café Doble",
       "cat": "cafe",
       "price": 1740,
+      "loyverseItemId": "48300f7d-6220-42af-9e63-5b5f6e649dbb",
       "image": "https://api.loyverse.com/image/48300f7d-6220-42af-9e63-5b5f6e649dbb"
     },
     {
       "id": "cafe-doble-xg",
       "name": "Café Doble Extra Grande",
       "cat": "cafe",
-      "price": 3250
+      "price": 3250,
+      "loyverseItemId": "2a8dabc0-dba1-441a-9b52-fe1877ac8e76"
     },
     {
       "id": "cafe-xg",
       "name": "Café Extra Grande",
       "cat": "cafe",
       "price": 2660,
+      "loyverseItemId": "d7e4fd63-cb0f-42e3-b42f-694bd596d54e",
       "image": "https://api.loyverse.com/image/d7e4fd63-cb0f-42e3-b42f-694bd596d54e"
     },
     {
@@ -540,26 +555,31 @@
       "name": "Café Marrón",
       "cat": "cafe",
       "price": 2180,
+      "loyverseItemId": "894098cc-26cb-40df-9b98-a5f379d705ab",
       "image": "https://api.loyverse.com/image/894098cc-26cb-40df-9b98-a5f379d705ab"
     },
     {
       "id": "cafe-moccachino",
       "name": "Moccachino",
       "cat": "cafe",
-      "price": 2180
+      "price": 2180,
+      "loyverseItemId": "e488777b-1694-41b7-be12-74313cc0c5e2",
+      "image": "https://api.loyverse.com/image/e488777b-1694-41b7-be12-74313cc0c5e2"
     },
     {
       "id": "cafe-bombon",
       "name": "Café Bombón",
       "cat": "cafe",
       "price": 2220,
+      "loyverseItemId": "a9467a9b-f5fe-4f05-9cfd-2ad885ea24be",
       "image": "https://api.loyverse.com/image/a9467a9b-f5fe-4f05-9cfd-2ad885ea24be"
     },
     {
       "id": "barraquito",
       "name": "Barraquito",
       "cat": "cafe",
-      "price": 4010
+      "price": 4010,
+      "loyverseItemId": "288dbe69-4e5f-45d8-a21b-a74d49a74c66"
     },
     {
       "id": "chocolate-caliente",
@@ -567,6 +587,7 @@
       "cat": "calientes",
       "price": 2450,
       "desc": "Chocolate a la taza, preparado con cacao disuelto en leche caliente.",
+      "loyverseItemId": "adea053e-6588-4973-ae49-b89fde8efa6e",
       "image": "https://api.loyverse.com/image/adea053e-6588-4973-ae49-b89fde8efa6e"
     },
     {
@@ -720,20 +741,24 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1130
+          "price": 1130,
+          "loyverseItemId": "3ae7fb65-15d4-42c4-9580-f39a87d54b05"
         },
         {
           "label": "Mediano",
-          "price": 1170
+          "price": 1170,
+          "loyverseItemId": "fcafc7e4-7da5-40fb-8c0f-7751362a0057"
         },
         {
           "label": "Grande",
-          "price": 2020
+          "price": 2020,
+          "loyverseItemId": "11f7ec7a-9d16-4bd8-bdf4-c4718129705d"
         }
       ],
       "mods": [
         "sabor-frappe"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/fcafc7e4-7da5-40fb-8c0f-7751362a0057"
     },
     {
       "id": "frappe-uva",
@@ -742,15 +767,18 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1100
+          "price": 1100,
+          "loyverseItemId": "8feedf1b-b4f7-4554-a674-e3a8d539c1e2"
         },
         {
           "label": "Mediano",
-          "price": 1130
+          "price": 1130,
+          "loyverseItemId": "057394e5-91c1-4b11-a6e5-f1d16739270f"
         },
         {
           "label": "Grande",
-          "price": 1960
+          "price": 1960,
+          "loyverseItemId": "74a42796-43f4-41d2-885c-069eb5a3479b"
         }
       ],
       "mods": [
@@ -764,20 +792,24 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1130
+          "price": 1130,
+          "loyverseItemId": "9ec89c9d-66e1-4301-88aa-4fd4ccb7c36c"
         },
         {
           "label": "Mediano",
-          "price": 1170
+          "price": 1170,
+          "loyverseItemId": "9a40675e-c26a-4486-8b87-ab06497b4a67"
         },
         {
           "label": "Grande",
-          "price": 2020
+          "price": 2020,
+          "loyverseItemId": "cfa9ca78-63c8-438e-b48d-6d7c49997e0e"
         }
       ],
       "mods": [
         "sabor-frappe"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/9a40675e-c26a-4486-8b87-ab06497b4a67"
     },
     {
       "id": "frappe-naranja",
@@ -786,20 +818,24 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1140
+          "price": 1140,
+          "loyverseItemId": "21b7d8ca-036f-488d-97d9-52fa4310bb55"
         },
         {
           "label": "Mediano",
-          "price": 1170
+          "price": 1170,
+          "loyverseItemId": "d89f3e63-36cf-47a5-9295-2a92c68197ed"
         },
         {
           "label": "Grande",
-          "price": 2020
+          "price": 2020,
+          "loyverseItemId": "e24c483a-0375-4125-94d2-090073896914"
         }
       ],
       "mods": [
         "sabor-frappe"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/d89f3e63-36cf-47a5-9295-2a92c68197ed"
     },
     {
       "id": "frappe-parchita",
@@ -808,21 +844,25 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1130
+          "price": 1130,
+          "loyverseItemId": "f2a3fa7b-be4d-4b73-b0d9-9ee51dce4def"
         },
         {
           "label": "Mediano",
-          "price": 1400
+          "price": 1400,
+          "loyverseItemId": "594bc0c8-48db-44fb-83be-06a55d8e8175"
         },
         {
           "label": "Grande",
-          "price": 2020
+          "price": 2020,
+          "loyverseItemId": "3ae60d7a-4ca3-4410-9ec1-509077e6dc60"
         }
       ],
       "tag": "Popular",
       "mods": [
         "sabor-frappe"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/594bc0c8-48db-44fb-83be-06a55d8e8175"
     },
     {
       "id": "frappe-tamarindo",
@@ -831,20 +871,24 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1130
+          "price": 1130,
+          "loyverseItemId": "18897473-1d69-4c2e-a5d4-bf8f73e39bc7"
         },
         {
           "label": "Mediano",
-          "price": 1170
+          "price": 1170,
+          "loyverseItemId": "baf3277d-7812-4db3-8255-da584468bc16"
         },
         {
           "label": "Grande",
-          "price": 2020
+          "price": 2020,
+          "loyverseItemId": "6fab33ac-aa1c-49d6-82c9-708f78969b65"
         }
       ],
       "mods": [
         "sabor-frappe"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/baf3277d-7812-4db3-8255-da584468bc16"
     },
     {
       "id": "frappe-toddy",
@@ -853,7 +897,8 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1130
+          "price": 1130,
+          "loyverseItemId": "be1538ad-6b29-4fe5-88d0-19faed98a682"
         },
         {
           "label": "Mediano",
@@ -875,20 +920,24 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1130
+          "price": 1130,
+          "loyverseItemId": "2ccb0d57-abd6-423a-8bde-6652b7833045"
         },
         {
           "label": "Mediano",
-          "price": 1170
+          "price": 1170,
+          "loyverseItemId": "64ec7c4c-6cc4-4f60-82c1-93d75765975e"
         },
         {
           "label": "Grande",
-          "price": 2020
+          "price": 2020,
+          "loyverseItemId": "33e0e5aa-de6e-4858-9682-ce07ccbc896e"
         }
       ],
       "mods": [
         "sabor-frappe"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/64ec7c4c-6cc4-4f60-82c1-93d75765975e"
     },
     {
       "id": "jugo-3en1",
@@ -897,17 +946,21 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1030
+          "price": 1030,
+          "loyverseItemId": "42b4d9d6-d3f1-4636-b057-f05e7869c81c"
         },
         {
           "label": "Mediano",
-          "price": 1400
+          "price": 1400,
+          "loyverseItemId": "ecd6054e-71a2-49c3-a60d-264d832ab842"
         },
         {
           "label": "Grande",
-          "price": 2310
+          "price": 2310,
+          "loyverseItemId": "a0595fac-e9e5-4f8e-9c04-40200f6e797a"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/42b4d9d6-d3f1-4636-b057-f05e7869c81c"
     },
     {
       "id": "jugo-2en1",
@@ -916,9 +969,11 @@
       "sizes": [
         {
           "label": "Grande",
-          "price": 2310
+          "price": 2310,
+          "loyverseItemId": "ae41252f-9d90-453d-b6e3-cf6978d80eb1"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/ae41252f-9d90-453d-b6e3-cf6978d80eb1"
     },
     {
       "id": "jugo-fresa",
@@ -927,13 +982,16 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1030
+          "price": 1030,
+          "loyverseItemId": "c3f84fa7-a1e4-4747-984c-fa6cbb7f3a4f"
         },
         {
           "label": "Mediano",
-          "price": 1400
+          "price": 1400,
+          "loyverseItemId": "ec905bd8-f2ee-46bc-a8bf-1609e332d864"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/c3f84fa7-a1e4-4747-984c-fa6cbb7f3a4f"
     },
     {
       "id": "jugo-guanabana",
@@ -942,9 +1000,11 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1030
+          "price": 1030,
+          "loyverseItemId": "36fb7500-00b9-4f6b-8c41-e620a9e41120"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/36fb7500-00b9-4f6b-8c41-e620a9e41120"
     },
     {
       "id": "jugo-guayaba",
@@ -953,17 +1013,21 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1030
+          "price": 1030,
+          "loyverseItemId": "608d3ceb-aa9f-4e6d-8813-e1025d0b0988"
         },
         {
           "label": "Mediano",
-          "price": 1400
+          "price": 1400,
+          "loyverseItemId": "f9b99451-7edf-4a2d-aa5b-6bee96d77a87"
         },
         {
           "label": "Grande",
-          "price": 2310
+          "price": 2310,
+          "loyverseItemId": "99957b64-cf7d-4ecb-847a-ea51325a098f"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/608d3ceb-aa9f-4e6d-8813-e1025d0b0988"
     },
     {
       "id": "jugo-naranja",
@@ -972,17 +1036,21 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1030
+          "price": 1030,
+          "loyverseItemId": "fd7e6c96-a118-4730-8e94-4fe9b4bc6089"
         },
         {
           "label": "Mediano",
-          "price": 1400
+          "price": 1400,
+          "loyverseItemId": "0f3b879b-bddd-403c-9d5a-6835502ce79b"
         },
         {
           "label": "Grande",
-          "price": 2310
+          "price": 2310,
+          "loyverseItemId": "6e3d702a-6b5d-428d-8610-36d904feedf5"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/fd7e6c96-a118-4730-8e94-4fe9b4bc6089"
     },
     {
       "id": "jugo-naranja-zanahoria",
@@ -991,13 +1059,16 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1030
+          "price": 1030,
+          "loyverseItemId": "fd7e6c96-a118-4730-8e94-4fe9b4bc6089"
         },
         {
           "label": "Mediano",
-          "price": 1400
+          "price": 1400,
+          "loyverseItemId": "12c708a6-e897-489d-8430-10b6aa66978a"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/fd7e6c96-a118-4730-8e94-4fe9b4bc6089"
     },
     {
       "id": "jugo-parchita",
@@ -1006,17 +1077,21 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1030
+          "price": 1030,
+          "loyverseItemId": "69372daf-d1e8-4826-8dda-d92e87ba5f22"
         },
         {
           "label": "Mediano",
-          "price": 1400
+          "price": 1400,
+          "loyverseItemId": "468d27d0-f5fa-4bfc-af32-cf5d99bd31f9"
         },
         {
           "label": "Grande",
-          "price": 2310
+          "price": 2310,
+          "loyverseItemId": "b5a18c5e-cd10-4c28-932d-5ddee96ddbbb"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/69372daf-d1e8-4826-8dda-d92e87ba5f22"
     },
     {
       "id": "jugo-pina",
@@ -1025,17 +1100,21 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 1030
+          "price": 1030,
+          "loyverseItemId": "cf1c9726-e4dd-4b92-8f80-8b2f2470dfdd"
         },
         {
           "label": "Mediano",
-          "price": 1400
+          "price": 1400,
+          "loyverseItemId": "348ec8f8-cb14-4027-9b89-1fee9c449dbd"
         },
         {
           "label": "Grande",
-          "price": 2310
+          "price": 2310,
+          "loyverseItemId": "14c51b26-2c3a-4a18-b1d5-e7fb8b95b821"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/cf1c9726-e4dd-4b92-8f80-8b2f2470dfdd"
     },
     {
       "id": "agua",
@@ -1044,17 +1123,21 @@
       "sizes": [
         {
           "label": "Pequeña",
-          "price": 570
+          "price": 570,
+          "loyverseItemId": "087a69a6-2157-474a-98bc-a4b30c171b79"
         },
         {
           "label": "Mediana",
-          "price": 750
+          "price": 750,
+          "loyverseItemId": "5c630488-2a73-422b-9b7c-b437d43b97c1"
         },
         {
           "label": "Grande",
-          "price": 1160
+          "price": 1160,
+          "loyverseItemId": "ce70eff5-ce47-4abc-8be2-fd4ae60c0a01"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/087a69a6-2157-474a-98bc-a4b30c171b79"
     },
     {
       "id": "agua-sparkling",
@@ -1064,6 +1147,7 @@
       "mods": [
         "sabor-agua"
       ],
+      "loyverseItemId": "edc5150c-ad18-4a9b-b48e-605bea5495be",
       "image": "https://api.loyverse.com/image/edc5150c-ad18-4a9b-b48e-605bea5495be"
     },
     {
@@ -1073,11 +1157,13 @@
       "sizes": [
         {
           "label": "Retornable",
-          "price": 510
+          "price": 510,
+          "loyverseItemId": "97689a11-b653-44c8-96c0-ad90f6793ba6"
         },
         {
           "label": "Desechable",
-          "price": 750
+          "price": 750,
+          "loyverseItemId": "0af15e83-6430-430a-9e0f-0a393286194d"
         }
       ],
       "image": "https://api.loyverse.com/image/97689a11-b653-44c8-96c0-ad90f6793ba6"
@@ -1089,20 +1175,24 @@
       "sizes": [
         {
           "label": "Pequeño",
-          "price": 900
+          "price": 900,
+          "loyverseItemId": "e9d67df9-2afa-40a7-800b-dbf91b83ec9e"
         },
         {
           "label": "Mediano",
-          "price": 1100
+          "price": 1100,
+          "loyverseItemId": "ee240a21-5506-4634-95d8-ec34f1577660"
         },
         {
           "label": "Grande",
-          "price": 1510
+          "price": 1510,
+          "loyverseItemId": "39030deb-f06f-42cd-a175-a8d65df305aa"
         }
       ],
       "mods": [
         "sabor-nestea"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/e9d67df9-2afa-40a7-800b-dbf91b83ec9e"
     },
     {
       "id": "tizana",
@@ -1111,15 +1201,18 @@
       "sizes": [
         {
           "label": "Pequeña",
-          "price": 1300
+          "price": 1300,
+          "loyverseItemId": "d3e6200b-035a-482f-b86b-92bd5c6818cc"
         },
         {
           "label": "Mediana",
-          "price": 1540
+          "price": 1540,
+          "loyverseItemId": "3261e39f-0f66-4f01-9412-d56f00f014f3"
         },
         {
           "label": "Grande",
-          "price": 2260
+          "price": 2260,
+          "loyverseItemId": "d31c80d3-294e-4d1b-9d9c-18009a3509b7"
         }
       ]
     },
@@ -1130,32 +1223,39 @@
       "sizes": [
         {
           "label": "Retornable",
-          "price": 570
+          "price": 570,
+          "loyverseItemId": "5c5b23b2-aabf-47d9-b59e-4858e4860f68"
         },
         {
           "label": "Lata",
-          "price": 1070
+          "price": 1070,
+          "loyverseItemId": "2ab787e2-0416-4408-805b-cb05ce21e89a"
         },
         {
           "label": "355ml desechable",
-          "price": 1070
+          "price": 1070,
+          "loyverseItemId": "c3a291c2-3778-4d04-8a86-5b1978c5d0d4"
         },
         {
           "label": "1 litro",
-          "price": 1260
+          "price": 1260,
+          "loyverseItemId": "8a148e0f-044b-403a-ac4a-547e81bbb362"
         },
         {
           "label": "1.5 litros",
-          "price": 1570
+          "price": 1570,
+          "loyverseItemId": "dc2ea164-2a71-4e47-b655-04741b5fbcb0"
         },
         {
           "label": "2 litros",
-          "price": 2110
+          "price": 2110,
+          "loyverseItemId": "39fbc92b-4646-4cec-ae05-62360d80325c"
         }
       ],
       "mods": [
         "sabor-coca-cola"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/5c5b23b2-aabf-47d9-b59e-4858e4860f68"
     },
     {
       "id": "pepsi",
@@ -1164,28 +1264,34 @@
       "sizes": [
         {
           "label": "Retornable",
-          "price": 570
+          "price": 570,
+          "loyverseItemId": "c8aaffb1-1a44-43bd-afec-24de25d5271d"
         },
         {
           "label": "Lata",
-          "price": 1100
+          "price": 1100,
+          "loyverseItemId": "01cecd8f-1e92-49f8-a75f-8659283e8765"
         },
         {
           "label": "1 litro",
-          "price": 1260
+          "price": 1260,
+          "loyverseItemId": "0ade16c1-0868-4ef7-9d87-62f4312ebb66"
         },
         {
           "label": "1.5 litros",
-          "price": 1600
+          "price": 1600,
+          "loyverseItemId": "1b7e8059-7abb-4c31-9f58-02429cefd9fd"
         },
         {
           "label": "2 litros",
-          "price": 2110
+          "price": 2110,
+          "loyverseItemId": "f8d3e6b4-72b1-4404-8983-7d04e559e408"
         }
       ],
       "mods": [
         "sabor-pepsi"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/c8aaffb1-1a44-43bd-afec-24de25d5271d"
     },
     {
       "id": "arepa-viuda",
@@ -1196,6 +1302,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "c46ee0c4-5035-4a80-a45b-bb3450d03bee",
       "image": "https://api.loyverse.com/image/c46ee0c4-5035-4a80-a45b-bb3450d03bee"
     },
     {
@@ -1207,6 +1314,7 @@
         "textura-arepa",
         "adicional-queso"
       ],
+      "loyverseItemId": "14062a26-8ed9-4940-a117-09a9d5fde622",
       "image": "https://api.loyverse.com/image/14062a26-8ed9-4940-a117-09a9d5fde622"
     },
     {
@@ -1217,6 +1325,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "9b12a187-eda8-4738-b306-901941b9305d",
       "image": "https://api.loyverse.com/image/9b12a187-eda8-4738-b306-901941b9305d"
     },
     {
@@ -1227,6 +1336,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "2da56438-c2b9-493e-8b3f-2388cc523fa9",
       "image": "https://api.loyverse.com/image/2da56438-c2b9-493e-8b3f-2388cc523fa9"
     },
     {
@@ -1238,6 +1348,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "b9e0ef3d-c37b-4674-9ae0-ffe00631d003",
       "image": "https://api.loyverse.com/image/b9e0ef3d-c37b-4674-9ae0-ffe00631d003"
     },
     {
@@ -1247,7 +1358,9 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "loyverseItemId": "2086f813-8f14-40e1-bb7a-967a8d16437c",
+      "image": "https://api.loyverse.com/image/2086f813-8f14-40e1-bb7a-967a8d16437c"
     },
     {
       "id": "arepa-pollo-queso",
@@ -1258,6 +1371,7 @@
         "textura-arepa",
         "adicional-queso"
       ],
+      "loyverseItemId": "aec278c2-b37e-41d4-b9f2-77a16f442026",
       "image": "https://api.loyverse.com/image/aec278c2-b37e-41d4-b9f2-77a16f442026"
     },
     {
@@ -1267,7 +1381,9 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "loyverseItemId": "0c07752b-0d17-48de-86d7-32c5610dbe3d",
+      "image": "https://api.loyverse.com/image/0c07752b-0d17-48de-86d7-32c5610dbe3d"
     },
     {
       "id": "arepa-carne-mechada",
@@ -1277,6 +1393,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "6dc7846b-bd2c-4dcb-9767-5cc2a8cef54e",
       "image": "https://api.loyverse.com/image/6dc7846b-bd2c-4dcb-9767-5cc2a8cef54e"
     },
     {
@@ -1287,7 +1404,9 @@
       "mods": [
         "textura-arepa",
         "adicional-queso"
-      ]
+      ],
+      "loyverseItemId": "dab7c87f-201b-41b3-b95e-297b4b3ef726",
+      "image": "https://api.loyverse.com/image/dab7c87f-201b-41b3-b95e-297b4b3ef726"
     },
     {
       "id": "arepa-molida",
@@ -1297,6 +1416,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "521d692f-c4e7-45e6-b981-dc375ba3c2fc",
       "image": "https://api.loyverse.com/image/521d692f-c4e7-45e6-b981-dc375ba3c2fc"
     },
     {
@@ -1308,6 +1428,7 @@
         "textura-arepa",
         "adicional-queso"
       ],
+      "loyverseItemId": "540f5b16-25d1-4fd0-9298-573351b86e76",
       "image": "https://api.loyverse.com/image/540f5b16-25d1-4fd0-9298-573351b86e76"
     },
     {
@@ -1317,7 +1438,9 @@
       "price": 2840,
       "mods": [
         "textura-arepa"
-      ]
+      ],
+      "loyverseItemId": "7ff1273d-38f3-4cf5-a217-65c38374253b",
+      "image": "https://api.loyverse.com/image/7ff1273d-38f3-4cf5-a217-65c38374253b"
     },
     {
       "id": "arepa-atun",
@@ -1327,6 +1450,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "82792208-e6ac-4b79-a570-d239bae17fd5",
       "image": "https://api.loyverse.com/image/82792208-e6ac-4b79-a570-d239bae17fd5"
     },
     {
@@ -1337,6 +1461,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "3ce1348e-bdf5-43af-b97a-e89f24b9527a",
       "image": "https://api.loyverse.com/image/3ce1348e-bdf5-43af-b97a-e89f24b9527a"
     },
     {
@@ -1347,6 +1472,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "d8187ee7-4ef5-4bf6-83a1-c7b8cf87a884",
       "image": "https://api.loyverse.com/image/d8187ee7-4ef5-4bf6-83a1-c7b8cf87a884"
     },
     {
@@ -1358,6 +1484,7 @@
         "textura-arepa",
         "adicional-queso"
       ],
+      "loyverseItemId": "dd6690a4-e4d2-4b38-ba7a-968d3150ac1a",
       "image": "https://api.loyverse.com/image/dd6690a4-e4d2-4b38-ba7a-968d3150ac1a"
     },
     {
@@ -1368,6 +1495,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "3c884bdf-85f2-4975-bdf6-727aa7b75f34",
       "image": "https://api.loyverse.com/image/3c884bdf-85f2-4975-bdf6-727aa7b75f34"
     },
     {
@@ -1378,6 +1506,7 @@
       "mods": [
         "textura-arepa"
       ],
+      "loyverseItemId": "e215b930-e295-41e5-b1d1-deecf5884b51",
       "image": "https://api.loyverse.com/image/e215b930-e295-41e5-b1d1-deecf5884b51"
     },
     {
@@ -1387,7 +1516,9 @@
       "price": 2800,
       "mods": [
         "pan-sandwich"
-      ]
+      ],
+      "loyverseItemId": "3a306253-5811-4675-8b38-556affcee160",
+      "image": "https://api.loyverse.com/image/3a306253-5811-4675-8b38-556affcee160"
     },
     {
       "id": "sandwich-jamon-queso",
@@ -1398,6 +1529,7 @@
         "pan-sandwich",
         "adicional-queso"
       ],
+      "loyverseItemId": "1f714a93-d6e9-40d5-9344-d4b1097084ae",
       "image": "https://api.loyverse.com/image/1f714a93-d6e9-40d5-9344-d4b1097084ae"
     },
     {
@@ -1408,6 +1540,7 @@
       "mods": [
         "pan-sandwich"
       ],
+      "loyverseItemId": "b52a5e04-f2be-4460-86a4-97d550c34862",
       "image": "https://api.loyverse.com/image/b52a5e04-f2be-4460-86a4-97d550c34862"
     },
     {
@@ -1418,6 +1551,7 @@
       "mods": [
         "pan-sandwich"
       ],
+      "loyverseItemId": "7c8264f7-77f5-4415-8d0c-51b9af0d5650",
       "image": "https://api.loyverse.com/image/7c8264f7-77f5-4415-8d0c-51b9af0d5650"
     },
     {
@@ -1428,6 +1562,7 @@
       "mods": [
         "pan-sandwich"
       ],
+      "loyverseItemId": "7014aaf0-9c3f-4b26-a97b-a7557c8f2ac6",
       "image": "https://api.loyverse.com/image/7014aaf0-9c3f-4b26-a97b-a7557c8f2ac6"
     },
     {
@@ -1435,6 +1570,7 @@
       "name": "Empanada de Queso",
       "cat": "empanadas",
       "price": 880,
+      "loyverseItemId": "0228f74b-2ff5-4ce9-8614-72068ad52f1e",
       "image": "https://api.loyverse.com/image/0228f74b-2ff5-4ce9-8614-72068ad52f1e"
     },
     {
@@ -1442,6 +1578,7 @@
       "name": "Empanada de Pollo",
       "cat": "empanadas",
       "price": 990,
+      "loyverseItemId": "2ae22333-4e43-47cf-ab41-92348b425599",
       "image": "https://api.loyverse.com/image/2ae22333-4e43-47cf-ab41-92348b425599"
     },
     {
@@ -1449,6 +1586,7 @@
       "name": "Empanada Jamón y Queso",
       "cat": "empanadas",
       "price": 990,
+      "loyverseItemId": "cba931e5-c053-45e4-a9be-d55fbebe4260",
       "image": "https://api.loyverse.com/image/cba931e5-c053-45e4-a9be-d55fbebe4260"
     },
     {
@@ -1456,6 +1594,7 @@
       "name": "Empanada Caraota y Queso",
       "cat": "empanadas",
       "price": 990,
+      "loyverseItemId": "75d5517f-025f-4230-9ddb-294dc8f373bd",
       "image": "https://api.loyverse.com/image/75d5517f-025f-4230-9ddb-294dc8f373bd"
     },
     {
@@ -1463,6 +1602,7 @@
       "name": "Empanada de Atún",
       "cat": "empanadas",
       "price": 990,
+      "loyverseItemId": "9721206c-cf6f-4bb3-b4e6-1cb5fda53e38",
       "image": "https://api.loyverse.com/image/9721206c-cf6f-4bb3-b4e6-1cb5fda53e38"
     },
     {
@@ -1470,6 +1610,7 @@
       "name": "Empanada Carne Molida",
       "cat": "empanadas",
       "price": 1110,
+      "loyverseItemId": "9ab959d8-070a-456f-b207-7c54182726d0",
       "image": "https://api.loyverse.com/image/9ab959d8-070a-456f-b207-7c54182726d0"
     },
     {
@@ -1477,19 +1618,23 @@
       "name": "Empanada de Pernil",
       "cat": "empanadas",
       "price": 1220,
+      "loyverseItemId": "0776b0cc-f279-417b-84b0-90573d2483c5",
       "image": "https://api.loyverse.com/image/0776b0cc-f279-417b-84b0-90573d2483c5"
     },
     {
       "id": "empanada-champinones-mozzarella",
       "name": "Empanada Champiñones y Queso Mozzarella",
       "cat": "empanadas",
-      "price": 1250
+      "price": 1250,
+      "loyverseItemId": "76a16c17-f3b4-44f9-be14-0f1787994dc1",
+      "image": "https://api.loyverse.com/image/76a16c17-f3b4-44f9-be14-0f1787994dc1"
     },
     {
       "id": "empanada-cazon",
       "name": "Empanada de Cazón",
       "cat": "empanadas",
       "price": 1330,
+      "loyverseItemId": "47ad236c-5e63-4e83-9374-d48d486096ed",
       "image": "https://api.loyverse.com/image/47ad236c-5e63-4e83-9374-d48d486096ed"
     },
     {
@@ -1497,6 +1642,7 @@
       "name": "Empanada de Mechada",
       "cat": "empanadas",
       "price": 1360,
+      "loyverseItemId": "e8d1212e-3873-4b24-928a-39cf678fcef5",
       "image": "https://api.loyverse.com/image/e8d1212e-3873-4b24-928a-39cf678fcef5"
     },
     {
@@ -1504,13 +1650,15 @@
       "name": "Empanada de Pabellón",
       "cat": "empanadas",
       "price": 1400,
+      "loyverseItemId": "229ab2df-4b40-409f-b6ad-80e305d86e04",
       "image": "https://api.loyverse.com/image/229ab2df-4b40-409f-b6ad-80e305d86e04"
     },
     {
       "id": "empanada-mechada-queso-amarillo",
       "name": "Empanada Mechada con Queso Amarillo",
       "cat": "empanadas",
-      "price": 1590
+      "price": 1590,
+      "loyverseItemId": "0047cef7-3863-4571-8ddf-8f249e4a02bb"
     },
     {
       "id": "cachitos",
@@ -1518,19 +1666,22 @@
       "cat": "panaderia",
       "price": 1270,
       "tag": "Popular",
+      "loyverseItemId": "76ae6bb1-e16d-4e09-a678-a2cee7b10b50",
       "image": "https://api.loyverse.com/image/76ae6bb1-e16d-4e09-a678-a2cee7b10b50"
     },
     {
       "id": "mini-cachito",
       "name": "Mini Cachito",
       "cat": "panaderia",
-      "price": 890
+      "price": 890,
+      "loyverseItemId": "6d61f72b-ff5b-41d0-ba3c-e48b700dfe79"
     },
     {
       "id": "cachito-mortadela-pistacho",
       "name": "Cachito de Mortadela y Pistacho",
       "cat": "panaderia",
       "price": 1670,
+      "loyverseItemId": "e67672b6-f57c-4d01-9091-edab9dd36876",
       "image": "https://api.loyverse.com/image/e67672b6-f57c-4d01-9091-edab9dd36876"
     },
     {
@@ -1538,6 +1689,7 @@
       "name": "Cachito Jamón de Pavo / Queso Crema",
       "cat": "panaderia",
       "price": 1670,
+      "loyverseItemId": "ddcf3f92-1d2c-4702-ad2e-95d67b34cd98",
       "image": "https://api.loyverse.com/image/ddcf3f92-1d2c-4702-ad2e-95d67b34cd98"
     },
     {
@@ -1545,6 +1697,7 @@
       "name": "Cachito Queso Paisa",
       "cat": "panaderia",
       "price": 1390,
+      "loyverseItemId": "5ae30755-0cbd-4e90-8d8d-f3cc5005d2d7",
       "image": "https://api.loyverse.com/image/5ae30755-0cbd-4e90-8d8d-f3cc5005d2d7"
     },
     {
@@ -1555,6 +1708,7 @@
       "mods": [
         "topping-croissant"
       ],
+      "loyverseItemId": "e86b89e2-27b9-49fa-a73d-c55ab7bafce3",
       "image": "https://api.loyverse.com/image/e86b89e2-27b9-49fa-a73d-c55ab7bafce3"
     },
     {
@@ -1565,56 +1719,66 @@
       "mods": [
         "topping-croissant"
       ],
+      "loyverseItemId": "ec097559-90c5-4835-80ce-b49539c8d3b6",
       "image": "https://api.loyverse.com/image/ec097559-90c5-4835-80ce-b49539c8d3b6"
     },
     {
       "id": "golfiado",
       "name": "Golfiado",
       "cat": "panaderia",
-      "price": 1280
+      "price": 1280,
+      "loyverseItemId": "1196c458-f894-4179-821e-819dca4dbc68"
     },
     {
       "id": "pan-de-jamon",
       "name": "Pan de Jamón Grande",
       "cat": "panaderia",
-      "price": 10770
+      "price": 10770,
+      "loyverseItemId": "5ab6d8aa-a127-449f-9dcf-616eb4dee868",
+      "image": "https://api.loyverse.com/image/5ab6d8aa-a127-449f-9dcf-616eb4dee868"
     },
     {
       "id": "pan-de-jamon-croissant",
       "name": "Pan de Jamón Croissant",
       "cat": "panaderia",
-      "price": 10770
+      "price": 10770,
+      "loyverseItemId": "c1d10b56-cd40-40ec-96ff-f263966ac3ec"
     },
     {
       "id": "pan-de-jamon-mediano",
       "name": "Pan de Jamón Mediano",
       "cat": "panaderia",
-      "price": 7060
+      "price": 7060,
+      "loyverseItemId": "7aa89468-fc2b-4b55-931b-b3caecc4842b"
     },
     {
       "id": "mini-pan-de-jamon",
       "name": "Mini Pan de Jamón",
       "cat": "panaderia",
-      "price": 3510
+      "price": 3510,
+      "loyverseItemId": "266c3f8d-5adc-46aa-9cae-cb1977a66b0e"
     },
     {
       "id": "rol-canela",
       "name": "Rol de Canela",
       "cat": "panaderia",
       "price": 1290,
+      "loyverseItemId": "d2c86ee1-daf6-4c8b-862c-7f48f31f3321",
       "image": "https://api.loyverse.com/image/d2c86ee1-daf6-4c8b-862c-7f48f31f3321"
     },
     {
       "id": "rol-pan-de-jamon-brioche",
       "name": "Rol de Pan de Jamón Brioche",
       "cat": "panaderia",
-      "price": 1280
+      "price": 1280,
+      "loyverseItemId": "1a0be264-15ea-40f9-bcd4-255ad1b481db"
     },
     {
       "id": "rol-pan-de-jamon-croissant",
       "name": "Rol de Pan de Jamón Croissant",
       "cat": "panaderia",
-      "price": 1590
+      "price": 1590,
+      "loyverseItemId": "ba8ec1ea-2487-4e4d-8ffa-e57f455d53a9"
     },
     {
       "id": "pastelito-jamon-queso",
@@ -1623,44 +1787,52 @@
       "price": 2310,
       "mods": [
         "relleno-pastelito"
-      ]
+      ],
+      "loyverseItemId": "368279d2-65fb-4ad0-9a66-c6e403b2eb45"
     },
     {
       "id": "pastelito-ricota",
       "name": "Pastelito de Ricota",
       "cat": "panaderia",
       "price": 2310,
+      "loyverseItemId": "e15fbc80-bd86-4d26-8f6e-03af0c7f0db7",
       "image": "https://api.loyverse.com/image/e15fbc80-bd86-4d26-8f6e-03af0c7f0db7"
     },
     {
       "id": "pastelito-champinones-paisa",
       "name": "Pastelito Champiñones/Queso Paisa",
       "cat": "panaderia",
-      "price": 2310
+      "price": 2310,
+      "loyverseItemId": "6d509673-bc97-4e63-b1ad-9ea5b7fe183e"
     },
     {
       "id": "pastelito-pollo",
       "name": "Pastelito de Pollo",
       "cat": "panaderia",
-      "price": 2310
+      "price": 2310,
+      "loyverseItemId": "5496749f-e5f8-41dd-b8c8-a4ecc6c08f22",
+      "image": "https://api.loyverse.com/image/5496749f-e5f8-41dd-b8c8-a4ecc6c08f22"
     },
     {
       "id": "pastelito-navideno",
       "name": "Pastelito Navideño",
       "cat": "panaderia",
-      "price": 2290
+      "price": 2290,
+      "loyverseItemId": "8989de5f-871e-43f0-9417-f8695bde88f7"
     },
     {
       "id": "mini-pastelito",
       "name": "Mini Pastelito",
       "cat": "panaderia",
-      "price": 1280
+      "price": 1280,
+      "loyverseItemId": "2fad1455-548e-4a9c-9522-0b34773b3ba4"
     },
     {
       "id": "mini-lunch",
       "name": "Mini Lunch",
       "cat": "panaderia",
       "price": 1270,
+      "loyverseItemId": "b51060fa-b961-43a8-8345-4e19e0be2301",
       "image": "https://api.loyverse.com/image/b51060fa-b961-43a8-8345-4e19e0be2301"
     },
     {
@@ -1671,6 +1843,7 @@
       "mods": [
         "adicional-desayuno"
       ],
+      "loyverseItemId": "3499e8d9-9591-453f-af72-0a6946ed9629",
       "image": "https://api.loyverse.com/image/3499e8d9-9591-453f-af72-0a6946ed9629"
     },
     {
@@ -1681,19 +1854,22 @@
       "mods": [
         "adicional-desayuno"
       ],
+      "loyverseItemId": "500f42ce-3cb6-4f86-b0e0-33f2307e4216",
       "image": "https://api.loyverse.com/image/500f42ce-3cb6-4f86-b0e0-33f2307e4216"
     },
     {
       "id": "tortilla-espanola",
       "name": "Tortilla Española",
       "cat": "desayunos",
-      "price": 2180
+      "price": 2180,
+      "loyverseItemId": "76e16ccf-3142-4bfc-a2ef-1fa84fb98555"
     },
     {
       "id": "tortilla-omelette",
       "name": "Tortilla Omelette",
       "cat": "desayunos",
-      "price": 3100
+      "price": 3100,
+      "loyverseItemId": "67eb0094-5920-4033-9a13-856ba5ffb81b"
     },
     {
       "id": "pizza-margarita",
@@ -1704,6 +1880,7 @@
       "mods": [
         "extras-pizza"
       ],
+      "loyverseItemId": "2a90179b-33cd-4469-a4b9-a598ac926552",
       "image": "https://api.loyverse.com/image/2a90179b-33cd-4469-a4b9-a598ac926552"
     },
     {
@@ -1721,6 +1898,7 @@
       "mods": [
         "extras-pizza"
       ],
+      "loyverseItemId": "1b274df2-2c90-4995-86ed-f28c517c3b53",
       "image": "https://api.loyverse.com/image/1b274df2-2c90-4995-86ed-f28c517c3b53"
     },
     {
@@ -1728,6 +1906,7 @@
       "name": "Mini Pizza",
       "cat": "pizza",
       "price": 1740,
+      "loyverseItemId": "ef13238a-b92d-4463-8ab0-2db4ecc05a88",
       "image": "https://api.loyverse.com/image/ef13238a-b92d-4463-8ab0-2db4ecc05a88"
     },
     {
@@ -1735,6 +1914,7 @@
       "name": "Donas Glaseadas",
       "cat": "donas",
       "price": 990,
+      "loyverseItemId": "a6ddf81b-06b5-4642-80d3-eda03ba9d736",
       "image": "https://api.loyverse.com/image/a6ddf81b-06b5-4642-80d3-eda03ba9d736"
     },
     {
@@ -1742,19 +1922,23 @@
       "name": "Donas Rellenas",
       "cat": "donas",
       "price": 990,
+      "loyverseItemId": "f6174d5f-ddfe-4d88-85e2-dead778ac883",
       "image": "https://api.loyverse.com/image/f6174d5f-ddfe-4d88-85e2-dead778ac883"
     },
     {
       "id": "alfajor-coco",
       "name": "Alfajor de Coco",
       "cat": "galletas",
-      "price": 810
+      "price": 810,
+      "loyverseItemId": "86ee6059-c120-4600-9f3b-7c0693949099",
+      "image": "https://api.loyverse.com/image/86ee6059-c120-4600-9f3b-7c0693949099"
     },
     {
       "id": "alfajor-bom-o-bom",
       "name": "Alfajor Bom o Bom",
       "cat": "galletas",
       "price": 810,
+      "loyverseItemId": "4b736352-ab72-4780-98a3-2aab10630cff",
       "image": "https://api.loyverse.com/image/4b736352-ab72-4780-98a3-2aab10630cff"
     },
     {
@@ -1762,6 +1946,7 @@
       "name": "Alfajor Havanna Arequipe",
       "cat": "galletas",
       "price": 1220,
+      "loyverseItemId": "35d41585-f926-444b-b3bd-854b87290ca6",
       "image": "https://api.loyverse.com/image/35d41585-f926-444b-b3bd-854b87290ca6"
     },
     {
@@ -1769,19 +1954,22 @@
       "name": "Alfajor Mantequilla de Maní",
       "cat": "galletas",
       "price": 810,
+      "loyverseItemId": "47c643d0-2048-4e59-a5b8-3bc0758f5e2e",
       "image": "https://api.loyverse.com/image/47c643d0-2048-4e59-a5b8-3bc0758f5e2e"
     },
     {
       "id": "3-mini-alfajores",
       "name": "3 Mini Alfajores",
       "cat": "galletas",
-      "price": 790
+      "price": 790,
+      "loyverseItemId": "ffea6b35-568a-4b32-8bda-88de358021d8"
     },
     {
       "id": "cajita-12-mini-alfajores",
       "name": "Cajita 12 Mini Alfajores",
       "cat": "galletas",
       "price": 3430,
+      "loyverseItemId": "c751a444-b602-408f-9705-7697243f2c8b",
       "image": "https://api.loyverse.com/image/c751a444-b602-408f-9705-7697243f2c8b"
     },
     {
@@ -1789,6 +1977,7 @@
       "name": "Galleta Nutella Chocolate",
       "cat": "galletas",
       "price": 530,
+      "loyverseItemId": "508403b6-a97a-419b-b626-f1709c4ace38",
       "image": "https://api.loyverse.com/image/508403b6-a97a-419b-b626-f1709c4ace38"
     },
     {
@@ -1796,6 +1985,7 @@
       "name": "Galleta Nutella Vainilla",
       "cat": "galletas",
       "price": 530,
+      "loyverseItemId": "e4d47518-e076-4898-b358-cede17b873a3",
       "image": "https://api.loyverse.com/image/e4d47518-e076-4898-b358-cede17b873a3"
     },
     {
@@ -1803,6 +1993,7 @@
       "name": "Galletas Chocolate con Chispas",
       "cat": "galletas",
       "price": 350,
+      "loyverseItemId": "9ebbdabb-bc54-4436-887d-7f440e83815d",
       "image": "https://api.loyverse.com/image/9ebbdabb-bc54-4436-887d-7f440e83815d"
     },
     {
@@ -1810,6 +2001,7 @@
       "name": "Galletas Vainilla con Chispas",
       "cat": "galletas",
       "price": 350,
+      "loyverseItemId": "df3d0a16-3152-4c92-9986-8a6f8737b68b",
       "image": "https://api.loyverse.com/image/df3d0a16-3152-4c92-9986-8a6f8737b68b"
     },
     {
@@ -1817,6 +2009,7 @@
       "name": "Galletas Danesas",
       "cat": "galletas",
       "price": 1030,
+      "loyverseItemId": "39a0fdf7-0f09-4b08-93f0-3dc94608ea61",
       "image": "https://api.loyverse.com/image/39a0fdf7-0f09-4b08-93f0-3dc94608ea61"
     },
     {
@@ -1824,6 +2017,7 @@
       "name": "Brownie Tradicional",
       "cat": "postres",
       "price": 1420,
+      "loyverseItemId": "7f1a8491-e663-49ec-b71f-ba9e4efac579",
       "image": "https://api.loyverse.com/image/7f1a8491-e663-49ec-b71f-ba9e4efac579"
     },
     {
@@ -1831,6 +2025,7 @@
       "name": "Brownie Frutos Secos",
       "cat": "postres",
       "price": 1670,
+      "loyverseItemId": "d5da9d6a-8aaa-4029-9083-578217d353e6",
       "image": "https://api.loyverse.com/image/d5da9d6a-8aaa-4029-9083-578217d353e6"
     },
     {
@@ -1838,6 +2033,7 @@
       "name": "Choco Almendra",
       "cat": "postres",
       "price": 2650,
+      "loyverseItemId": "95dc99be-8213-4d6b-b4ee-4b0d4e889026",
       "image": "https://api.loyverse.com/image/95dc99be-8213-4d6b-b4ee-4b0d4e889026"
     },
     {
@@ -1845,31 +2041,39 @@
       "name": "Oreo",
       "cat": "postres",
       "price": 2650,
+      "loyverseItemId": "3777e18c-ccc0-4e50-ab47-d63d5ce61713",
       "image": "https://api.loyverse.com/image/3777e18c-ccc0-4e50-ab47-d63d5ce61713"
     },
     {
       "id": "lingote-chocolate",
       "name": "Lingote de Chocolate",
       "cat": "postres",
-      "price": 870
+      "price": 870,
+      "loyverseItemId": "986504c9-9f60-4c8b-a836-77f38c3d6762",
+      "image": "https://api.loyverse.com/image/986504c9-9f60-4c8b-a836-77f38c3d6762"
     },
     {
       "id": "lingote-limon",
       "name": "Lingote de Limón",
       "cat": "postres",
-      "price": 640
+      "price": 640,
+      "loyverseItemId": "91c4dc73-8d66-44ae-a61a-e19850748eb0",
+      "image": "https://api.loyverse.com/image/91c4dc73-8d66-44ae-a61a-e19850748eb0"
     },
     {
       "id": "lingote-vainilla",
       "name": "Lingote de Vainilla",
       "cat": "postres",
-      "price": 600
+      "price": 600,
+      "loyverseItemId": "9ca029e6-7b4f-44d6-afd8-70f51477979b",
+      "image": "https://api.loyverse.com/image/9ca029e6-7b4f-44d6-afd8-70f51477979b"
     },
     {
       "id": "pay-limon",
       "name": "Pay de Limón",
       "cat": "postres",
       "price": 1780,
+      "loyverseItemId": "4ce0eb6c-09d8-405f-acd6-1821a9c1bd8a",
       "image": "https://api.loyverse.com/image/4ce0eb6c-09d8-405f-acd6-1821a9c1bd8a"
     },
     {
@@ -1877,31 +2081,37 @@
       "name": "Pay de Parchita",
       "cat": "postres",
       "price": 1780,
+      "loyverseItemId": "cfed3326-d04d-4a5a-933d-20fd179641c1",
       "image": "https://api.loyverse.com/image/cfed3326-d04d-4a5a-933d-20fd179641c1"
     },
     {
       "id": "muffin-calabaza",
       "name": "Muffin de Calabaza con Chispas",
       "cat": "postres",
-      "price": 960
+      "price": 960,
+      "loyverseItemId": "ed59c20c-e308-4283-af56-f6e0d9e379b4"
     },
     {
       "id": "torta-fresa",
       "name": "Torta de Fresa (porción)",
       "cat": "postres",
-      "price": 3150
+      "price": 3150,
+      "loyverseItemId": "135a5e0a-08f4-4734-966b-5d4782149d92",
+      "image": "https://api.loyverse.com/image/135a5e0a-08f4-4734-966b-5d4782149d92"
     },
     {
       "id": "torta-naranja",
       "name": "Torta de Naranja (porción)",
       "cat": "postres",
-      "price": 1170
+      "price": 1170,
+      "loyverseItemId": "50248b37-1df1-4162-9ef6-178806177fc6"
     },
     {
       "id": "torta-parchita",
       "name": "Torta de Parchita (porción)",
       "cat": "postres",
-      "price": 1970
+      "price": 1970,
+      "loyverseItemId": "9b89bc98-b2e5-4382-a657-a0795e05e88d"
     },
     {
       "id": "torta-queso",
@@ -1911,37 +2121,46 @@
       "tag": "Popular",
       "mods": [
         "topping-torta-queso"
-      ]
+      ],
+      "loyverseItemId": "41adb462-9852-4a7a-88c4-262ce66c49bf"
     },
     {
       "id": "torta-red-velvet",
       "name": "Torta Red Velvet (porción)",
       "cat": "postres",
-      "price": 2290
+      "price": 2290,
+      "loyverseItemId": "64d714f4-b41f-47f7-800d-830282b725c6",
+      "image": "https://api.loyverse.com/image/64d714f4-b41f-47f7-800d-830282b725c6"
     },
     {
       "id": "torta-tiramisu",
       "name": "Torta Tiramisú (porción)",
       "cat": "postres",
-      "price": 2290
+      "price": 2290,
+      "loyverseItemId": "5f6651e0-89c0-4a72-b921-5b9558093892",
+      "image": "https://api.loyverse.com/image/5f6651e0-89c0-4a72-b921-5b9558093892"
     },
     {
       "id": "torta-zanahoria-nueces",
       "name": "Torta Zanahoria y Nueces (porción)",
       "cat": "postres",
-      "price": 2290
+      "price": 2290,
+      "loyverseItemId": "f471a4ea-a196-423a-bcd0-a4f3639073c4",
+      "image": "https://api.loyverse.com/image/f471a4ea-a196-423a-bcd0-a4f3639073c4"
     },
     {
       "id": "torta-ron",
       "name": "Torta de Ron (porción)",
       "cat": "postres",
-      "price": 1380
+      "price": 1380,
+      "loyverseItemId": "49edcb64-4227-4537-8cb4-439ed10b74d2"
     },
     {
       "id": "torta-coco",
       "name": "Torta de Coco (porción)",
       "cat": "postres",
-      "price": 2640
+      "price": 2640,
+      "loyverseItemId": "ae8624d9-fc39-4fe4-86b5-ad15b4da8955"
     },
     {
       "id": "torta-auyama",
@@ -1956,15 +2175,18 @@
       "sizes": [
         {
           "label": "Grande",
-          "price": 10710
+          "price": 10710,
+          "loyverseItemId": "9390a024-9682-4f89-ba58-37986420d291"
         },
         {
           "label": "Grande 2.2kg",
-          "price": 22930
+          "price": 22930,
+          "loyverseItemId": "50dc17b5-b4ac-408d-a399-96d43664abe6"
         },
         {
           "label": "Completa",
-          "price": 18920
+          "price": 18920,
+          "loyverseItemId": "6923d8f7-ba18-4066-9496-87f2d2c3721b"
         }
       ],
       "image": "https://api.loyverse.com/image/135a5e0a-08f4-4734-966b-5d4782149d92"
@@ -1976,7 +2198,8 @@
       "sizes": [
         {
           "label": "Completa",
-          "price": 17760
+          "price": 17760,
+          "loyverseItemId": "ce2ec52b-185f-4d64-acc5-e150b8f80cf6"
         }
       ]
     },
@@ -1987,7 +2210,8 @@
       "sizes": [
         {
           "label": "Completa",
-          "price": 11510
+          "price": 11510,
+          "loyverseItemId": "7cf52a3f-db84-4b3b-9a1a-533a74f7feed"
         }
       ]
     },
@@ -1998,7 +2222,8 @@
       "sizes": [
         {
           "label": "Completa",
-          "price": 17410
+          "price": 17410,
+          "loyverseItemId": "b7d9f77b-ce33-4921-b97b-5a3b3b3e0336"
         }
       ]
     },
@@ -2009,7 +2234,8 @@
       "sizes": [
         {
           "label": "Completa",
-          "price": 19370
+          "price": 19370,
+          "loyverseItemId": "12cdfa9c-cb86-482e-b625-9683ebd49c1c"
         }
       ]
     },
@@ -2020,11 +2246,13 @@
       "sizes": [
         {
           "label": "4 porciones",
-          "price": 9760
+          "price": 9760,
+          "loyverseItemId": "92e3c577-519b-47c1-8318-b4a1750da0b2"
         },
         {
           "label": "Completa",
-          "price": 14550
+          "price": 14550,
+          "loyverseItemId": "883c1ff5-fe22-4e04-b13f-f6e6d2d0a021"
         }
       ]
     },
@@ -2035,15 +2263,18 @@
       "sizes": [
         {
           "label": "4 porciones",
-          "price": 9790
+          "price": 9790,
+          "loyverseItemId": "f7b34c87-981b-4fca-bba0-b5f1fc049f30"
         },
         {
           "label": "Completa",
-          "price": 15010
+          "price": 15010,
+          "loyverseItemId": "aca7d38c-6499-454f-be20-065d5032af85"
         },
         {
           "label": "30x30",
-          "price": 28990
+          "price": 28990,
+          "loyverseItemId": "24e03e1e-d094-4e8d-bc2c-60842b9d1f0b"
         }
       ]
     },
@@ -2054,7 +2285,8 @@
       "sizes": [
         {
           "label": "Completa",
-          "price": 8870
+          "price": 8870,
+          "loyverseItemId": "a557eeda-d4a0-4903-b00e-7409444fedd9"
         }
       ]
     },
@@ -2065,11 +2297,13 @@
       "sizes": [
         {
           "label": "Completa",
-          "price": 22560
+          "price": 22560,
+          "loyverseItemId": "b4c91108-0f14-41b8-b513-18979c9f7957"
         },
         {
           "label": "3 Rellenos",
-          "price": 25760
+          "price": 25760,
+          "loyverseItemId": "eb571e55-85dc-4aa3-ae80-499f37b10ca5"
         }
       ]
     },
@@ -2080,11 +2314,13 @@
       "sizes": [
         {
           "label": "Arequipe o Chocolate",
-          "price": 21600
+          "price": 21600,
+          "loyverseItemId": "c30bc18f-6971-477a-9d9e-971c676fad1b"
         },
         {
           "label": "3 Rellenos",
-          "price": 23530
+          "price": 23530,
+          "loyverseItemId": "38b02a9e-b98f-4c24-a506-a3ae03ecba12"
         }
       ]
     },
@@ -2095,11 +2331,13 @@
       "sizes": [
         {
           "label": "Individual",
-          "price": 4610
+          "price": 4610,
+          "loyverseItemId": "ec3ea44b-6646-4844-95ff-8aaacab23b0a"
         },
         {
           "label": "Marmoleado Grande",
-          "price": 11250
+          "price": 11250,
+          "loyverseItemId": "bda30fb7-70bf-4f31-9bb7-3f2284462301"
         }
       ]
     },
@@ -2110,24 +2348,29 @@
       "sizes": [
         {
           "label": "Clásico",
-          "price": 11800
+          "price": 11800,
+          "loyverseItemId": "51717dea-3cf0-4004-8ce4-15803736fe6d"
         },
         {
           "label": "Choco/Almendras",
-          "price": 11840
+          "price": 11840,
+          "loyverseItemId": "4733c43c-85b8-4578-8e80-d54e31963b80"
         },
         {
           "label": "Red Velvet",
-          "price": 9560
+          "price": 9560,
+          "loyverseItemId": "25a3eec8-2ae1-40b1-ad35-0daea94103d3"
         },
         {
           "label": "Tiramisú",
-          "price": 9590
+          "price": 9590,
+          "loyverseItemId": "6f4fcb9a-56c8-4b4c-8a1c-b5b28953df99"
         }
       ],
       "mods": [
         "relleno-mini-cake"
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/25a3eec8-2ae1-40b1-ad35-0daea94103d3"
     },
     {
       "id": "pie-de-limon",
@@ -2136,11 +2379,13 @@
       "sizes": [
         {
           "label": "15cm",
-          "price": 5890
+          "price": 5890,
+          "loyverseItemId": "52515f6d-c212-42d1-b6ea-fe71063dbf5e"
         },
         {
           "label": "21cm",
-          "price": 12910
+          "price": 12910,
+          "loyverseItemId": "81165160-4ffa-41d3-af0c-cb4d54bd388e"
         }
       ]
     },
@@ -2152,13 +2397,15 @@
       "mods": [
         "relleno-mini-cake"
       ],
+      "loyverseItemId": "2467c8f5-b5d9-4238-9911-54ac24000b50",
       "image": "https://api.loyverse.com/image/2467c8f5-b5d9-4238-9911-54ac24000b50"
     },
     {
       "id": "torta-dos-pisos",
       "name": "Torta Dos Pisos con Toppers",
       "cat": "tortas",
-      "price": 40580
+      "price": 40580,
+      "loyverseItemId": "d2bd0af7-9ab0-420d-87f3-edb7cbd5c02d"
     },
     {
       "id": "tequenos",
@@ -2169,14 +2416,17 @@
       "mods": [
         "salsa-tequeno"
       ],
+      "loyverseItemId": "3e514b80-beb3-4154-aed3-f83877da9e5c",
       "image": "https://api.loyverse.com/image/3e514b80-beb3-4154-aed3-f83877da9e5c"
     },
     {
       "id": "papas-chips",
       "name": "Ración de Papas Chips",
       "cat": "raciones",
-      "price": 1280
+      "price": 1280,
+      "loyverseItemId": "fa16f4f1-0272-4b7f-9a4d-ed746358c47f",
+      "image": "https://api.loyverse.com/image/fa16f4f1-0272-4b7f-9a4d-ed746358c47f"
     }
   ],
-  "_syncedAt": "2026-07-22T13:59:16.100Z"
+  "_syncedAt": "2026-07-22T14:15:51.770Z"
 }
