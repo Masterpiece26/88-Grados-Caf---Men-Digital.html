@@ -1260,7 +1260,7 @@
         },
         {
           "label": "355ml desechable",
-          "price": 1070,
+          "price": 740,
           "loyverseItemId": "c3a291c2-3778-4d04-8a86-5b1978c5d0d4"
         },
         {
@@ -2527,5 +2527,5 @@
     }
   ],
   "whatsappNumber": "582383340106",
-  "_syncedAt": "2026-07-23T13:05:50.550Z"
+  "_syncedAt": "2026-07-23T15:26:43.332Z"
 }
