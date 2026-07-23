@@ -84,11 +84,29 @@
 // docs/admin.html y se guarda en catalog/settings.json.
 const WHATSAPP_NUMBER_FALLBACK = '582123340106';
 const DATA_URL = './data/menu-data.json';
+// Mismo Worker que usa docs/admin.html — aquí solo se llama la acción pública
+// "track" (sin contraseña) para registrar uso del menú. Si no está configurado
+// (D1 no vinculado aún) los eventos simplemente no se guardan; nunca rompe el
+// menú para el cliente.
+const WORKER_URL = 'https://admin-worker.galponbooking.workers.dev';
 
 function getTableNumberFromURL() {
   const params = new URLSearchParams(window.location.search);
   const mesa = params.get('mesa');
   return mesa && mesa.trim() ? mesa.trim() : null;
+}
+
+// "Fire and forget": nunca debe bloquear la interfaz ni mostrar errores al
+// cliente si falla (Worker no configurado, sin internet, etc.).
+function track(type, extra) {
+  try {
+    fetch(WORKER_URL, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ action: 'track', type, mesa: state.tableNumber, ...extra }),
+      keepalive: true,
+    }).catch(() => {});
+  } catch {}
 }
 
 const state = {
@@ -248,6 +266,7 @@ function renderItemGrid() {
       state.selectedSizeIndex = 0;
       state.qty = 1;
       state.modSelections = {};
+      track('item_view', { itemId: card.dataset.item });
       render();
     });
   });
@@ -372,6 +391,7 @@ function closeModal() {
 }
 
 function addToCart(item) {
+  track('add_to_cart', { itemId: item.id });
   const { modDelta, modOverridePrice, modSummaryParts } = computeModifiers(item, state.modSelections);
   const sizeLabel = item.sizes ? item.sizes[state.selectedSizeIndex].label : null;
   const baseUnit = item.price != null ? item.price : item.sizes[state.selectedSizeIndex].price;
@@ -523,6 +543,7 @@ function handleWhatsAppClick() {
 
 function sendWhatsApp() {
   if (state.cart.length === 0) return;
+  track('order_sent');
   const fullName = `${state.customerFirstName.trim()} ${state.customerLastName.trim()}`.trim();
   const cartTotal = state.cart.reduce((sum, c) => sum + c.qty * c.unitPrice, 0);
   const lines = state.cart.map(c => `• ${c.qty}x ${c.name}${c.sizeLabel ? ' (' + c.sizeLabel + ')' : ''} — ${fmt(c.unitPrice * c.qty)}`);
@@ -545,7 +566,14 @@ function renderTableBadge() {
 }
 
 document.getElementById('cart-btn').addEventListener('click', () => { state.cartOpen = true; render(); });
-document.getElementById('search-input').addEventListener('input', (e) => { state.search = e.target.value; render(); });
+let searchTrackTimer = null;
+document.getElementById('search-input').addEventListener('input', (e) => {
+  state.search = e.target.value;
+  render();
+  clearTimeout(searchTrackTimer);
+  const q = e.target.value.trim();
+  if (q) searchTrackTimer = setTimeout(() => track('search', { query: q }), 700);
+});
 
 async function init() {
   renderTableBadge();
@@ -556,6 +584,7 @@ async function init() {
     state.catalog = catalog;
     state.activeCategory = catalog.CATEGORIES[0].id;
     render();
+    track('page_view');
   } catch (err) {
     document.getElementById('loading-state').textContent = 'No se pudo cargar el menú. Intenta recargar la página.';
     console.error('Error cargando menu-data.json', err);

@@ -66,6 +66,17 @@
 
   .filter-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
   .filter-row label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #C9B9A4; white-space: nowrap; cursor: pointer; }
+
+  .range-row { display: flex; gap: 8px; margin-bottom: 16px; flex-wrap: wrap; }
+  .range-btn { padding: 8px 14px; border-radius: 999px; border: 1px solid #ffffff20; background: #ffffff0d; color: #F4ECE1; font-weight: 600; font-size: 13px; }
+  .range-btn.active { background: #E85D04; border-color: #E85D04; color: #241c14; }
+  .stat-grid-5 { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 10px; margin-bottom: 16px; }
+  .bar-row { display: flex; align-items: center; gap: 10px; padding: 6px 0; }
+  .bar-name { flex-shrink: 0; width: 45%; font-size: 13.5px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .bar-track { flex: 1; height: 18px; background: #ffffff0d; border-radius: 4px; overflow: hidden; }
+  .bar-fill { height: 100%; background: #E85D04; border-radius: 4px; }
+  .bar-count { flex-shrink: 0; font-size: 12.5px; color: #C9B9A4; min-width: 24px; text-align: right; }
+  .empty-note { color: #C9B9A4; font-size: 13.5px; padding: 8px 0; }
 </style>
 </head>
 <body>
@@ -90,6 +101,7 @@
       <button class="nav-tab" data-section="resumen">Resumen</button>
       <button class="nav-tab" data-section="productos">Productos</button>
       <button class="nav-tab" data-section="whatsapp">WhatsApp</button>
+      <button class="nav-tab" data-section="estadisticas">Estadísticas</button>
     </div>
   </div>
 
@@ -144,6 +156,42 @@
           <button class="btn-primary" id="wa-save-btn">Guardar</button>
         </div>
         <div class="status-msg" id="wa-status"></div>
+      </div>
+    </div>
+
+    <div class="section" id="section-estadisticas">
+      <h2>Estadísticas de uso del menú</h2>
+      <div class="range-row">
+        <button class="range-btn" data-range="hoy">Hoy</button>
+        <button class="range-btn" data-range="7d">7 días</button>
+        <button class="range-btn" data-range="30d">30 días</button>
+        <button class="range-btn" data-range="todo">Todo</button>
+      </div>
+      <div class="status-msg" id="stats-status"></div>
+      <div id="stats-content" style="display: none;">
+        <div class="stat-grid-5">
+          <div class="stat-card"><div class="stat-value" id="stats-views">—</div><div class="stat-label">Visitas</div></div>
+          <div class="stat-card"><div class="stat-value" id="stats-item-views">—</div><div class="stat-label">Vistas de producto</div></div>
+          <div class="stat-card"><div class="stat-value" id="stats-searches">—</div><div class="stat-label">Búsquedas</div></div>
+          <div class="stat-card"><div class="stat-value" id="stats-carts">—</div><div class="stat-label">Agregados al carrito</div></div>
+          <div class="stat-card"><div class="stat-value" id="stats-orders">—</div><div class="stat-label">Pedidos por WhatsApp</div></div>
+        </div>
+        <div class="card">
+          <label>Productos más vistos</label>
+          <div id="stats-top-viewed"></div>
+        </div>
+        <div class="card">
+          <label>Productos más agregados al carrito</label>
+          <div id="stats-top-carts"></div>
+        </div>
+        <div class="card">
+          <label>Búsquedas más frecuentes</label>
+          <div id="stats-top-searches"></div>
+        </div>
+        <div class="card">
+          <label>Visitas por día</label>
+          <div id="stats-daily"></div>
+        </div>
       </div>
     </div>
   </div>
@@ -366,6 +414,73 @@ async function onToggle(switchEl, checkbox) {
     checkbox.disabled = false;
   }
 }
+
+// --- Estadísticas ---
+let statsLoaded = false;
+
+function rangeToFromTo(range) {
+  const now = Math.floor(Date.now() / 1000);
+  const DAY = 86400;
+  if (range === 'hoy') return { from: now - DAY, to: now };
+  if (range === '7d') return { from: now - 7 * DAY, to: now };
+  if (range === '30d') return { from: now - 30 * DAY, to: now };
+  return { from: 0, to: now }; // todo
+}
+
+function itemName(id) {
+  const item = state.catalog && state.catalog.ITEMS.find(it => it.id === id);
+  return item ? item.name : id;
+}
+
+function renderBarList(container, rows, labelFn) {
+  if (!rows || rows.length === 0) {
+    container.innerHTML = '<div class="empty-note">Sin datos en este período.</div>';
+    return;
+  }
+  const max = Math.max(...rows.map(r => r.count));
+  container.innerHTML = rows.map(r => `
+    <div class="bar-row">
+      <div class="bar-name" title="${escapeHtml(labelFn(r.key))}">${escapeHtml(labelFn(r.key))}</div>
+      <div class="bar-track"><div class="bar-fill" style="width: ${Math.max(4, (r.count / max) * 100)}%;"></div></div>
+      <div class="bar-count">${r.count}</div>
+    </div>
+  `).join('');
+}
+
+async function loadStats(range) {
+  document.querySelectorAll('.range-btn').forEach(b => b.classList.toggle('active', b.dataset.range === range));
+  const statusEl = document.getElementById('stats-status');
+  const content = document.getElementById('stats-content');
+  statusEl.className = 'status-msg';
+  statusEl.textContent = 'Cargando estadísticas…';
+  content.style.display = 'none';
+  const { from, to } = rangeToFromTo(range);
+  try {
+    const { stats } = await callWorker({ action: 'stats', from, to });
+    statusEl.textContent = '';
+    content.style.display = 'block';
+    document.getElementById('stats-views').textContent = stats.totals.page_view;
+    document.getElementById('stats-item-views').textContent = stats.totals.item_view;
+    document.getElementById('stats-searches').textContent = stats.totals.search;
+    document.getElementById('stats-carts').textContent = stats.totals.add_to_cart;
+    document.getElementById('stats-orders').textContent = stats.totals.order_sent;
+    renderBarList(document.getElementById('stats-top-viewed'), stats.topViewed, itemName);
+    renderBarList(document.getElementById('stats-top-carts'), stats.topAddedToCart, itemName);
+    renderBarList(document.getElementById('stats-top-searches'), stats.topSearches, k => k);
+    renderBarList(document.getElementById('stats-daily'), stats.dailyViews.map(d => ({ key: d.day, count: d.count })), k => k);
+  } catch (err) {
+    statusEl.className = 'status-msg err';
+    statusEl.textContent = 'No se pudieron cargar las estadísticas: ' + err.message;
+  }
+}
+
+document.querySelectorAll('.range-btn').forEach(btn => {
+  btn.addEventListener('click', () => loadStats(btn.dataset.range));
+});
+
+document.querySelector('[data-section="estadisticas"]').addEventListener('click', () => {
+  if (!statsLoaded) { statsLoaded = true; loadStats('7d'); }
+});
 
 // Si ya había una sesión iniciada en este dispositivo (misma pestaña), entra directo.
 if (getPassword()) {
