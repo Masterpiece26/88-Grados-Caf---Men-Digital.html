@@ -452,7 +452,8 @@
       "cat": "cafe",
       "price": 880,
       "loyverseItemId": "b28f8d98-a796-4cb5-b392-c8a05dcbd4e7",
-      "image": "https://api.loyverse.com/image/b28f8d98-a796-4cb5-b392-c8a05dcbd4e7"
+      "image": "https://api.loyverse.com/image/b28f8d98-a796-4cb5-b392-c8a05dcbd4e7",
+      "available": false
     },
     {
       "id": "cafe-pequeno",
