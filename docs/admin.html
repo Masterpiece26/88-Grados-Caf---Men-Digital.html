@@ -9,7 +9,9 @@
   * { box-sizing: border-box; }
   body { margin: 0; background: #241c14; font-family: -apple-system, BlinkMacSystemFont, Arial, sans-serif; color: #F4ECE1; }
   h1 { font-size: 19px; margin: 0; color: #F2C14E; }
-  .topbar { position: sticky; top: 0; z-index: 10; background: #241c14ee; backdrop-filter: blur(10px); border-bottom: 1px solid #ffffff14; padding: 16px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+  h2 { font-size: 16px; margin: 0 0 14px; color: #F4ECE1; }
+  .topbar { position: sticky; top: 0; z-index: 10; background: #241c14ee; backdrop-filter: blur(10px); border-bottom: 1px solid #ffffff14; }
+  .topbar-inner { padding: 16px 20px 0; display: flex; align-items: center; justify-content: space-between; gap: 12px; }
   .wrap { max-width: 720px; margin: 0 auto; padding: 20px; }
   input[type=password], input[type=text] {
     width: 100%; padding: 12px 14px; border-radius: 10px; border: 1px solid #ffffff20;
@@ -25,6 +27,23 @@
   .login-card p { color: #C9B9A4; font-size: 13.5px; margin: 0 0 18px; }
   .error { color: #ff6b6b; font-size: 13px; margin-top: 10px; min-height: 16px; }
   #panel { display: none; }
+
+  .nav-tabs { display: flex; gap: 8px; overflow-x: auto; padding: 14px 20px; max-width: 720px; margin: 0 auto; }
+  .nav-tab { flex-shrink: 0; padding: 9px 16px; border-radius: 999px; border: 1px solid #ffffff20; background: #ffffff0d; color: #F4ECE1; font-weight: 600; font-size: 13.5px; white-space: nowrap; }
+  .nav-tab.active { background: #E85D04; border-color: #E85D04; color: #241c14; }
+  .section { display: none; }
+  .section.active { display: block; }
+
+  .card { background: #2f2519; border: 1px solid #ffffff1a; border-radius: 14px; padding: 16px 18px; margin-bottom: 14px; }
+  .card label { display: block; font-size: 12.5px; font-weight: 600; color: #C9B9A4; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px; }
+  .stat-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 14px; }
+  .stat-card { background: #2f2519; border: 1px solid #ffffff1a; border-radius: 14px; padding: 16px 18px; }
+  .stat-value { font-family: inherit; font-weight: 800; font-size: 26px; color: #F2C14E; line-height: 1.1; }
+  .stat-label { font-size: 12.5px; color: #C9B9A4; margin-top: 4px; }
+  .quick-actions { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 4px; }
+  .agotados-list { margin-top: 10px; font-size: 13.5px; color: #F4ECE1; }
+  .agotados-list div { padding: 4px 0; }
+
   .cat-section { margin-bottom: 22px; }
   .cat-title { font-family: inherit; font-weight: 700; font-size: 15px; color: #C9B9A4; text-transform: uppercase; letter-spacing: 0.03em; margin: 0 0 10px; padding-bottom: 6px; border-bottom: 1px solid #ffffff14; }
   .item-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 0; border-bottom: 1px solid #ffffff0a; }
@@ -37,16 +56,16 @@
   input:checked + .slider { background: #25D366; }
   input:checked + .slider::before { transform: translateX(20px); }
   .switch.pending .slider { opacity: 0.5; }
-  #status-msg { font-size: 13px; margin-top: 4px; min-height: 18px; }
-  #status-msg.ok { color: #25D366; }
-  #status-msg.err { color: #ff6b6b; }
-  .settings-card { background: #2f2519; border: 1px solid #ffffff1a; border-radius: 14px; padding: 16px 18px; margin-bottom: 20px; }
-  .settings-card label { display: block; font-size: 12.5px; font-weight: 600; color: #C9B9A4; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px; }
+
   .settings-row { display: flex; gap: 8px; align-items: flex-start; }
   .settings-row input { flex: 1; }
-  #wa-status { font-size: 13px; margin-top: 8px; min-height: 16px; }
-  #wa-status.ok { color: #25D366; }
-  #wa-status.err { color: #ff6b6b; }
+
+  .status-msg { font-size: 13px; margin-top: 8px; min-height: 16px; }
+  .status-msg.ok { color: #25D366; }
+  .status-msg.err { color: #ff6b6b; }
+
+  .filter-row { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  .filter-row label { display: flex; align-items: center; gap: 6px; font-size: 13px; color: #C9B9A4; white-space: nowrap; cursor: pointer; }
 </style>
 </head>
 <body>
@@ -63,23 +82,70 @@
 
 <div id="panel">
   <div class="topbar">
-    <h1>Disponibilidad de productos</h1>
-    <button class="btn-ghost" id="logout-btn">Salir</button>
+    <div class="topbar-inner">
+      <h1>88° Grados Café — Admin</h1>
+      <button class="btn-ghost" id="logout-btn">Salir</button>
+    </div>
+    <div class="nav-tabs">
+      <button class="nav-tab" data-section="resumen">Resumen</button>
+      <button class="nav-tab" data-section="productos">Productos</button>
+      <button class="nav-tab" data-section="whatsapp">WhatsApp</button>
+    </div>
   </div>
+
   <div class="wrap">
-    <div class="settings-card">
-      <label for="wa-input">Número de WhatsApp para pedidos</label>
-      <div class="settings-row">
-        <input type="text" id="wa-input" placeholder="Ej. 584121234567 (código de país + número)">
-        <button class="btn-primary" id="wa-save-btn">Guardar</button>
+    <div id="loading">Cargando…</div>
+
+    <div class="section" id="section-resumen">
+      <div class="stat-grid">
+        <div class="stat-card">
+          <div class="stat-value" id="stat-total">—</div>
+          <div class="stat-label">Productos en el menú</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-value" id="stat-agotados">—</div>
+          <div class="stat-label">Marcados agotados</div>
+        </div>
       </div>
-      <div id="wa-status"></div>
+      <div class="card">
+        <label>Número de WhatsApp actual</label>
+        <div id="resumen-wa" style="font-size: 15px; font-weight: 600;">—</div>
+      </div>
+      <div class="card">
+        <label>Última sincronización con Loyverse</label>
+        <div id="resumen-sync" style="font-size: 15px; font-weight: 600;">—</div>
+      </div>
+      <div class="card" id="resumen-agotados-card" style="display: none;">
+        <label>Productos agotados ahora mismo</label>
+        <div class="agotados-list" id="resumen-agotados-list"></div>
+      </div>
+      <div class="quick-actions">
+        <button class="btn-ghost" data-goto="productos">Gestionar productos</button>
+        <button class="btn-ghost" data-goto="whatsapp">Cambiar número de WhatsApp</button>
+      </div>
     </div>
 
-    <input type="text" id="search-input" placeholder="Buscar producto…" style="margin-bottom: 6px;">
-    <div id="status-msg"></div>
-    <div id="loading">Cargando productos…</div>
-    <div id="list"></div>
+    <div class="section" id="section-productos">
+      <h2>Disponibilidad de productos</h2>
+      <div class="filter-row">
+        <input type="text" id="search-input" placeholder="Buscar producto…" style="flex: 1;">
+        <label><input type="checkbox" id="filter-agotados"> Solo agotados</label>
+      </div>
+      <div class="status-msg" id="status-msg"></div>
+      <div id="list"></div>
+    </div>
+
+    <div class="section" id="section-whatsapp">
+      <h2>Número de WhatsApp para pedidos</h2>
+      <div class="card">
+        <label for="wa-input">Número (con código de país)</label>
+        <div class="settings-row">
+          <input type="text" id="wa-input" placeholder="Ej. 584121234567">
+          <button class="btn-primary" id="wa-save-btn">Guardar</button>
+        </div>
+        <div class="status-msg" id="wa-status"></div>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -88,7 +154,7 @@
 // 'https://admin-worker.tu-usuario.workers.dev'
 const WORKER_URL = 'https://admin-worker.galponbooking.workers.dev';
 
-const state = { catalog: null, search: '' };
+const state = { catalog: null, search: '', onlyUnavailable: false };
 
 function getPassword() { return sessionStorage.getItem('adminPassword') || ''; }
 
@@ -136,6 +202,18 @@ document.getElementById('logout-btn').addEventListener('click', () => {
   document.getElementById('password-input').value = '';
 });
 
+// --- Navegación entre secciones ---
+function switchSection(name) {
+  document.querySelectorAll('.section').forEach(s => s.classList.toggle('active', s.id === 'section-' + name));
+  document.querySelectorAll('.nav-tab').forEach(t => t.classList.toggle('active', t.dataset.section === name));
+}
+document.querySelectorAll('.nav-tab').forEach(tab => {
+  tab.addEventListener('click', () => switchSection(tab.dataset.section));
+});
+document.querySelectorAll('[data-goto]').forEach(btn => {
+  btn.addEventListener('click', () => switchSection(btn.dataset.goto));
+});
+
 function fmt(n) { return 'Bs. ' + Number(n).toLocaleString('es-VE'); }
 function priceLabelFor(item) {
   if (item.price != null) return fmt(item.price);
@@ -145,13 +223,44 @@ function priceLabelFor(item) {
 function escapeHtml(str) {
   return String(str).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
 }
+function timeAgo(iso) {
+  if (!iso) return 'Sin datos';
+  const diffMs = Date.now() - new Date(iso).getTime();
+  const min = Math.round(diffMs / 60000);
+  if (min < 1) return 'Hace un momento';
+  if (min < 60) return `Hace ${min} min`;
+  const hrs = Math.round(min / 60);
+  if (hrs < 24) return `Hace ${hrs} h`;
+  const days = Math.round(hrs / 24);
+  return `Hace ${days} día${days === 1 ? '' : 's'}`;
+}
 
 async function loadCatalog() {
   const res = await fetch('./data/menu-data.json', { cache: 'no-store' });
   state.catalog = await res.json();
   document.getElementById('loading').style.display = 'none';
   document.getElementById('wa-input').value = state.catalog.whatsappNumber || '';
+  renderResumen();
   renderList();
+  switchSection('resumen');
+}
+
+function renderResumen() {
+  const { ITEMS, whatsappNumber, _syncedAt } = state.catalog;
+  const agotados = ITEMS.filter(it => it.available === false);
+  document.getElementById('stat-total').textContent = ITEMS.length;
+  document.getElementById('stat-agotados').textContent = agotados.length;
+  document.getElementById('resumen-wa').textContent = whatsappNumber || '(sin configurar)';
+  document.getElementById('resumen-sync').textContent = timeAgo(_syncedAt);
+
+  const card = document.getElementById('resumen-agotados-card');
+  const listEl = document.getElementById('resumen-agotados-list');
+  if (agotados.length) {
+    card.style.display = 'block';
+    listEl.innerHTML = agotados.map(it => `<div>• ${escapeHtml(it.name)}</div>`).join('');
+  } else {
+    card.style.display = 'none';
+  }
 }
 
 document.getElementById('wa-save-btn').addEventListener('click', async () => {
@@ -160,21 +269,22 @@ document.getElementById('wa-save-btn').addEventListener('click', async () => {
   const btn = document.getElementById('wa-save-btn');
   const digits = input.value.replace(/\D/g, '');
   if (digits.length < 10 || digits.length > 15) {
-    statusEl.className = 'err';
+    statusEl.className = 'status-msg err';
     statusEl.textContent = 'Número inválido — debe tener entre 10 y 15 dígitos, con código de país (ej. 58 para Venezuela).';
     return;
   }
   btn.disabled = true;
-  statusEl.className = '';
+  statusEl.className = 'status-msg';
   statusEl.textContent = 'Guardando…';
   try {
     await callWorker({ action: 'updateSettings', whatsappNumber: digits });
     input.value = digits;
     state.catalog.whatsappNumber = digits;
-    statusEl.className = 'ok';
+    statusEl.className = 'status-msg ok';
     statusEl.textContent = 'Guardado. Puede tardar ~1 min en verse en el menú.';
+    renderResumen();
   } catch (err) {
-    statusEl.className = 'err';
+    statusEl.className = 'status-msg err';
     statusEl.textContent = 'No se pudo guardar: ' + err.message;
   } finally {
     btn.disabled = false;
@@ -185,15 +295,25 @@ document.getElementById('search-input').addEventListener('input', (e) => {
   state.search = e.target.value;
   renderList();
 });
+document.getElementById('filter-agotados').addEventListener('change', (e) => {
+  state.onlyUnavailable = e.target.checked;
+  renderList();
+});
 
 function renderList() {
   const list = document.getElementById('list');
   const { CATEGORIES, ITEMS } = state.catalog;
   const q = state.search.trim().toLowerCase();
-  const filtered = q ? ITEMS.filter(it => it.name.toLowerCase().includes(q)) : ITEMS;
+  let filtered = q ? ITEMS.filter(it => it.name.toLowerCase().includes(q)) : ITEMS;
+  if (state.onlyUnavailable) filtered = filtered.filter(it => it.available === false);
 
   const byCat = {};
   for (const it of filtered) (byCat[it.cat] = byCat[it.cat] || []).push(it);
+
+  if (filtered.length === 0) {
+    list.innerHTML = '<div style="color:#C9B9A4; padding: 20px 0;">Sin resultados.</div>';
+    return;
+  }
 
   list.innerHTML = CATEGORIES
     .filter(c => byCat[c.id] && byCat[c.id].length)
@@ -227,17 +347,19 @@ async function onToggle(switchEl, checkbox) {
   const statusEl = document.getElementById('status-msg');
   switchEl.classList.add('pending');
   checkbox.disabled = true;
-  statusEl.className = '';
+  statusEl.className = 'status-msg';
   statusEl.textContent = 'Guardando…';
   try {
     await callWorker({ action: 'toggle', itemId, available });
     const item = state.catalog.ITEMS.find(it => it.id === itemId);
     if (item) { if (available) delete item.available; else item.available = false; }
-    statusEl.className = 'ok';
+    statusEl.className = 'status-msg ok';
     statusEl.textContent = `"${item ? item.name : itemId}" ${available ? 'marcado disponible' : 'marcado agotado'}. Puede tardar ~1 min en verse en el menú.`;
+    renderResumen();
+    if (state.onlyUnavailable) renderList();
   } catch (err) {
     checkbox.checked = !available; // revertir
-    statusEl.className = 'err';
+    statusEl.className = 'status-msg err';
     statusEl.textContent = 'No se pudo guardar: ' + err.message;
   } finally {
     switchEl.classList.remove('pending');
