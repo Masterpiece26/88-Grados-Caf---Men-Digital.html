@@ -4560,6 +4560,22 @@
     ]
   },
   {
+    "id": "7de05fa6-ac49-44cd-8f16-9fd508a1f63b",
+    "item_name": "Green Strawberry",
+    "category": "Te caliente",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "91f0a21f-dad0-41d7-b283-e4d9de972ea1",
+        "sku": "10111",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 1920
+      }
+    ]
+  },
+  {
     "id": "4abb4160-338d-415b-ab08-1370e3f76692",
     "item_name": "Indiana nights",
     "category": "Te caliente",
@@ -4696,6 +4712,22 @@
       {
         "variant_id": "c26d0257-08f4-4ed8-b71f-e8f8516d0167",
         "sku": "10155",
+        "option1_value": null,
+        "option2_value": null,
+        "option3_value": null,
+        "default_price": 3370
+      }
+    ]
+  },
+  {
+    "id": "392adae1-b56d-4ae0-b3c1-24a1a79f3284",
+    "item_name": "Green Strawberry",
+    "category": "Té frio",
+    "image_url": null,
+    "variants": [
+      {
+        "variant_id": "2b5281cb-959d-4ae3-94d4-225cf655a9d0",
+        "sku": "10007",
         "option1_value": null,
         "option2_value": null,
         "option3_value": null,
