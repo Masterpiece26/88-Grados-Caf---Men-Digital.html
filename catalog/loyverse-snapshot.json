@@ -787,7 +787,7 @@
     "id": "d31c80d3-294e-4d1b-9d9c-18009a3509b7",
     "item_name": "Tizana grande",
     "category": "Bebidas Frias",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/d31c80d3-294e-4d1b-9d9c-18009a3509b7",
     "variants": [
       {
         "variant_id": "5e01a7c2-f312-4ada-bd75-e3e8111d62df",
@@ -803,7 +803,7 @@
     "id": "3261e39f-0f66-4f01-9412-d56f00f014f3",
     "item_name": "Tizana Mediana",
     "category": "Bebidas Frias",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/3261e39f-0f66-4f01-9412-d56f00f014f3",
     "variants": [
       {
         "variant_id": "43c328c9-e70c-4563-af4e-ed3b1562af43",
@@ -819,7 +819,7 @@
     "id": "d3e6200b-035a-482f-b86b-92bd5c6818cc",
     "item_name": "Tizana pequeña",
     "category": "Bebidas Frias",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/d3e6200b-035a-482f-b86b-92bd5c6818cc",
     "variants": [
       {
         "variant_id": "8c02a2d7-a48b-4c37-95a9-bb25006c17cb",
@@ -851,7 +851,7 @@
     "id": "288dbe69-4e5f-45d8-a21b-a74d49a74c66",
     "item_name": "Barraquito",
     "category": "Cafe",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/288dbe69-4e5f-45d8-a21b-a74d49a74c66",
     "variants": [
       {
         "variant_id": "07a9dc06-be63-4a22-973e-01a8b71de791",
@@ -947,7 +947,7 @@
     "id": "2a8dabc0-dba1-441a-9b52-fe1877ac8e76",
     "item_name": "Cafe Doble  Extra Grande",
     "category": "Cafe",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/2a8dabc0-dba1-441a-9b52-fe1877ac8e76",
     "variants": [
       {
         "variant_id": "e15e0ce0-8a4e-4065-a767-445405d3ef5f",
@@ -1027,7 +1027,7 @@
     "id": "f6639e2b-fca8-4b17-a150-84644e893c87",
     "item_name": "Café lungo",
     "category": "Cafe",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/f6639e2b-fca8-4b17-a150-84644e893c87",
     "variants": [
       {
         "variant_id": "2a0cea10-494b-41f4-a55b-4b5e33ba2c38",
@@ -1219,7 +1219,7 @@
     "id": "5df5c2f5-c039-48b4-97d7-25545a38d84d",
     "item_name": "Delivery",
     "category": "Delivery",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/5df5c2f5-c039-48b4-97d7-25545a38d84d",
     "variants": [
       {
         "variant_id": "f71a8962-a91f-4e94-a384-bb55891895c9",
@@ -1235,7 +1235,7 @@
     "id": "e551c34c-a9ec-4685-9c0d-891ba07e56f7",
     "item_name": "Delivery Foraneo",
     "category": "Delivery",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/e551c34c-a9ec-4685-9c0d-891ba07e56f7",
     "variants": [
       {
         "variant_id": "79eaab35-8156-406c-b78f-d5c94509f143",
@@ -1299,7 +1299,7 @@
     "id": "76e16ccf-3142-4bfc-a2ef-1fa84fb98555",
     "item_name": "Tortilla española",
     "category": "Desayunos",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/76e16ccf-3142-4bfc-a2ef-1fa84fb98555",
     "variants": [
       {
         "variant_id": "d6dc674d-a329-4e15-9e8e-6b4924a8f2d4",
@@ -1315,7 +1315,7 @@
     "id": "67eb0094-5920-4033-9a13-856ba5ffb81b",
     "item_name": "Tortilla omelette",
     "category": "Desayunos",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/67eb0094-5920-4033-9a13-856ba5ffb81b",
     "variants": [
       {
         "variant_id": "e544ae07-44fc-4c88-a772-0fa37f60c2c0",
@@ -1427,7 +1427,7 @@
     "id": "b590f691-0eba-4e07-8d48-cf45faf4d6c6",
     "item_name": "Brownie Fruto Sec comp",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/b590f691-0eba-4e07-8d48-cf45faf4d6c6",
     "variants": [
       {
         "variant_id": "e219622b-0357-4d1c-a85c-41ee52903771",
@@ -1459,7 +1459,7 @@
     "id": "798f42e4-7284-4898-9b5c-3af13f50fbb7",
     "item_name": "Brownie trad comp",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/798f42e4-7284-4898-9b5c-3af13f50fbb7",
     "variants": [
       {
         "variant_id": "c6ddf8e5-aff0-4526-ae67-2c77aa698bdc",
@@ -1731,7 +1731,7 @@
     "id": "ed59c20c-e308-4283-af56-f6e0d9e379b4",
     "item_name": "Muffins de Calabaza con Chispas de chocolate",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/ed59c20c-e308-4283-af56-f6e0d9e379b4",
     "variants": [
       {
         "variant_id": "c6a73709-2cdb-4a60-bcdd-13b71fca05a4",
@@ -1795,7 +1795,7 @@
     "id": "52515f6d-c212-42d1-b6ea-fe71063dbf5e",
     "item_name": "Pie de limón 15cm",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/52515f6d-c212-42d1-b6ea-fe71063dbf5e",
     "variants": [
       {
         "variant_id": "a98b4107-8883-444d-a108-656006569055",
@@ -1811,7 +1811,7 @@
     "id": "81165160-4ffa-41d3-af0c-cb4d54bd388e",
     "item_name": "Pie de limón 21CM",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/81165160-4ffa-41d3-af0c-cb4d54bd388e",
     "variants": [
       {
         "variant_id": "e18a29b4-2989-4280-ab1f-c0a93595407d",
@@ -1827,7 +1827,7 @@
     "id": "ec3ea44b-6646-4844-95ff-8aaacab23b0a",
     "item_name": "Ponqué de vainilla",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/ec3ea44b-6646-4844-95ff-8aaacab23b0a",
     "variants": [
       {
         "variant_id": "8efcbf07-7067-4655-8dc6-48c4a73f9feb",
@@ -1843,7 +1843,7 @@
     "id": "ee9801ec-c000-4323-9a14-ae3a75e7d23c",
     "item_name": "Ponqué de Vainilla 3relleno arequipe  2.5KL",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/ee9801ec-c000-4323-9a14-ae3a75e7d23c",
     "variants": [
       {
         "variant_id": "8ddf4aef-f7a2-422f-864a-1e857c02a92d",
@@ -1859,7 +1859,7 @@
     "id": "bda30fb7-70bf-4f31-9bb7-3f2284462301",
     "item_name": "Ponqué marmoleado grande de vainilla",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/bda30fb7-70bf-4f31-9bb7-3f2284462301",
     "variants": [
       {
         "variant_id": "540c656f-a3a1-4e4a-825d-9df8e715d97e",
@@ -1875,7 +1875,7 @@
     "id": "62826f34-fd4e-4e8d-9f7a-7f258a6e5671",
     "item_name": "Ponque Vainilla 4 Relle Arequipe 3.362 kg",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/62826f34-fd4e-4e8d-9f7a-7f258a6e5671",
     "variants": [
       {
         "variant_id": "61cdd8d5-f36e-4022-8a0f-dd4da78aa887",
@@ -1891,7 +1891,7 @@
     "id": "883c1ff5-fe22-4e04-b13f-f6e6d2d0a021",
     "item_name": "Red velvet completa",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/883c1ff5-fe22-4e04-b13f-f6e6d2d0a021",
     "variants": [
       {
         "variant_id": "c4d605a6-1bad-4541-bdd8-deedb5017b07",
@@ -1907,7 +1907,7 @@
     "id": "92e3c577-519b-47c1-8318-b4a1750da0b2",
     "item_name": "Red velvet de 4 porciones",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/92e3c577-519b-47c1-8318-b4a1750da0b2",
     "variants": [
       {
         "variant_id": "1b9ea05d-84a7-409c-9cc5-f27c1aa042e8",
@@ -1939,7 +1939,7 @@
     "id": "24e03e1e-d094-4e8d-bc2c-60842b9d1f0b",
     "item_name": "Tiramisú 30x30",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/24e03e1e-d094-4e8d-bc2c-60842b9d1f0b",
     "variants": [
       {
         "variant_id": "78811105-f43a-4018-b103-8bf6cbb06ef9",
@@ -1955,7 +1955,7 @@
     "id": "aca7d38c-6499-454f-be20-065d5032af85",
     "item_name": "Tiramisú completa",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/aca7d38c-6499-454f-be20-065d5032af85",
     "variants": [
       {
         "variant_id": "2b66ef67-4249-425a-b3fb-460a73c051e9",
@@ -1971,7 +1971,7 @@
     "id": "f7b34c87-981b-4fca-bba0-b5f1fc049f30",
     "item_name": "Tiramisú de 4 porciones",
     "category": "Dulces",
-    "image_url": null,
+    "image_url": "https://api.loyverse.com/image/f7b34c87-981b-4fca-bba0-b5f1fc049f30",
     "variants": [
       {
         "variant_id": "217001f1-d391-4231-849e-ee826b050c35",

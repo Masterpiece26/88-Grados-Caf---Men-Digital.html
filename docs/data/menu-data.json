@@ -471,7 +471,8 @@
       "name": "Café Lungo",
       "cat": "cafe",
       "price": 890,
-      "loyverseItemId": "f6639e2b-fca8-4b17-a150-84644e893c87"
+      "loyverseItemId": "f6639e2b-fca8-4b17-a150-84644e893c87",
+      "image": "https://api.loyverse.com/image/f6639e2b-fca8-4b17-a150-84644e893c87"
     },
     {
       "id": "cafe-americano",
@@ -542,7 +543,8 @@
       "name": "Café Doble Extra Grande",
       "cat": "cafe",
       "price": 3270,
-      "loyverseItemId": "2a8dabc0-dba1-441a-9b52-fe1877ac8e76"
+      "loyverseItemId": "2a8dabc0-dba1-441a-9b52-fe1877ac8e76",
+      "image": "https://api.loyverse.com/image/2a8dabc0-dba1-441a-9b52-fe1877ac8e76"
     },
     {
       "id": "cafe-xg",
@@ -581,7 +583,8 @@
       "name": "Barraquito",
       "cat": "cafe",
       "price": 4040,
-      "loyverseItemId": "288dbe69-4e5f-45d8-a21b-a74d49a74c66"
+      "loyverseItemId": "288dbe69-4e5f-45d8-a21b-a74d49a74c66",
+      "image": "https://api.loyverse.com/image/288dbe69-4e5f-45d8-a21b-a74d49a74c66"
     },
     {
       "id": "chocolate-caliente",
@@ -1241,7 +1244,8 @@
           "price": 2270,
           "loyverseItemId": "d31c80d3-294e-4d1b-9d9c-18009a3509b7"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/d3e6200b-035a-482f-b86b-92bd5c6818cc"
     },
     {
       "id": "coca-cola",
@@ -1889,14 +1893,16 @@
       "name": "Tortilla Española",
       "cat": "desayunos",
       "price": 2200,
-      "loyverseItemId": "76e16ccf-3142-4bfc-a2ef-1fa84fb98555"
+      "loyverseItemId": "76e16ccf-3142-4bfc-a2ef-1fa84fb98555",
+      "image": "https://api.loyverse.com/image/76e16ccf-3142-4bfc-a2ef-1fa84fb98555"
     },
     {
       "id": "tortilla-omelette",
       "name": "Tortilla Omelette",
       "cat": "desayunos",
       "price": 3130,
-      "loyverseItemId": "67eb0094-5920-4033-9a13-856ba5ffb81b"
+      "loyverseItemId": "67eb0094-5920-4033-9a13-856ba5ffb81b",
+      "image": "https://api.loyverse.com/image/67eb0094-5920-4033-9a13-856ba5ffb81b"
     },
     {
       "id": "pizza-margarita",
@@ -2118,7 +2124,8 @@
       "name": "Muffin de Calabaza con Chispas",
       "cat": "postres",
       "price": 960,
-      "loyverseItemId": "ed59c20c-e308-4283-af56-f6e0d9e379b4"
+      "loyverseItemId": "ed59c20c-e308-4283-af56-f6e0d9e379b4",
+      "image": "https://api.loyverse.com/image/ed59c20c-e308-4283-af56-f6e0d9e379b4"
     },
     {
       "id": "torta-fresa",
@@ -2285,7 +2292,8 @@
           "price": 14650,
           "loyverseItemId": "883c1ff5-fe22-4e04-b13f-f6e6d2d0a021"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/92e3c577-519b-47c1-8318-b4a1750da0b2"
     },
     {
       "id": "torta-entera-tiramisu",
@@ -2307,7 +2315,8 @@
           "price": 29190,
           "loyverseItemId": "24e03e1e-d094-4e8d-bc2c-60842b9d1f0b"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/f7b34c87-981b-4fca-bba0-b5f1fc049f30"
     },
     {
       "id": "torta-entera-zanahoria",
@@ -2385,7 +2394,8 @@
           "price": 24940,
           "loyverseItemId": "62826f34-fd4e-4e8d-9f7a-7f258a6e5671"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/ec3ea44b-6646-4844-95ff-8aaacab23b0a"
     },
     {
       "id": "mini-cake",
@@ -2433,7 +2443,8 @@
           "price": 13010,
           "loyverseItemId": "81165160-4ffa-41d3-af0c-cb4d54bd388e"
         }
-      ]
+      ],
+      "image": "https://api.loyverse.com/image/52515f6d-c212-42d1-b6ea-fe71063dbf5e"
     },
     {
       "id": "small-cake",
@@ -2527,5 +2538,5 @@
     }
   ],
   "whatsappNumber": "582383340106",
-  "_syncedAt": "2026-07-27T10:57:16.133Z"
+  "_syncedAt": "2026-07-27T13:43:09.625Z"
 }
